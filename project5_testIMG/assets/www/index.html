@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Coucou !</title>
+    </head>
+    <body>
+
+		<form id="theForm">
+			<span class="form_col">Sexe :</span>
+			<label><input name="sex" type="radio" value="Male" />Homme</label>
+			<label><input name="sex" type="radio" value="Female" />Femme</label>
+			<span class="tips">Vous devez rentrer votre sexe</span>
+			<br /><br />
+			
+			<label class="form_col" for="LastName">Nom :</label>
+			<input name="LastName" id="LastName" type="text" />
+			<span class="tips">Un nom ne peut pas faire moins de 2 caracteres</span>
+			<br /><br />
+			
+			<label class="form_col" for="FirstName">Prenom :</label>
+			<input name="FirstName" id="FirstName" type="text" />
+			<span class="tips">Un nom ne peut pas faire moins de 2 caracteres</span>
+			<br /><br />
+			
+			<label class="form_col" for="Age">Age :</label>
+			<input name="Age" id="Age" type="text" />
+			<span class="tips">Un nombre compris entre 5 et 140</span>
+			<br /><br />
+			
+			<label class="form_col" for="Nick">Pseudo :</label>
+			<input name="Nick" id="Nick" type="text" />
+			<span class="tips">Un pseudo ne peut pas faire moins de 4 caracteres</span>
+			<br /><br />
+			
+			<label class="form_col" for="Pass1">Password :</label>
+			<input name="Pass1" id="Pass1" type="password" />
+			<span class="tips">Un password ne peut pas faire moins de 6 caracteres</span>
+			<br /><br />
+			
+			<label class="form_col" for="Pass2">Password (confirmation):</label>
+			<input name="Pass2" id="Pass2" type="password" />
+			<span class="tips">Il doit etre identique au precedent</span>
+			<br /><br />
+			
+			<label class="form_col" for="country">Pays :</label>
+
+			<select name="country" id="country">
+				<option value="none">Selectionnez votre pays de residence</option>
+				<option value="en">Angleterre</option>
+				<option value="us">Etats-Unis</option>
+				<option value="fr">France</option>
+				<option value="du">Allemagne</option>
+				<option value="br">Bresil</option>
+				<option value="ca">Canada</option>
+				<option value="ph">Philippines</option>
+			</select>
+			<span class="tips">Vous devez selectionner votre pays de résidence</span>
+			<br /><br />
+			
+			<span class="form_col"></span>
+			<label><input name="news" type="checkbox" /> Je désire recevoir la newsletter chaque mois.</label>
+			<br /><br />
+
+			<span class="form_col"></span>
+			<input type="submit" value="M'inscrire" /> <input type="reset" value="Reinitialiser le formulaire" />
+		</form>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+
+        <script type="text/javascript">
+        </script>
+    </body>
+</html>
