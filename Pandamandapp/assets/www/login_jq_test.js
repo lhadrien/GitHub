@@ -3,26 +3,53 @@ function init() {
 	delete init;
 }
 
-function deviceReady() 
-{
-	$("#loginForm").on("submit",function(e) {
-	$("#submitButton",this).attr("disabled","disabled");
-	var u = $("#username", this).val();
-	var p = $("#password", this).val();
-	if (u != '' && p!= '')
+
+function checkPreAuth() {
+	var form = $("#loginForm");
+
+	if(window.localStorage["username"] != undefined && window.localStorage["password"] != undefined)
 	{
-		$.post("http://www.coldfusionjedi.com/demos/2011/nov/10/service.cfc?method=login&returnformat=json", { username:u,password:p}, function(res) {
-			if(res == true)
+		$("#username", form).val(window.localStorage["username"]);
+		$("#password", form).val(window.localStorage["password"]);
+		handleLogin();
+	}
+}
+
+function handleLogin() 
+{
+	var form = $("#loginForm");    
+
+	$("#submitButton",form).attr("disabled","disabled");
+	var user = $("#username", form).val();
+	var pass = $("#password", form).val();
+	
+	console.log("click");
+	if (user != '' && pass != '')
+	{
+		$.post("http://www.pandamanda.com/pm/wp-admin/admin-ajax.php", {log:user, pwd:pass}, function(res) {
+			if (res == true)
 			{
+				//store
+				window.localStorage["username"] = user;
+				window.localStorage["password"] = pass;             
 				$.mobile.changePage("thefuturishere.html");
 			}
 			else
 			{
-				navigator.notification.alert("Your login failed", function() {});
+				navigator.notification.alert("Your login failed", function() {}, 'Wrong pass or user', 'Ok, ok...');
 			}
 			$("#submitButton").removeAttr("disabled");
-		},"json");
+		}, "json");
 	}
-	return false;
-	});			// remember to change the code later...
+	else
+	{
+		navigator.notification.alert("You must enter a username and a password", function() {});
+		$("#submitButton").removeAttr("disabled");
+	}
+		return false;
+}
+
+function deviceReady()
+{
+	$("#loginForm").on("submit",handleLogin);
 }
