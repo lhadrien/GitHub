@@ -23,33 +23,44 @@ function handleLogin()
 	var user = $("#username", form).val();
 	var pass = $("#password", form).val();
 	
-	console.log("click");
+	console.log("click.. then...");
 	if (user != '' && pass != '')
 	{
-		$.post("http://www.pandamanda.com/pm/wp-admin/admin-ajax.php", {log:user, pwd:pass}, function(res) {
-			if (res == true)
-			{
-				//store
-				window.localStorage["username"] = user;
-				window.localStorage["password"] = pass;             
-				$.mobile.changePage("thefuturishere.html");
+		$.ajax({
+			type: 'POST',
+			dataType: 'json',
+			url: 'http://www.pandamanda.com/pm/wp-admin/admin-ajax.php',
+			username: user,
+			password: pass,
+			data: { 
+				'action': 'login_app',
+				'username': user, 
+				'password': pass },
+			success: function(data){
+				if (data.loggedin == true)
+				{
+					navigator.notification.alert(data.message, function() {});
+					window.localStorage["username"] = user;
+					window.localStorage["password"] = pass;
+					$.mobile.changePage("thefuturishere.html");
+				}
+				else
+				{
+					navigator.notification.alert(data.message, function() {}, 'Login failed', 'Ok...');
+				}
+				$("#submitButton").removeAttr("disabled");
 			}
-			else
-			{
-				navigator.notification.alert("Your login failed", function() {}, 'Wrong pass or user', 'Ok, ok...');
-			}
-			$("#submitButton").removeAttr("disabled");
-		}, "json");
+		});
 	}
 	else
 	{
 		navigator.notification.alert("You must enter a username and a password", function() {});
 		$("#submitButton").removeAttr("disabled");
 	}
-		return false;
+	return false;
 }
 
 function deviceReady()
 {
-	$("#loginForm").on("submit",handleLogin);
+	$("#loginForm").on("submit", handleLogin);
 }
