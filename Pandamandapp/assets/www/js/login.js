@@ -30,26 +30,6 @@ function handleLogin() // function that login
 			type: 'POST',
 			dataType: 'json',
 			crossDomain: true,
-			statusCode: {
-				404: function() {
-      				alert( 'page not found' );
-    				},
-    			200: function() {
-    				alert( 'correctly sent' );
-    				},
-    			400: function() {
-    				alert( 'bad request' );
-    				},
-    			401: function() {
-    				alert( 'Unauthorized' );
-    				},
-    			403: function() {
-    				alert( 'Forbidden' );
-    				},
-    			402: function() {
-    				alert( 'payment required' );
-    				}
-				},
 			url: 'http://www.pandamanda.com/pm/wp-admin/admin-ajax.php',
 			username: user,
 			password: pass,
@@ -63,15 +43,13 @@ function handleLogin() // function that login
 			success: function(data) { // if success then do...
 				if (data.loggedin == true) // wrong identification ?
 				{
-					navigator.notification.alert("debug loggedin == true");
-					navigator.notification.alert(data.message);
 					window.localStorage["username"] = user;
 					window.localStorage["password"] = pass;
-					$.mobile.changePage("test_json_page2.html"); // charge the next page
+					document.location.href = "main_page_dashboard.html"; // charge the next page
 				}
 				else
 				{
-					navigator.notification.alert("debug loggedin == 0 or false", function() {}, data.message, 'Ok...');
+					navigator.notification.alert("Fail", function() {}, data.message, 'Ok...');
 				}
 				$("#submitButton").removeAttr("disabled"); // enable again the buttons
 			}

@@ -4,10 +4,9 @@ function init() { // a phonegap function that check if the device is ready
 }
 
 function handlejson() {
-	alert('gros noob');
 	$.ajax({
 		type: "GET",
-		url: document.location.protocol + 'http://www.pandamanda.com/api_json/get_page_index/',
+		url: 'http://localhost/pandamanda/www/pm/wp-admin/admin-ajax.php',
 		dataType: 'json',
 		error: function() {
 			alert('Unable to load feed, Incorrect path or invalid feed');
