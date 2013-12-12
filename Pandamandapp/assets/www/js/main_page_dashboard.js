@@ -52,11 +52,14 @@ function displayjson_dashboard()
 				navigator.notification.alert('Message', function() {}, data.message, 'Ok !');
 				var postlist = data.response;
 				var html = '<ul data-role="listview" data-filter="true">' ;
+//				window.localStorage["json_posts"] = postlist;
+//				window.localStorage["post_title"] = entry.post_title;
 				for (var i = 0; i < 10; i++)
-				{ 
+				{
+
 					var entry = postlist[i];
 					html += '<li>';
-					html += '<a href="' + entry.guid + '">';
+					html += '<a href="main_page_dashboard.html" data-transition="slide">';
 					html += '<div class="entry">' + 'Title : ' + entry.post_title + '</div>' ;
 					html += '<div class="entry">' + 'Date : ' + entry.post_date + '</div>' ;
 					html += '<div class="entry">' + 'Type : <span color=#FFFFFF backgroundColor=#' + get_color_type(entry.post_type) + '>' + capFLetter(entry.post_type) + '</span></div>';
@@ -72,8 +75,6 @@ function displayjson_dashboard()
 			{
 				navigator.notification.alert("Fail", function() {}, data.message, 'Ok...');
 			}
-/*			$( "#postlist" ).append(html);
-			$( "#postlist ul[data-role=listview]" ).listview(); */
 		}
 	});
 
