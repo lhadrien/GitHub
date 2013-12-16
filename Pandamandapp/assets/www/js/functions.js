@@ -30,11 +30,15 @@ function get_color_type(data_type)
 
 function displaypost(idPost)
 {
-	$( "#headpost" ).empty();		// clear the title page from the previous post
-	$( "#myPost" ).empty();			// clear the content from the previous post
-	$( "#headpost" ).append(window.postTitle[idPost]);	//  new title
-	$( "#myPost" ).append(window.postContent[idPost]); //	new content already formated in array
-	$( "#myPost ul[data-role=listview]" ).listview();
+	if (typeof idPost !== 'undefined')
+	{
+		$( "#headpost" ).empty();		// clear the title page from the previous post
+		$( "#myPost" ).empty();			// clear the content from the previous post
+		$( "#headpost" ).append(window.postTitle[idPost]);	//  new title
+		$( "#myPost" ).append(window.postContent[idPost]); //	new content already formated in array
+		$( "#myPost ul[data-role=listview]" ).listview();
+		window.idPost = idPost;
+	}
 }
 
 function formatpost(myPostContent)
@@ -51,7 +55,7 @@ function formatpost(myPostContent)
 	{
 		contentArrInside = contentArr[i].split("|");
 		html += '<li>';
-		html += '<a href="#dashboard" data-rel="back">';
+		html += '<a id="sound" href="#">';
 		html += '<div class="entry"><h2>' + contentArrInside[1] + '</h2></div>' ;
 		html += '<div class="entry"><p>' + contentArrInside[0] + '</p></div>' ;
 		html += '<div class="entry"><p><strong>' + contentArrInside[2] + '</strong></p></div>';
@@ -61,6 +65,32 @@ function formatpost(myPostContent)
 	html += '</ul>';
 	return (html);
 }
+
+$('#sound').on('click', function(e) {
+	var textSound = $(e).find('h2').text();
+	alert(textSound); // does not even display the alert
+	var linkSound = "http://api.voicerss.org/?key=7f4987b0d4ce417d9404c58c4fb07ca8&src=" + textSound + "&hl=zh-cn&f=12khz_16bit_stereo&r=-5&ext=.mp3";
+	var clickSound = createsound(linkSound);
+});
+
+function createsound(sound)
+{
+	var audio = document.createElement('audio');
+	
+		var sourceElement = document.createElement('source');
+		sourceElement.setAttribute('src', arguments[0]);
+		sourceElement.setAttribute('type', 'audio/mpeg');
+		audio.appendChild(sourceElement);
+		audio.load();
+		audio.playclip = function() {
+			audio.pause();
+			audio.currentTime = 0;
+			audio.play();
+		};
+		return (audio);
+}
+// var clicksound = createsound(linkSound);
+// var clicksound = createsound("http://api.voicerss.org/?key=7f4987b0d4ce417d9404c58c4fb07ca8&src=%E6%9C%9B%E7%9D%80&hl=zh-cn&f=12khz_16bit_stereo&r=-5&ext=.mp3");
 
 function handlepost(idPost)
 {

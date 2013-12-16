@@ -5,6 +5,8 @@ var postList;
 var postContent = new Array();
 var postTitle = new Array();
 var idPost = 0;
+		
+
 
 function onDeviceReady()
 {
@@ -76,6 +78,7 @@ $(document).on('pageinit', '#dashboard', function()
 			success: function(data) {
 				if (data.dashboard == true)
 				{
+					navigator.notification.alert(data.response);
 					window.postList = data.response;
 					var html = '<ul data-role="listview" data-filter="true">';
 					for (var i = 0; i < 20; i++)

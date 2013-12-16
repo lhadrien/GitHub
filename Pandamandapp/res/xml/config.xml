@@ -30,9 +30,7 @@
         Apache Cordova Team
     </author>
 
-    <access />
-	<access origin="*" />
-	<access origin="http://www.pandamanda.com*" subdomains="true" />
+    <access origin="*"/>
 
     <!-- <content src="http://mysite.com/myapp.html" /> for external pages -->
     <content src="index.html" />

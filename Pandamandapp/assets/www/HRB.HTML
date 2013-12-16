@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pandamandapp</title>
+        <meta charset="UTF-8" />
+	<script>
+
+		function createsoundbite(sound)
+		{
+			var html5audio = document.createElement('audio');
+			
+
+			var sourceel = document.createElement('source');
+			sourceel.setAttribute('src', sound);
+			sourceel.setAttribute('type', 'audio/mpeg');
+			html5audio.appendChild(sourceel);
+			html5audio.load();
+			html5audio.playclip = function() {
+				html5audio.pause();
+				html5audio.currentTime = 0;
+				html5audio.play();
+			};
+			return (html5audio);
+			}
+		}
+
+		//Initialize two sound clips with 1 fallback file each:
+
+		var mouseoversound = createsoundbite("whistle.mp3");
+		var clicksound = createsoundbite("click.mp3");
+	</script>
+	</head>
+	<body>
+		<p align="left"><b>Moveover</b> your mouse over any of the links below to hear a 
+		sound effect:</p>
+
+		<p align="left">
+		<a href="http://www.javascriptkit.com" onmouseover="mouseoversound.playclip()">JavaScript Kit</a></p>
+
+		<p align="left">
+		<a href="http://www.dynamicdrive.com" onmouseover="mouseoversound.playclip()">Dynamic Drive</a></p>
+
+		<p align="left">
+		<a href="http://www.cssdrive.com" onmouseover="mouseoversound.playclip()">CSS Drive</a></p>
+
+		<p align="left">
+		<a href="http://www.codingforums.com" onmouseover="mouseoversound.playclip()">Coding Forums</a></p>
+
+		<p align="left"><b>Click</b> on the following links to hear a sound effect:</p>
+		<p align="left">
+		<a href="#current" onclick="clicksound.playclip()">Link 1</a>
+		<a href="#current" onclick="clicksound.playclip()">Link 2</a>
+		<a href="#current" onclick="clicksound.playclip()">Link 3</a></p>
+	</body>
+</html>
