@@ -55,7 +55,7 @@ function formatpost(myPostContent)
 	{
 		contentArrInside = contentArr[i].split("|");
 		html += '<li>';
-		html += '<a id="sound" href="#">';
+		html += '<a id="sound" href="#current">';
 		html += '<div class="entry"><h2>' + contentArrInside[1] + '</h2></div>' ;
 		html += '<div class="entry"><p>' + contentArrInside[0] + '</p></div>' ;
 		html += '<div class="entry"><p><strong>' + contentArrInside[2] + '</strong></p></div>';
@@ -66,9 +66,19 @@ function formatpost(myPostContent)
 	return (html);
 }
 
+// function test
+/* $('#sound').on('click', gnegne);
+
+function gnegne()
+{
+	alert("gnegne");
+	return false;
+}
+*/
+
 $('#sound').on('click', function(e) {
-	var textSound = $(e).find('h2').text();
-	alert(textSound); // does not even display the alert
+	var textSound = $(e).find('h2').text(); // $(e) or $(this) ?
+	alert(textSound);
 	var linkSound = "http://api.voicerss.org/?key=7f4987b0d4ce417d9404c58c4fb07ca8&src=" + textSound + "&hl=zh-cn&f=12khz_16bit_stereo&r=-5&ext=.mp3";
 	var clickSound = createsound(linkSound);
 });
