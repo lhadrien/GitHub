@@ -34,7 +34,6 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-		console.log('device ready !');
         app.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
@@ -55,7 +54,7 @@ var app = {
        
         switch (id) {
             case 'deviceready':
-				console.log('success, device ready');
+				console.log('device ready : success');
                 $('#loginForm').on('submit', login.process);
 				$(document).on('pageinit', '#dashboard', dashboard.display);
             break;
@@ -68,7 +67,7 @@ var app = {
  */
 var login = {
 	process: function(e) {
-		console.log('success, process login');
+		console.log('function login: -> process login');
 		e.preventDefault(); // Prevent the form from submitting
 		var form = $("#loginForm");
 
@@ -77,23 +76,34 @@ var login = {
 		var pass = $("#password", form).val();
 
 		if (user != '' && pass != '') {
-			if (ajax_login()) {
+			if (ajax_login(user, pass)) {
+				console.log('function login: -> change page now');
 				$.mobile.changePage('#dashboard', { transition: 'pop' });
+			} else {
+				console.log('function login: -> fail to changePage (ajax_login() return false)');
 			}
 		}
 		else
 		{
+			console.log('function login: -> you must enter a username and a password, fail');
 			navigator.notification.alert("You must enter a username and a password", function() {});
 			$("#submitButton").removeAttr("disabled");
 		}
+		console.log('function login: -> end of login');
 	}
 };
 
 var dashboard = {
 	display: function(e) {
+		console.log('function dashboard: start');
 		if (typeof window.postList === 'undefined') // dont initialize the dashboard a second time
 		{
+			console.log('function dashboard: variable is undefined');
 			ajax_dashboard();
+		}
+		else
+		{
+			console.log('function dashboard: variable is defined');
 		}
 	}
 };

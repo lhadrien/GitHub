@@ -1,4 +1,4 @@
-function ajax_login()
+function ajax_login(user, pass)
 {
 	$.ajax({ // ajax request with jQuery to the webside
 		type: 'POST',
@@ -13,21 +13,20 @@ function ajax_login()
 			password: pass
 		},
 		error: function() {
-			console.log('error');
+			console.log('function login error: -> error ajax');
 			navigator.notification.alert('Unable to load feed, Incorrect path or invalid feed');
 		},
 		success: function(data) { // if success then do...
-			console.log('success');
-			if (data.loggedin == true) // wrong identification ?
-			{
+			console.log('function login success: -> success ajax and data.loggedin = ' + data.loggedin);
+			if (data.loggedin == true) {
 				window.localStorage["username"] = user;
 				window.localStorage["password"] = pass;
-				$.mobile.changePage('#dashboard', { transition: 'pop' });
+				console.log('function login success: -> loggedin = true and we change page now');
+				$.mobile.changePage('#dashboard', { transition: 'pop', changeHash: false });
 				$("#submitButton").removeAttr("disabled"); // enable again the buttons
 				return true;
-			}
-			else
-			{
+			} else {
+				console.log('function login: -> success ajax but loggedin == false');
 				navigator.notification.alert("Fail", function() {}, data.message, 'Ok...');
 				$("#submitButton").removeAttr("disabled"); // enable again the buttons
 				return false;
