@@ -1,3 +1,5 @@
+Pandamandapp/nbproject/
+
 #################
 ## Eclipse
 #################
@@ -210,3 +212,5 @@ pip-log.txt
 
 .gitattributes
 .gitignore
+/Pandamandapp/nbproject/private/
+/app/nbproject/private/
