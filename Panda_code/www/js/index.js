@@ -33,6 +33,7 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
+	console.log("test");
         app.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
@@ -53,6 +54,7 @@ var app = {
        
         switch (id) {
             case 'deviceready':
+			console.log("test ready");
                 $('#loginForm').on('submit', login.process);
 				$(document).on('pageinit', '#dashboard', dashboard.display);
             break;
@@ -65,6 +67,7 @@ var app = {
  */
 var login = {
 	process: function(e) {
+		console.log("test");
 		e.preventDefault(); // Prevent the form from submitting
 		var form = $("#loginForm");
 

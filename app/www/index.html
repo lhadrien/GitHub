@@ -30,16 +30,8 @@
         <title>Hello World</title>
     </head>
     <body>
-        <!--
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        -->
-        
+	
+	<!-- login page -->
 		<div data-role="page" id="loginPage">
 			<div data-theme="a" data-role="header">
 				<h1 id="header">
@@ -74,7 +66,65 @@
 					<span class="copyright">&copy;</span> Pandamanda
 				</h1>
 			</div>
-		</div>        
+		</div>
+
+	<!-- home page -->
+		<div id="home" data-role="page" data-mini="true">
+		</div>
+
+	<!-- Dashboard page -->
+		<div data-role="page" id="dashboard">
+			<div data-theme="a" data-role="header">
+				<h1 id="header">
+					Pandashboard
+				</h1>
+			</div>
+			
+			<div data-theme="c" data-role="content" id="postlist"> </div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+				<h1>
+					<span class="copyright">&copy;</span> Pandamanda
+				</h1>
+			</div>
+		</div>
+		
+	<!-- Post page -->
+		<div data-role="page" id="post">
+			<div data-theme="a" data-role="header">
+				<h1 id="headpost"></h1>
+			</div>
+			<div data-theme="c" data-role="content" id="myPost">
+			
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+				<h1>
+					&copy; Pandamanda
+				</h1>
+				<a data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+					Back
+				</a>
+			</div>
+		</div>
+		
+	<!-- New page -->
+		<div data-role="page" id="futur">
+			<div data-theme="a" data-role="header">
+				<h1 id="header">
+					Pandamandapp
+				</h1>
+			</div>
+			<div data-theme="a" data-role="content">
+			An awesome page here soon
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+				<h1>
+					<span class="copyright">&copy;</span> Pandamanda
+				</h1>
+				<a data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+					Back
+				</a>
+			</div>
+		</div>		
         
         <!--
         <script type="text/javascript" src="cordova.js"></script>
@@ -82,6 +132,7 @@
         <script type="text/javascript" src="jquery.js"></script>
         <script type="text/javascript" src="jquery.mobile-1.3.2.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/ajax_functions.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>

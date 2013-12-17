@@ -53,6 +53,7 @@ var app = {
        
         switch (id) {
             case 'deviceready':
+				console.log('success, device ready');
                 $('#loginForm').on('submit', login.process);
 				$(document).on('pageinit', '#dashboard', dashboard.display);
             break;
@@ -65,6 +66,7 @@ var app = {
  */
 var login = {
 	process: function(e) {
+		console.log('success, process login');
 		e.preventDefault(); // Prevent the form from submitting
 		var form = $("#loginForm");
 
@@ -88,8 +90,8 @@ var login = {
 var dashboard = {
 	display: function(e) {
 		if (typeof window.postList === 'undefined') // dont initialize the dashboard a second time
-	{
-		ajax_dashboard();
-	}
+		{
+			ajax_dashboard();
+		}
 	}
 };
