@@ -1,37 +1,39 @@
 function ajax_login()
 {
 	$.ajax({ // ajax request with jQuery to the webside
-                type: 'POST',
-                dataType: 'json',
-                crossDomain: true,
-                url: 'http://www.pandamanda.com/pm/wp-admin/admin-ajax.php',
-                username: user,
-                password: pass,
-                data: { 
-                    action: 'login_app',
-                    username: user, 
-                    password: pass
-                },
-                error: function() {
-                    console.log('error');
-
-                    navigator.notification.alert('Unable to load feed, Incorrect path or invalid feed');
-                },
-                success: function(data) { // if success then do...
-                    console.log('success');
-                    if (data.loggedin == true) // wrong identification ?
-                    {
-                        window.localStorage["username"] = user;
-                        window.localStorage["password"] = pass;
-                        $.mobile.changePage('#dashboard', { transition: 'pop' });
-                    }
-                    else
-                    {
-                        navigator.notification.alert("Fail", function() {}, data.message, 'Ok...');
-                    }
-                    $("#submitButton").removeAttr("disabled"); // enable again the buttons
-                }
-            });
+		type: 'POST',
+		dataType: 'json',
+		crossDomain: true,
+		url: 'http://www.pandamanda.com/pm/wp-admin/admin-ajax.php',
+		username: user,
+		password: pass,
+		data: { 
+			action: 'login_app',
+			username: user, 
+			password: pass
+		},
+		error: function() {
+			console.log('error');
+			navigator.notification.alert('Unable to load feed, Incorrect path or invalid feed');
+		},
+		success: function(data) { // if success then do...
+			console.log('success');
+			if (data.loggedin == true) // wrong identification ?
+			{
+				window.localStorage["username"] = user;
+				window.localStorage["password"] = pass;
+				$.mobile.changePage('#dashboard', { transition: 'pop' });
+				$("#submitButton").removeAttr("disabled"); // enable again the buttons
+				return true;
+			}
+			else
+			{
+				navigator.notification.alert("Fail", function() {}, data.message, 'Ok...');
+				$("#submitButton").removeAttr("disabled"); // enable again the buttons
+				return false;
+			}
+		}
+	});
 }
 
 function ajax_dashboard()

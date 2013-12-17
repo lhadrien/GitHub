@@ -26,6 +26,7 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
+		console.log('app.bindEvents !');
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     // deviceready Event Handler
@@ -33,6 +34,7 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
+		console.log('device ready !');
         app.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
@@ -53,6 +55,7 @@ var app = {
        
         switch (id) {
             case 'deviceready':
+				console.log('success, device ready');
                 $('#loginForm').on('submit', login.process);
 				$(document).on('pageinit', '#dashboard', dashboard.display);
             break;
@@ -65,6 +68,7 @@ var app = {
  */
 var login = {
 	process: function(e) {
+		console.log('success, process login');
 		e.preventDefault(); // Prevent the form from submitting
 		var form = $("#loginForm");
 
@@ -88,8 +92,8 @@ var login = {
 var dashboard = {
 	display: function(e) {
 		if (typeof window.postList === 'undefined') // dont initialize the dashboard a second time
-	{
-		ajax_dashboard();
-	}
+		{
+			ajax_dashboard();
+		}
 	}
 };
