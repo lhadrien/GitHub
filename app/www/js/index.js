@@ -56,7 +56,11 @@ var app = {
             case 'deviceready':
 				console.log('device ready : success');
                 $('#loginForm').on('submit', login.process);
-				$(document).on('pagebeforeshow', $('#dashboard'), dashboard.display);
+				$(document).on('pageinit', '#dashboard', dashboard.display);
+				$(document).on('pageshow', '#post', post.display);
+				$(".showDash").click(function(){
+					alert($(this).data("post"));
+				});
             break;
         }
     }
@@ -79,9 +83,8 @@ var login = {
 		var pass = $("#password", form).val();
 
 		if (user != '' && pass != '') {
-			login.ajax(user, pass);
-			console.log('function login: -> change page now');
-			$.mobile.changePage( $('#dashboard'), { transition: 'pop', changeHash: false });
+			login.ajax(user, pass)
+			return false;
 		}
 		else
 		{
@@ -90,6 +93,7 @@ var login = {
 			$("#submitButton").removeAttr("disabled");
 		}
 		console.log('function login: process: -> end');
+		return false;
 	},
 	
 	ajax: function(user, pass) {
@@ -137,14 +141,13 @@ var dashboard = {
 
 	display: function(e) {
 		console.log('function dashboard: -> start');
-		if (login._login == null) // dont initialize the dashboard a second time
-		{
-			console.log('function dashboard: display: _login is : ' + login._login);
+		if (login._login == null) {
+			console.log('function dashboard: disp: _login is : ' + login._login);
 			dashboard.ajax();
-		}
-		else
-		{
-			console.log('function dashboard: display: _login is : ' + login._login);
+			return false;
+		} else {
+			console.log('function dashboard: disp: _login is : ' + login._login);
+			return false;
 		}
 	},
 	
@@ -166,15 +169,13 @@ var dashboard = {
 				console.log('function dashboard: ajax: success: ' + data.dashboard);
 				if (data.dashboard == true)
 				{
-					console.log('function dashboard: ajax: data.response : ' + data.response);
-					navigator.notification.alert(data.response); // debug alert with all the json
 					dashboard.postList = data.response;
-					var html = '<ul data-role="listview" data-filter="true">'; 
+					var html = '<ul id="dash" data-role="listview" data-filter="true">'; 
 					for (var i = 0; i < 20; i++) // display 20 posts
 					{
 						var entry = dashboard.postList[i];
 						html += '<li>';
-						html += '<a href="#post" data-transition="slide" onclick="window.idPost = '+ i +'">';
+						html += '<a href="#" class="showDash" data-post="' + i + '" data-transition="slide">';
 						html += '<div class="entry"><h2>' + entry.post_title + '</h2></div>' ;
 						html += '<div class="entry"><p>' + 'Date : ' + entry.post_date + '</p></div>' ;
 						html += '<div class="entry"><p><strong>' + 'Type : <span color=#FFFFFF backgroundColor=#' + dashboard.get_color_type(entry.post_type) + '>' + dashboard.capFLetter(entry.post_type) + '</span></p></strong></div>'; // get_color_type() does not work yet
@@ -186,15 +187,16 @@ var dashboard = {
 					html += '</ul>';
 					$( "#postlist" ).append(html); // append the whole html 
 					$( "#postlist ul[data-role=listview]" ).listview();
-				}		
+					return true;
+				}
 				else
 				{
 					console.log('function dashboard: ajax: success but fail');
 					navigator.notification.alert("Fail", function() {}, data.message, 'Ok...');
+					return false;
 				}
 			}
 		});
-		console.log('function dashboard: -> end');
 	},
 	
 	get_color_type: function(data_type)
@@ -229,20 +231,29 @@ var dashboard = {
 
 var post = {
 
-	idPost: -1,
+	idPost: 0,
 	postContents: new Array(),
 	postTitles: new Array(),
 	
-	displaypost: function (idPost) {
+	myTest: function (e) {
+		console.log($(e).data("post"));
+		alert($(e).data("post"));
+	},
+	
+	display: function (idPost) {
+		console.log('function post: disp: idPost = ' + idPost);
 		if (typeof idPost !== 'undefined')
 		{
+			console.log('function post: disp: -> Im inside the IF');
 			$( "#headpost" ).empty();		// clear the title page from the previous post
 			$( "#myPost" ).empty();			// clear the content from the previous post
-			$( "#headpost" ).append(post.postTitle[idPost]);	//  new title
-			$( "#myPost" ).append(post.postContent[idPost]); //	new content already formated in array
+			$( "#headpost" ).append(post.postTitles[idPost]);	//  new title
+			$( "#myPost" ).append(post.postContents[idPost]); //	new content already formated in array
 			$( "#myPost ul[data-role=listview]" ).listview();
 			post.idPost = idPost;
 		}
+		console.log('function post: disp: -> Im outside the IF, end');
+		return false;
 	},
 
 	formatpost: function (myPostContent) {
