@@ -1,0 +1,2237 @@
+Console was cleared ripple.js:37
+Ripple :: Environment Warming Up (Tea. Earl Gray. Hot.) ripple.js:37
+Uncaught SyntaxError: Unexpected token u Insertion.js:1
+XHR finished loading: "http://localhost/pandamandapp/assets/www/config.xml". ripple.js:50
+cordova :: Your application does not appear to match the platform you have selected. The version number in your configuration might not match the selected platform version or your configuration file has errors in it. ripple.js:37
+cordova :: Initialization Finished (Make it so.) ripple.js:37
+The key "target-densitydpi" is not supported. index.html:25
+app.bindEvents ! index.js:29
+GET http://localhost/pandamandapp/assets/www/cordova_plugins.json 404 (Not Found) ripple.js:50
+XHR finished loading: "http://localhost/pandamandapp/assets/www/cordova_plugins.json". ripple.js:50
+Access made to deprecated symbol: navigator.network.connection. null cordova.js:425
+device ready : success index.js:57
+function login: process: -> start index.js:92
+function login: ajax: -> start index.js:115
+XHR finished loading: "https://rippleapi.herokuapp.com/xhr_proxy?tinyhippos_apikey=ABC&tinyhippos_rurl=http%3A//www.pandamanda.com/pm/wp-admin/admin-ajax.php".
+function login: ajax: success: -> success ajax and data.loggedin = true index.js:133
+function login: ajax: success: -> loggedin = true and we change page now index.js:137
+function dashboard: -> start index.js:165
+function dashboard: disp: _login is : null index.js:167
+function dashboard: ajax: -> start index.js:177
+deviceready has not fired after 5 seconds. cordova.js:6725
+Channel not fired: onCordovaConnectionReady cordova.js:6718
+Channel not fired: onCordovaInfoReady cordova.js:6718
+XHR finished loading: "https://rippleapi.herokuapp.com/xhr_proxy?tinyhippos_apikey=ABC&tinyhippos_rurl=http%3A//www.pandamanda.com/pm/wp-admin/admin-ajax.php". ripple.js:50
+function dashboard: ajax: success: true index.js:191
+your lessonsVocab =  index.js:201
+name : {grammar_id} = {1};
+name : {grammar_text} = {Adj. 是 Adj., 可是 ­ “This (adj.) is true, but...” (Adj. shì Adj., kěshì)};
+name : {lesson_id} = {42};
+name : {sample_id} = {1};
+name : {chinese} = {<u>高兴是高兴，可是</u>我还没做饭。};
+name : {pinyin} = {<u>Gāo xìng shì gāo xìng, kě shì</u> wǒ hái méi zuò fàn!};
+name : {english} = {Happy is happy, but l still haven’t made anything (for you) to eat!};
+ index.js:245
+name : {grammar_id} = {1};
+name : {grammar_text} = {Adj. 是 Adj., 可是 ­ “This (adj.) is true, but...” (Adj. shì Adj., kěshì)};
+name : {lesson_id} = {42};
+name : {sample_id} = {2};
+name : {chinese} = {<u>好看是好看，可是</u>太贵了。};
+name : {pinyin} = {<u>Hǎo kàn shì hǎo kàn, kě shì</u> tài guì le!};
+name : {english} = {Sure its pretty, but its so expensive!};
+ index.js:245
+name : {grammar_id} = {2};
+name : {grammar_text} = {吧 ­ (Grammar: makes sentence a suggestion) (ba)};
+name : {lesson_id} = {42};
+name : {sample_id} = {3};
+name : {chinese} = {你休息<u>吧</u>。};
+name : {pinyin} = {Nǐ xiū xí <u>ba</u>.};
+name : {english} = {Why don’t you rest.};
+ index.js:245
+name : {grammar_id} = {2};
+name : {grammar_text} = {吧 ­ (Grammar: makes sentence a suggestion) (ba)};
+name : {lesson_id} = {42};
+name : {sample_id} = {4};
+name : {chinese} = {我们去饭馆<u>吧</u>。};
+name : {pinyin} = {Wǒ men qù fàn guǎn <u>ba</u>.};
+name : {english} = {Let’s go eat at a restaurant.};
+ index.js:245
+name : {grammar_id} = {3};
+name : {grammar_text} = {太adj.了 - "Too adj" or "So adj." (tài...le)};
+name : {lesson_id} = {42};
+name : {sample_id} = {5};
+name : {chinese} = {你<u>太</u>周到<u>了</u>。};
+name : {pinyin} = {Nǐ <u>tài</u> zhōu dào <u>le</u>.};
+name : {english} = {You're so nice.};
+ index.js:245
+name : {grammar_id} = {3};
+name : {grammar_text} = {太adj.了 - "Too adj" or "So adj." (tài...le)};
+name : {lesson_id} = {42};
+name : {sample_id} = {6};
+name : {chinese} = {回家<u>太</u>远<u>了</u>。};
+name : {pinyin} = {Huí jiā <u>tài</u> yuǎn <u>le</u>.};
+name : {english} = {It's too far to go home.};
+ index.js:245
+name : {grammar_id} = {4};
+name : {grammar_text} = {S 很多 (hěn duō) - Indicated there are very many of S };
+name : {lesson_id} = {42};
+name : {sample_id} = {7};
+name : {chinese} = {时差<u>很多</u>。};
+name : {pinyin} = {Shí chā <u>hěn duō</u>.};
+name : {english} = {The time difference is a lot. / That's a lot of jet lag.};
+ index.js:245
+name : {grammar_id} = {4};
+name : {grammar_text} = {S 很多 (hěn duō) - Indicated there are very many of S };
+name : {lesson_id} = {42};
+name : {sample_id} = {8};
+name : {chinese} = {我去过<u>很多</u>飞机场。};
+name : {pinyin} = {Wǒ qù guò <u>hěn duō</u> fēi jī chǎng.};
+name : {english} = {I've been to many different airports.};
+ index.js:245
+name : {grammar_id} = {5};
+name : {grammar_text} = {adj. 死了 (adj. sǐ le) - Emphasizes the extent of an adj. "I'm adj. to death!"};
+name : {lesson_id} = {42};
+name : {sample_id} = {9};
+name : {chinese} = {你一定累<u>死了</u>！};
+name : {pinyin} = {Nǐ yī dìng lèi sǐ le!};
+name : {english} = {You must be tired to death!};
+ index.js:245
+name : {grammar_id} = {5};
+name : {grammar_text} = {adj. 死了 (adj. sǐ le) - Emphasizes the extent of an adj. "I'm adj. to death!"};
+name : {lesson_id} = {42};
+name : {sample_id} = {10};
+name : {chinese} = {我饿<u>死了</u>!};
+name : {pinyin} = {Wǒ è <u>sǐ le</u>!};
+name : {english} = {I'm starving! / I'm so hungry l could die!};
+ index.js:245
+name : {grammar_id} = {6};
+name : {grammar_text} = {在...上V (zài...shàng V) “In/on” ... Do something};
+name : {lesson_id} = {42};
+name : {sample_id} = {11};
+name : {chinese} = {你<u>在</u>飞机<u>上</u>睡不睡觉？};
+name : {pinyin} = {Nǐ zài fēi jī shàng shuì bù shuì jiào?};
+name : {english} = {Did you sleep on the plane?};
+ index.js:245
+name : {grammar_id} = {6};
+name : {grammar_text} = {在...上V (zài...shàng V) “In/on” ... Do something};
+name : {lesson_id} = {42};
+name : {sample_id} = {12};
+name : {chinese} = {我<u>在</u>饭馆<u>里</u>吃了饭。};
+name : {pinyin} = {Wǒ zài fàn guǎn lǐ chī le fàn.};
+name : {english} = {I ate at a restaurant - In this case, instead of 上(shàng), or "on", we use 里(lǐ), "in", to illustrate the same sentence pattern using a different preposition ("in", instead of "on")};
+ index.js:245
+name : {grammar_id} = {7};
+name : {grammar_text} = {V 不 V (bù) - Way of asking question: "Eat or not eat"};
+name : {lesson_id} = {42};
+name : {sample_id} = {13};
+name : {chinese} = {你在飞机上睡<u>不</u>睡觉？};
+name : {pinyin} = {Nǐ zài fēi jī shàng shuì <u>bù</u> shuì jiào?};
+name : {english} = {Did you sleep on the plane?};
+ index.js:245
+name : {grammar_id} = {7};
+name : {grammar_text} = {V 不 V (bù) - Way of asking question: "Eat or not eat"};
+name : {lesson_id} = {42};
+name : {sample_id} = {14};
+name : {chinese} = {你要<u>不</u>要回家？};
+name : {pinyin} = {Nǐ yào <u>bù</u> yào huí jiā?};
+name : {english} = {Do you want to go home?};
+ index.js:245
+name : {grammar_id} = {8};
+name : {grammar_text} = {再说 (zài shuō) - To avoid a topic: "Let's talk about it later"};
+name : {lesson_id} = {42};
+name : {sample_id} = {15};
+name : {chinese} = {我们<u>再说</u>吧。};
+name : {pinyin} = {Wǒ men <u>zài shuō</u> ba.};
+name : {english} = {Let's talk about this later. / Let's not talk about this now.};
+ index.js:245
+name : {grammar_id} = {9};
+name : {grammar_text} = {Subject 忙着 do sth. 呢。The literal meaning is "very busy", but mostly it’s used to find out how you’ve been spending most of your time and energy.};
+name : {lesson_id} = {45};
+name : {sample_id} = {16};
+name : {chinese} = {小于最近<u>忙着</u>交女朋友<u>呢</u>。};
+name : {pinyin} = {Xiǎo yú zuì jìn <u>máng zhe</u> jiāo nǚ péng yǒu <u>ne</u>.};
+name : {english} = {Xiao Yu is busy with making girl friend.};
+ index.js:245
+name : {grammar_id} = {9};
+name : {grammar_text} = {Subject 忙着 do sth. 呢。The literal meaning is "very busy", but mostly it’s used to find out how you’ve been spending most of your time and energy.};
+name : {lesson_id} = {45};
+name : {sample_id} = {17};
+name : {chinese} = {我<u>忙着</u>找工作<u>呢</u>。};
+name : {pinyin} = {Wǒ <u>máng zhe</u> zhǎo gōng zuò <u>ne</u>.};
+name : {english} = {I’m busy with looking for a job.};
+ index.js:245
+name : {grammar_id} = {9};
+name : {grammar_text} = {Subject 忙着 do sth. 呢。The literal meaning is "very busy", but mostly it’s used to find out how you’ve been spending most of your time and energy.};
+name : {lesson_id} = {45};
+name : {sample_id} = {18};
+name : {chinese} = {她<u>忙着</u>学习<u>呢</u>，没工夫出去玩。};
+name : {pinyin} = {Tā <u>máng zhe</u> xué xí <u>ne</u>, méi gōng fu chū qù wán.};
+name : {english} = {She is busy with her lessons and has no time to hang out.};
+ index.js:245
+name : {grammar_id} = {9};
+name : {grammar_text} = {Subject 忙着 do sth. 呢。The literal meaning is "very busy", but mostly it’s used to find out how you’ve been spending most of your time and energy.};
+name : {lesson_id} = {45};
+name : {sample_id} = {19};
+name : {chinese} = {妈妈<u>忙着</u>做饭<u>呢</u>，没时间聊天。};
+name : {pinyin} = {Mā ma <u>máng zhe</u> zuò fàn <u>ne</u>, méi shí jiān liáo tiān.};
+name : {english} = {Mum is busy with cooking. She has no time to chat.};
+ index.js:245
+name : {grammar_id} = {10};
+name : {grammar_text} = {不是...吗？This is used to express surprise, the speaker probably having expected something very different, or even the opposite. It's a rhetorical question, along the lines "Oh really ? But I thought you..."};
+name : {lesson_id} = {45};
+name : {sample_id} = {20};
+name : {chinese} = {我最近忙着交女朋友呢。};
+name : {pinyin} = {Wǒ zuì jìn máng zhe jiāo nǚ péng yǒu ne.};
+name : {english} = {Recently I’m busy with making girl friend.};
+ index.js:245
+name : {grammar_id} = {10};
+name : {grammar_text} = {不是...吗？This is used to express surprise, the speaker probably having expected something very different, or even the opposite. It's a rhetorical question, along the lines "Oh really ? But I thought you..."};
+name : {lesson_id} = {45};
+name : {sample_id} = {21};
+name : {chinese} = {你<u>不是</u>有女朋友<u>吗</u>？};
+name : {pinyin} = {Nǐ <u>bú shì</u> yǒu nǚ péng yǒu <u>ma</u>?};
+name : {english} = {You have a girl friend, don’t you?};
+ index.js:245
+name : {grammar_id} = {10};
+name : {grammar_text} = {不是...吗？This is used to express surprise, the speaker probably having expected something very different, or even the opposite. It's a rhetorical question, along the lines "Oh really ? But I thought you..."};
+name : {lesson_id} = {45};
+name : {sample_id} = {22};
+name : {chinese} = {现在我很饿。};
+name : {pinyin} = {Xiàn zài wǒ hěn è.};
+name : {english} = {I’m very hungry now.};
+ index.js:245
+name : {grammar_id} = {10};
+name : {grammar_text} = {不是...吗？This is used to express surprise, the speaker probably having expected something very different, or even the opposite. It's a rhetorical question, along the lines "Oh really ? But I thought you..."};
+name : {lesson_id} = {45};
+name : {sample_id} = {23};
+name : {chinese} = {你<u>不是</u>吃午饭了<u>吗</u>？};
+name : {pinyin} = {Nǐ <u>bú shì</u> chī wǔ fàn le <u>ma</u>?};
+name : {english} = {You’ve had your lunch, haven’t you?};
+ index.js:245
+name : {grammar_id} = {10};
+name : {grammar_text} = {不是...吗？This is used to express surprise, the speaker probably having expected something very different, or even the opposite. It's a rhetorical question, along the lines "Oh really ? But I thought you..."};
+name : {lesson_id} = {45};
+name : {sample_id} = {24};
+name : {chinese} = {我想出去玩儿。};
+name : {pinyin} = {Wǒ xiǎng chū qù wán r.};
+name : {english} = {I want to get outside to have fun.};
+ index.js:245
+name : {grammar_id} = {10};
+name : {grammar_text} = {不是...吗？This is used to express surprise, the speaker probably having expected something very different, or even the opposite. It's a rhetorical question, along the lines "Oh really ? But I thought you..."};
+name : {lesson_id} = {45};
+name : {sample_id} = {25};
+name : {chinese} = {你<u>不是</u>刚从外面回来<u>吗</u>？};
+name : {pinyin} = {Nǐ <u>bú shì</u> gāng cóng wài miàn huí lái <u>ma</u>?};
+name : {english} = {You just got back from outside, didn’t you?};
+ index.js:245
+name : {grammar_id} = {10};
+name : {grammar_text} = {不是...吗？This is used to express surprise, the speaker probably having expected something very different, or even the opposite. It's a rhetorical question, along the lines "Oh really ? But I thought you..."};
+name : {lesson_id} = {45};
+name : {sample_id} = {26};
+name : {chinese} = {他最近忙着减肥呢。};
+name : {pinyin} = {Tā zuì jìn máng zhe jiǎn féi ne.};
+name : {english} = {Recently he is busy with losing weight.};
+ index.js:245
+name : {grammar_id} = {10};
+name : {grammar_text} = {不是...吗？This is used to express surprise, the speaker probably having expected something very different, or even the opposite. It's a rhetorical question, along the lines "Oh really ? But I thought you..."};
+name : {lesson_id} = {45};
+name : {sample_id} = {27};
+name : {chinese} = {他<u>不是</u>不胖<u>吗</u>？};
+name : {pinyin} = {Tā <u>bú shì</u> bú pàng <u>ma</u>?};
+name : {english} = {He isn’t fat, is he?};
+ index.js:245
+name : {grammar_id} = {11};
+name : {grammar_text} = {Subject 可 + VP.<br />By using this structure, the speaker would like to emphasize the contents after “ke” and convince the listener that he/she is telling the absolute truth.};
+name : {lesson_id} = {70};
+name : {sample_id} = {28};
+name : {chinese} = {我<u>可</u>没有钱。};
+name : {pinyin} = {Wǒ <u>kě</u> méi yǒu qián.};
+name : {english} = {I do not have money.};
+ index.js:245
+name : {grammar_id} = {11};
+name : {grammar_text} = {Subject 可 + VP.<br />By using this structure, the speaker would like to emphasize the contents after “ke” and convince the listener that he/she is telling the absolute truth.};
+name : {lesson_id} = {70};
+name : {sample_id} = {29};
+name : {chinese} = {我和他<u>可</u>不认识。};
+name : {pinyin} = {Wǒ hé tā <u>kě</u> bú rèn shi.};
+name : {english} = {I do not know him.};
+ index.js:245
+name : {grammar_id} = {11};
+name : {grammar_text} = {Subject 可 + VP.<br />By using this structure, the speaker would like to emphasize the contents after “ke” and convince the listener that he/she is telling the absolute truth.};
+name : {lesson_id} = {70};
+name : {sample_id} = {30};
+name : {chinese} = {这个问题<u>可</u>是我没想到的。};
+name : {pinyin} = {Zhè gè wèn tí <u>kě</u> shì wǒ méi xiǎng dào de.};
+name : {english} = {I really didn't expect there would be a problem.};
+ index.js:245
+name : {grammar_id} = {12};
+name : {grammar_text} = {Subject 变得 + adj. 了<br />
+This structure indicates the change of something. For example, something/someone was not like this in the past but now it/he is.};
+name : {lesson_id} = {70};
+name : {sample_id} = {31};
+name : {chinese} = {现在，北京人的生活<u>变得</u>有意思<u>了</u>。};
+name : {pinyin} = {Xiàn zài, běi jīng rén de shēng huó <u>biàn de</u> yǒu yì si <u>le</u>.};
+name : {english} = {Nowadays the Beijingers' life is getting more interesting.};
+ index.js:245
+name : {grammar_id} = {12};
+name : {grammar_text} = {Subject 变得 + adj. 了<br />
+This structure indicates the change of something. For example, something/someone was not like this in the past but now it/he is.};
+name : {lesson_id} = {70};
+name : {sample_id} = {32};
+name : {chinese} = {大伟<u>变得</u>有钱<u>了</u>。};
+name : {pinyin} = {Dà wěi <u>biàn de</u> yǒu qián <u>le</u>.};
+name : {english} = {Dawei is getting richer.};
+ index.js:245
+name : {grammar_id} = {12};
+name : {grammar_text} = {Subject 变得 + adj. 了<br />
+This structure indicates the change of something. For example, something/someone was not like this in the past but now it/he is.};
+name : {lesson_id} = {70};
+name : {sample_id} = {33};
+name : {chinese} = {说“你吃了吗？”<u>变得</u>过时<u>了</u>。};
+name : {pinyin} = {Shuō “nǐ chī le ma?” <u>biàn de</u> guò shí <u>le</u>.};
+name : {english} = {If you say "Have you eaten?" You are out of date.};
+ index.js:245
+name : {grammar_id} = {13};
+name : {grammar_text} = {Subject. + adj./v. 死了！
+<br />
+It’s spoken language and it shows the feeling is extremely strong. Generally 
+speaking, it is used in bad situations.};
+name : {lesson_id} = {71};
+name : {sample_id} = {34};
+name : {chinese} = {小丽的妈妈找不到小丽，现在急<u>死了</u>！};
+name : {pinyin} = {Xiǎo lì de mā mā zhǎo bú dào xiǎo lì, xiàn zài jí <u>sǐ le</u>!};
+name : {english} = {Xiao Li’s mum can’t find Xiao Li. She is worried to death now.};
+ index.js:245
+name : {grammar_id} = {13};
+name : {grammar_text} = {Subject. + adj./v. 死了！
+<br />
+It’s spoken language and it shows the feeling is extremely strong. Generally 
+speaking, it is used in bad situations.};
+name : {lesson_id} = {71};
+name : {sample_id} = {35};
+name : {chinese} = {快考试了，我忙<u>死了</u>，没时间出去玩儿！};
+name : {pinyin} = {Kuài kǎo shì le, wǒ máng <u>sǐ le</u>, méi shí jiān chū qù wán er!};
+name : {english} = {We’ll have a test soon, I’m busy to death, I have no time to hang out!};
+ index.js:245
+name : {grammar_id} = {13};
+name : {grammar_text} = {Subject. + adj./v. 死了！
+<br />
+It’s spoken language and it shows the feeling is extremely strong. Generally 
+speaking, it is used in bad situations.};
+name : {lesson_id} = {71};
+name : {sample_id} = {36};
+name : {chinese} = {三天没吃东西，我快饿<u>死了</u>！};
+name : {pinyin} = {Sān tiān méi chī dōng xi, wǒ kuài è <u>sǐ le</u>!};
+name : {english} = {I haven’t eaten any thing for 3 days, I’m starving (to death).};
+ index.js:245
+name : {grammar_id} = {13};
+name : {grammar_text} = {Subject. + adj./v. 死了！
+<br />
+It’s spoken language and it shows the feeling is extremely strong. Generally 
+speaking, it is used in bad situations.};
+name : {lesson_id} = {71};
+name : {sample_id} = {37};
+name : {chinese} = {你怎么还不回家？妈妈担心<u>死了</u>！};
+name : {pinyin} = {Nǐ zěn me hái bù huí jiā? Mā ma dān xīn <u>sǐ le</u>!};
+name : {english} = {Why don’t you go home? Your mom is worried to death.};
+ index.js:245
+name : {grammar_id} = {14};
+name : {grammar_text} = {Subject. 让 sb. do something.
+<br />
+It means somebody demands that the other person (should) do something.};
+name : {lesson_id} = {71};
+name : {sample_id} = {38};
+name : {chinese} = {要是你碰到小丽，<u>让</u>她给我回电话。 };
+name : {pinyin} = {Yào shì nǐ pèng dào Xiǎo Lì, <u>ràng</u> tā gěi wǒ huí diàn huà.};
+name : {english} = {If you see Xiao Li, please ask her to call me back. };
+ index.js:245
+name : {grammar_id} = {14};
+name : {grammar_text} = {Subject. 让 sb. do something.
+<br />
+It means somebody demands that the other person (should) do something.};
+name : {lesson_id} = {71};
+name : {sample_id} = {39};
+name : {chinese} = {小新，你<u>让</u>大山到我办公室来一下。};
+name : {pinyin} = {Xiǎo Xīn, nǐ <u>ràng</u> Dà Shān dào wǒ bàn gōng shì lái yí xià.};
+name : {english} = {Xiao Xin, please ask Da Shan to come to my office.};
+ index.js:245
+name : {grammar_id} = {14};
+name : {grammar_text} = {Subject. 让 sb. do something.
+<br />
+It means somebody demands that the other person (should) do something.};
+name : {lesson_id} = {71};
+name : {sample_id} = {40};
+name : {chinese} = {小明，你可以<u>让</u>小朋友到家里来玩儿！};
+name : {pinyin} = {Xiǎo Míng, nǐ kě yǐ <u>ràng</u> xiǎo péng yǒu dào jiā lǐ lái wán er!};
+name : {english} = {Xiao Ming, you can invite your friends to come to our home to play!};
+ index.js:245
+name : {grammar_id} = {14};
+name : {grammar_text} = {Subject. 让 sb. do something.
+<br />
+It means somebody demands that the other person (should) do something.};
+name : {lesson_id} = {71};
+name : {sample_id} = {41};
+name : {chinese} = {去哪儿吃饭好呢？<u>让</u>我想一想。};
+name : {pinyin} = {Qù nǎ er chī fàn hǎo ne? <u>Ràng</u> wǒ xiǎng yì xiǎng.};
+name : {english} = {Where shall we go for food? Let me think about it.};
+ index.js:245
+name : {grammar_id} = {15};
+name : {grammar_text} = {During any working occasion, if you want to address someone politely, you would better address him/her by his/her title.};
+name : {lesson_id} = {92};
+name : {sample_id} = {42};
+name : {chinese} = {李总};
+name : {pinyin} = {lǐ zǒnɡ};
+name : {english} = {General Manager Li};
+ index.js:245
+name : {grammar_id} = {15};
+name : {grammar_text} = {During any working occasion, if you want to address someone politely, you would better address him/her by his/her title.};
+name : {lesson_id} = {92};
+name : {sample_id} = {43};
+name : {chinese} = {孙秘书};
+name : {pinyin} = {sūn mì shū};
+name : {english} = {Assistant Sun};
+ index.js:245
+name : {grammar_id} = {15};
+name : {grammar_text} = {During any working occasion, if you want to address someone politely, you would better address him/her by his/her title.};
+name : {lesson_id} = {92};
+name : {sample_id} = {44};
+name : {chinese} = {陈主管};
+name : {pinyin} = {chén zhǔ guǎn};
+name : {english} = {Supervisor Chen};
+ index.js:245
+name : {grammar_id} = {16};
+name : {grammar_text} = {马上 (Adv.) Immediately, soon. Used before verbs or verb phrases.};
+name : {lesson_id} = {104};
+name : {sample_id} = {45};
+name : {chinese} = {<u>马上</u>就到五一假期了。};
+name : {pinyin} = {<u>Mǎ shàng</u> jiù dào wǔ yī jià qī le.};
+name : {english} = {May Day holiday is coming soon.};
+ index.js:245
+name : {grammar_id} = {16};
+name : {grammar_text} = {马上 (Adv.) Immediately, soon. Used before verbs or verb phrases.};
+name : {lesson_id} = {104};
+name : {sample_id} = {46};
+name : {chinese} = {快十二点了，<u>马上</u>就要下课了。};
+name : {pinyin} = {Kuài shí èr diǎn le, <u>mǎ shàng</u> jiù yào xià kè le.};
+name : {english} = {Class will be over soon.};
+ index.js:245
+name : {grammar_id} = {17};
+name : {grammar_text} = {都 (Adv.) Both, all.
+};
+name : {lesson_id} = {104};
+name : {sample_id} = {47};
+name : {chinese} = {五一假期的时候全国<u>都</u>放假。};
+name : {pinyin} = {Wǔ yī jià qī de shí hou quán guó <u>dōu</u> fàng jià.};
+name : {english} = {All the country will be on holiday during May Day holiday.};
+ index.js:245
+name : {grammar_id} = {17};
+name : {grammar_text} = {都 (Adv.) Both, all.
+};
+name : {lesson_id} = {104};
+name : {sample_id} = {48};
+name : {chinese} = {孩子们<u>都</u>喜欢看动画片。};
+name : {pinyin} = {Hái zi men <u>dōu</u> xǐ huan kàn dòng huà piàn.};
+name : {english} = {All children like to watch cartoons.};
+ index.js:245
+name : {grammar_id} = {18};
+name : {grammar_text} = {怎么样 How about, what about.
+};
+name : {lesson_id} = {104};
+name : {sample_id} = {49};
+name : {chinese} = {去红星农场露营<u>怎么样</u>？};
+name : {pinyin} = {Qù hóng xīng nóng chǎng lù yíng <u>zěn me yàng</u>?};
+name : {english} = {How about we go camping to Hongxing Farm?};
+ index.js:245
+name : {grammar_id} = {18};
+name : {grammar_text} = {怎么样 How about, what about.
+};
+name : {lesson_id} = {104};
+name : {sample_id} = {50};
+name : {chinese} = {今天天气不错，我们去公园玩<u>怎么样</u>？};
+name : {pinyin} = {Jīn tiān tiān qì bù cuò, wǒ men qù gōng yuán wán <u>zěn me yàng</u>?};
+name : {english} = {It’s a fine day today, shall we go to the park to enjoy ourselves?};
+ index.js:245
+name : {grammar_id} = {19};
+name : {grammar_text} = {Adj. + 极了 (Jíle) Extremely
+};
+name : {lesson_id} = {104};
+name : {sample_id} = {51};
+name : {chinese} = {好<u>极了</u>，晚上我们就烤鱼吃。};
+name : {pinyin} = {Hǎo <u>jí le</u>, wǎn shàng wǒ men jiù  kǎo yú chī.};
+name : {english} = {Extremely good! We can have roast fish in the evening.};
+ index.js:245
+name : {grammar_id} = {19};
+name : {grammar_text} = {Adj. + 极了 (Jíle) Extremely
+};
+name : {lesson_id} = {104};
+name : {sample_id} = {52};
+name : {chinese} = {北京的秋天美<u>极了</u>。};
+name : {pinyin} = {Běi jīng de qiū tiān měi <u>jí le</u>.};
+name : {english} = {It’s extremely beautiful in autumn in Beijing.};
+ index.js:245
+name : {grammar_id} = {20};
+name : {grammar_text} = {太(Tài) + Adj. Very, too.
+};
+name : {lesson_id} = {104};
+name : {sample_id} = {53};
+name : {chinese} = {城市里人<u>太</u>多了，咱们去乡村玩吧？};
+name : {pinyin} = {Chéng shì lǐ rén <u>tài</u> duō le, zán men qù xiāng cūn wán ba?};
+name : {english} = {There are too many people in the city, shall we go to visit the countryside?};
+ index.js:245
+name : {grammar_id} = {20};
+name : {grammar_text} = {太(Tài) + Adj. Very, too.
+};
+name : {lesson_id} = {104};
+name : {sample_id} = {54};
+name : {chinese} = {开车不要<u>太</u>快，那样太危险了！};
+name : {pinyin} = {Kāi chē bù yào <u>tài</u> kuài, nà yàng tài wéi xiǎn le!};
+name : {english} = {Don’t drive too fast! It’s too dangerous!};
+ index.js:245
+name : {grammar_id} = {21};
+name : {grammar_text} = {怎样: how. Structure: 怎样 + verb + object};
+name : {lesson_id} = {141};
+name : {sample_id} = {55};
+name : {chinese} = {彤彤，我们今天打算怎样游西湖？};
+name : {pinyin} = {Tōng tong, wǒ men jīn tiān dǎ suàn zěn yàng yóu xī hú?};
+name : {english} = {Tongtong, what’s our plan to travel the West Lake today?};
+ index.js:245
+name : {grammar_id} = {21};
+name : {grammar_text} = {怎样: how. Structure: 怎样 + verb + object};
+name : {lesson_id} = {141};
+name : {sample_id} = {56};
+name : {chinese} = {你可以教我怎样做这道数学题吗？};
+name : {pinyin} = {Nǐ kě yǐ jiào wǒ zěn yàng zuò zhè dào shù xué tí ma?};
+name : {english} = {Can you teach me how to solve this math problem?};
+ index.js:245
+name : {grammar_id} = {22};
+name : {grammar_text} = {不如: how about (to express suggestions). Structure: 不如 + subject + verb + object (+吧/怎么样)};
+name : {lesson_id} = {141};
+name : {sample_id} = {57};
+name : {chinese} = {咱们时间不多，不如租一辆自行车，这样就可以骑车绕着西湖看风景。};
+name : {pinyin} = {Zán men shí jiān bù duō, bù rú zū yī liàng zì xíng chē, zhè yàng jiù kě yǐ qí chē rào zhe xī hú kàn fēng jǐng.};
+name : {english} = {We don’t have enough time. How about renting a bicycle so that we can cycle around the West Lake to enjoy the view.};
+ index.js:245
+name : {grammar_id} = {22};
+name : {grammar_text} = {不如: how about (to express suggestions). Structure: 不如 + subject + verb + object (+吧/怎么样)};
+name : {lesson_id} = {141};
+name : {sample_id} = {58};
+name : {chinese} = {时间还早，不如我们先吃饭，再去搭火车吧。};
+name : {pinyin} = {Shí jiān hái zǎo, bù rú wǒ men xiān chī fàn, zài qù dā huǒ chē ba.};
+name : {english} = {It is still early. How about having dinner first, and then catching the train.};
+ index.js:245
+name : {grammar_id} = {23};
+name : {grammar_text} = {这样…: so that … Struction: 这样 (+ subject) (+就) + Chinese models (e.g. 可以, 能) + verb + object
+ };
+name : {lesson_id} = {141};
+name : {sample_id} = {59};
+name : {chinese} = {讲大声一点，这样奶奶就可以听到你。};
+name : {pinyin} = {Jiǎng dà shēng yī diǎn, zhè yàng nǎi nai jiù kě yǐ tīng dào nǐ.};
+name : {english} = {Speak louder, so that grandma can hear you.};
+ index.js:245
+name : {grammar_id} = {23};
+name : {grammar_text} = {这样…: so that … Struction: 这样 (+ subject) (+就) + Chinese models (e.g. 可以, 能) + verb + object
+ };
+name : {lesson_id} = {141};
+name : {sample_id} = {60};
+name : {chinese} = {早点睡觉吧，这样明天你就可以早点起来。};
+name : {pinyin} = {Zǎo diǎn shuì jiào ba, zhè yàng míng tiān nǐ jiù kě yǐ zǎo diǎn qǐ lái.};
+name : {english} = {Sleep early today, so that you can wake up early tomorrow.};
+ index.js:245
+name : {grammar_id} = {24};
+name : {grammar_text} = {好… ! : Good… ! Structure: 好 + noun};
+name : {lesson_id} = {141};
+name : {sample_id} = {61};
+name : {chinese} = {好主意！省下的时间我们可以去看看雷峰塔！};
+name : {pinyin} = {Hǎo zhǔ yì! Shěng xià de shí jiān wǒ men kě yǐ qù kàn kàn léi fēng tǎ!};
+name : {english} = {Good idea! With time saved, we can visit the Leifeng Pagoda!};
+ index.js:245
+name : {grammar_id} = {24};
+name : {grammar_text} = {好… ! : Good… ! Structure: 好 + noun};
+name : {lesson_id} = {141};
+name : {sample_id} = {62};
+name : {chinese} = {好办法！我们马上就按照它施行！ };
+name : {pinyin} = {Hǎo bàn fǎ! Wǒ men mǎ shàng jiù àn zhào tā shī xíng!};
+name : {english} = {Good solution! We’ll carry it out right away!};
+ index.js:245
+name : {grammar_id} = {25};
+name : {grammar_text} = {看: try and … Structure: verb ＊ 2 + 看};
+name : {lesson_id} = {141};
+name : {sample_id} = {63};
+name : {chinese} = {你看，前面的酒吧外面有很多自行车，我们去问问看吧。};
+name : {pinyin} = {Nǐ kàn, qián miàn de jiǔ bā wài miàn yǒu hěn duō zì xíng chē, wǒ men qù wèn wèn kàn ba.};
+name : {english} = {Look, there are a lot of bicycles outside the bar in front of us. Let’s go and check it out!};
+ index.js:245
+name : {grammar_id} = {25};
+name : {grammar_text} = {看: try and … Structure: verb ＊ 2 + 看};
+name : {lesson_id} = {141};
+name : {sample_id} = {64};
+name : {chinese} = {这是我新烤的面包，快来尝尝看！};
+name : {pinyin} = {Zhè shì wǒ xīn kǎo de miàn bāo, kuài lái cháng cháng kàn!};
+name : {english} = {This is the bread I just baked, come and have a try!};
+ index.js:245
+name : {grammar_id} = {26};
+name : {grammar_text} = {还是… : …  or … Structure: Choice#1 + 还是 +  Choice#2};
+name : {lesson_id} = {141};
+name : {sample_id} = {65};
+name : {chinese} = {租的，你要单人的还是双人的？};
+name : {pinyin} = {Zū de, nǐ yào dān rén de hái shì shuāng rén de?};
+name : {english} = {Yes. Do you want single or double version?};
+ index.js:245
+name : {grammar_id} = {26};
+name : {grammar_text} = {还是… : …  or … Structure: Choice#1 + 还是 +  Choice#2};
+name : {lesson_id} = {141};
+name : {sample_id} = {66};
+name : {chinese} = {你要吃荤菜还是素菜？};
+name : {pinyin} = {Nǐ yào chī hūn cài hái shì sù cài?};
+name : {english} = {Do you want meaty or vegetarian food?};
+ index.js:245
+name : {grammar_id} = {27};
+name : {grammar_text} = {哪… 都…: whichever…is… };
+name : {lesson_id} = {141};
+name : {sample_id} = {67};
+name : {chinese} = {行，你想租哪一辆都行。};
+name : {pinyin} = {Xíng, nǐ xiǎng zū nǎ yī liàng dōu xíng.};
+name : {english} = {Sure, whichever you wanna rent is fine.};
+ index.js:245
+name : {grammar_id} = {27};
+name : {grammar_text} = {哪… 都…: whichever…is… };
+name : {lesson_id} = {141};
+name : {sample_id} = {68};
+name : {chinese} = {杭州这么多的美食，选哪一种都不会错。};
+name : {pinyin} = {Háng zhōu zhè me duō dì měi shí, xuǎn nǎ yī zhǒng dōu bù huì cuò.};
+name : {english} = {There are so many kinds of delicious food in Hangzhou, whichever you choose won’t be bad.};
+ index.js:245
+name : {grammar_id} = {28};
+name : {grammar_text} = {不过…: … but … };
+name : {lesson_id} = {141};
+name : {sample_id} = {69};
+name : {chinese} = {建议你们午饭去试试西湖旁边的外婆家，晚上去清河坊步行街的夜市吃小吃，不过可要按时还车哦！};
+name : {pinyin} = {Jiàn yì nǐ men wǔ fàn qù shì shì xī hú páng biān de wài pó jiā, wǎn shàng qù qīng hé fāng bù xíng jiē de yè shì chī xiǎo chī, bù guò kě yào àn shí huán chē o!};
+name : {english} = {I suggest you go and try the Grandma’s Kitchen close to the West Lake for lunch, and have some snacks at the night market in Qinghefang Pedestrian Street, but do remember to return the bike on time!};
+ index.js:245
+name : {grammar_id} = {28};
+name : {grammar_text} = {不过…: … but … };
+name : {lesson_id} = {141};
+name : {sample_id} = {70};
+name : {chinese} = {这酒虽然很好喝，不过可不要贪杯哦！};
+name : {pinyin} = {Zhè jiǔ suī rán hěn hǎo hē, bù guò kě bù yào tān bēi ó!};
+name : {english} = {This wine is very nice, but don’t drink too much!};
+ index.js:245
+name : {grammar_id} = {29};
+name : {grammar_text} = {"偏偏” means the fact is different from or contrary to one’s wish.};
+name : {lesson_id} = {147};
+name : {sample_id} = {71};
+name : {chinese} = {偏偏明天圣诞节是周一，学校不放假。};
+name : {pinyin} = {Piān piān míng tiān shèng dàn jié shì zhōu yī, xué xiào bù fang jià.};
+name : {english} = {But tomorrow, Christmas is Monday so we can not be off school.};
+ index.js:245
+name : {grammar_id} = {29};
+name : {grammar_text} = {"偏偏” means the fact is different from or contrary to one’s wish.};
+name : {lesson_id} = {147};
+name : {sample_id} = {72};
+name : {chinese} = {我原想明天去故宫玩，偏偏今天病了。};
+name : {pinyin} = {Wǒ yuán xiǎng míng tiān qù gù gōng wán, piān piān jīn tiān bìng le.};
+name : {english} = {I planned to visit the Palace Museum but unfortunately I am sick today.};
+ index.js:245
+name : {grammar_id} = {29};
+name : {grammar_text} = {"偏偏” means the fact is different from or contrary to one’s wish.};
+name : {lesson_id} = {147};
+name : {sample_id} = {73};
+name : {chinese} = {我昨天找了你好几次，偏偏你都不在家。};
+name : {pinyin} = {Wǒ zuó tiān zhǎo le nǐ hǎo jǐ cì, piān piān nǐ dōu bù zài jiā.};
+name : {english} = {I went to look for you several times yesterday but unfortunately you were not home.};
+ index.js:245
+name : {grammar_id} = {30};
+name : {grammar_text} = {“舍不得” indicates that because one likes a place, a thing or a person so much that one doesn't want to leave it, give it up or prevents something harmful to it to happen.};
+name : {lesson_id} = {147};
+name : {sample_id} = {74};
+name : {chinese} = {难怪你那么舍不得离开你的家乡。};
+name : {pinyin} = {Nán guài nǐ nà me shě bu de lí kāi nǐ de jiā xiāng.};
+name : {english} = {No wonder you could not bear to leave your home.};
+ index.js:245
+name : {grammar_id} = {30};
+name : {grammar_text} = {“舍不得” indicates that because one likes a place, a thing or a person so much that one doesn't want to leave it, give it up or prevents something harmful to it to happen.};
+name : {lesson_id} = {147};
+name : {sample_id} = {75};
+name : {chinese} = {分别时，他们谁也舍不得谁。};
+name : {pinyin} = {Fēn bié shí, tā men shuí yě shě bu de shuí.};
+name : {english} = {When departed, they are both very much unwilling to leave each other.};
+ index.js:245
+name : {grammar_id} = {30};
+name : {grammar_text} = {“舍不得” indicates that because one likes a place, a thing or a person so much that one doesn't want to leave it, give it up or prevents something harmful to it to happen.};
+name : {lesson_id} = {147};
+name : {sample_id} = {76};
+name : {chinese} = {妈妈舍不得让孩子吃苦。};
+name : {pinyin} = {Mā mā shě bu de ràng hái zi chī kǔ.};
+name : {english} = {Mum is unwilling to let her kid suffer any hardship.};
+ index.js:245
+name : {grammar_id} = {31};
+name : {grammar_text} = {一下子 All of a sudden.};
+name : {lesson_id} = {147};
+name : {sample_id} = {77};
+name : {chinese} = {你一下子来到异乡过节肯定会失落。};
+name : {pinyin} = {Nǐ yī xià zi lái dào yì xiāng guò jié kěn dìng huì shī luò.};
+name : {english} = {You surely will feel lost if come to a foreign land to spend the festival all of a sudden.};
+ index.js:245
+name : {grammar_id} = {31};
+name : {grammar_text} = {一下子 All of a sudden.};
+name : {lesson_id} = {147};
+name : {sample_id} = {78};
+name : {chinese} = {汉语不是一下子能学好的。};
+name : {pinyin} = {Hàn yǔ bù shì yī xià zi néng xué hǎo de.};
+name : {english} = {You can not learn Chinese well all at once.};
+ index.js:245
+name : {grammar_id} = {31};
+name : {grammar_text} = {一下子 All of a sudden.};
+name : {lesson_id} = {147};
+name : {sample_id} = {79};
+name : {chinese} = {你最近怎么了？一下子胖了那么多。};
+name : {pinyin} = {Nǐ zuì jìn zěn me liǎo? Yī xià zi pang le nà me duō. };
+name : {english} = {What’s the matter with you recently? You are plumper a lot all of a sudden.};
+ index.js:245
+name : {grammar_id} = {32};
+name : {grammar_text} = {“数” is used to point out the best one in the certain group.};
+name : {lesson_id} = {147};
+name : {sample_id} = {80};
+name : {chinese} = {咱班就数你的手巧。};
+name : {pinyin} = {Zán bān jiù shǔ nǐ de shǒu qiǎo.};
+name : {english} = {You are the most handy girl in our class.};
+ index.js:245
+name : {grammar_id} = {32};
+name : {grammar_text} = {“数” is used to point out the best one in the certain group.};
+name : {lesson_id} = {147};
+name : {sample_id} = {81};
+name : {chinese} = {那里面就数那个大红灯笼最漂亮。};
+name : {pinyin} = {Nà lǐ miàn jiù shǔ nà gè dà hóng dēng lóng zuì piào liang.};
+name : {english} = {The big red lantern is the most beautiful one among those.};
+ index.js:245
+name : {grammar_id} = {32};
+name : {grammar_text} = {“数” is used to point out the best one in the certain group.};
+name : {lesson_id} = {147};
+name : {sample_id} = {82};
+name : {chinese} = {和人类关系最亲密的动物就数狗了。};
+name : {pinyin} = {Hé rén lèi guān xì zuì qīn mì de dòng wù jiù shǔ gǒu le.};
+name : {english} = {Dogs have the closest relationship with human beings.};
+ index.js:245
+name : {grammar_id} = {33};
+name : {grammar_text} = {S + 怎么/哪 + V S + zěnme/nǎ + V. It is a rhetorical question. It doesn’t need an answer and is a way to emphasize something. When the verb is in the affirmative form, the sentence has the sense of negation; when the verb is in the negative form, the sentence has the sense of affirmation.};
+name : {lesson_id} = {147};
+name : {sample_id} = {83};
+name : {chinese} = {在中国过节怎么能没有点中国的味道？};
+name : {pinyin} = {Zài zhōng guó guò jié zěn me néng méi yǒu diǎn zhōng guó de wèi dào?};
+name : {english} = {How can we have the Christmas in China without the mood of China?};
+ index.js:245
+name : {grammar_id} = {33};
+name : {grammar_text} = {S + 怎么/哪 + V S + zěnme/nǎ + V. It is a rhetorical question. It doesn’t need an answer and is a way to emphasize something. When the verb is in the affirmative form, the sentence has the sense of negation; when the verb is in the negative form, the sentence has the sense of affirmation.};
+name : {lesson_id} = {147};
+name : {sample_id} = {84};
+name : {chinese} = {我这么忙，哪有时间陪你玩啊？};
+name : {pinyin} = {Wǒ zhè me máng, nǎ yǒu shí jiān péi nǐ wán a?};
+name : {english} = {I am so busy. How can I find any spare time to accompany you for fun?};
+ index.js:245
+name : {grammar_id} = {33};
+name : {grammar_text} = {S + 怎么/哪 + V S + zěnme/nǎ + V. It is a rhetorical question. It doesn’t need an answer and is a way to emphasize something. When the verb is in the affirmative form, the sentence has the sense of negation; when the verb is in the negative form, the sentence has the sense of affirmation.};
+name : {lesson_id} = {147};
+name : {sample_id} = {85};
+name : {chinese} = {就是你干的事，你怎么能不知道？};
+name : {pinyin} = {Jiù shì nǐ gàn de shì, nǐ zěn me néng bù zhī dào?};
+name : {english} = { It’s something you did. How come that you did not know?};
+ index.js:245
+name : {grammar_id} = {34};
+name : {grammar_text} = {不是….吗？Bùshì…. Ma?
+也是反问句式，表示肯定，有强调的意思。
+Yě shì fǎn wèn jù shì, biǎo shì kěn dìng, yǒu qiáng diào de yì si.
+“不是….吗” is also a rhetorical question pattern, emphasizing an affirmation.};
+name : {lesson_id} = {147};
+name : {sample_id} = {86};
+name : {chinese} = {不是说入乡随俗吗？};
+name : {pinyin} = {Bù shì shuō rù xiāng suí sú ma?};
+name : {english} = {It is said that do as the Romans do when you are in Rome, right?};
+ index.js:245
+name : {grammar_id} = {34};
+name : {grammar_text} = {不是….吗？Bùshì…. Ma?
+也是反问句式，表示肯定，有强调的意思。
+Yě shì fǎn wèn jù shì, biǎo shì kěn dìng, yǒu qiáng diào de yì si.
+“不是….吗” is also a rhetorical question pattern, emphasizing an affirmation.};
+name : {lesson_id} = {147};
+name : {sample_id} = {87};
+name : {chinese} = {你不是已经看过这部电影了吗？};
+name : {pinyin} = {Nǐ bù shì yǐ jīng kàn guò zhè bù diàn yǐng le ma?};
+name : {english} = {You have already watched the film,have you?};
+ index.js:245
+name : {grammar_id} = {34};
+name : {grammar_text} = {不是….吗？Bùshì…. Ma?
+也是反问句式，表示肯定，有强调的意思。
+Yě shì fǎn wèn jù shì, biǎo shì kěn dìng, yǒu qiáng diào de yì si.
+“不是….吗” is also a rhetorical question pattern, emphasizing an affirmation.};
+name : {lesson_id} = {147};
+name : {sample_id} = {88};
+name : {chinese} = {这不就是你的自行车吗？};
+name : {pinyin} = {Zhè bù jiù shì nǐ de zì xíng chē ma?};
+name : {english} = {Isn't this your bicycle?};
+ index.js:245
+name : {grammar_id} = {35};
+name : {grammar_text} = {不仅… 还 (Bù jǐn… Hái) not only... but also};
+name : {lesson_id} = {148};
+name : {sample_id} = {89};
+name : {chinese} = {妈妈不仅给我买了新书包，还给我买了一个新铅笔盒。};
+name : {pinyin} = {mā mā bù jǐn gěi wǒ mǎi le xīn shū bāo, hái gěi wǒ mǎi le yī gè xīn qiān bǐ hé.};
+name : {english} = {Mom not only bought me a new bag, but also bought me a new pencil-box.};
+ index.js:245
+name : {grammar_id} = {35};
+name : {grammar_text} = {不仅… 还 (Bù jǐn… Hái) not only... but also};
+name : {lesson_id} = {148};
+name : {sample_id} = {90};
+name : {chinese} = {李玲不仅参加了学校的演讲比赛，还参加了唱歌比赛。};
+name : {pinyin} = {li líng bù jǐn cān jiā le xué xiào de yǎn jiǎng bǐ sài, hái cān jiā le chàng gē bǐ sài.};
+name : {english} = {LiLing not only took part in the speech contest, but also take part in the singing contest.};
+ index.js:245
+name : {grammar_id} = {36};
+name : {grammar_text} = {连… 都/也(Lián… dōu/yě), 连 means Even, 都/也 is used to strength the tone.};
+name : {lesson_id} = {148};
+name : {sample_id} = {91};
+name : {chinese} = {你不知道李刚是谁吗？连小丽都知道。};
+name : {pinyin} = {nǐ bù zhī dào li gāng shì shuí ma? Lián xiǎo lì dōu zhī dào.};
+name : {english} = {Don't you know who is Li Gang? Even Xiao Li knows.};
+ index.js:245
+name : {grammar_id} = {36};
+name : {grammar_text} = {连… 都/也(Lián… dōu/yě), 连 means Even, 都/也 is used to strength the tone.};
+name : {lesson_id} = {148};
+name : {sample_id} = {92};
+name : {chinese} = {他连吃饭时都在琢磨考试的事。};
+name : {pinyin} = {tā lián chī fàn shí dōu zài zhuó mó kǎo shì de shì.};
+name : {english} = {He is thinking about the teat even when he is eating.};
+ index.js:245
+name : {grammar_id} = {36};
+name : {grammar_text} = {连… 都/也(Lián… dōu/yě), 连 means Even, 都/也 is used to strength the tone.};
+name : {lesson_id} = {148};
+name : {sample_id} = {93};
+name : {chinese} = {这家博物馆连二楼门口都有保安把守。};
+name : {pinyin} = {zhè jiā bó wù guǎn lián èr lóu mén kǒu dōu yǒu bǎo' ān bǎ shǒu.};
+name : {english} = {There are security guards even at the second floor entrance in the museum.};
+ index.js:245
+name : {grammar_id} = {37};
+name : {grammar_text} = {形容词重叠 (Adj. Reduplication) Xíng róng cí chóng dié 表示程度深或加强的描写，有时有喜爱的色彩。（When the adj. word is reduplicated, it indicates a deep degree, usually with affection. It is usually used to make a description.）};
+name : {lesson_id} = {148};
+name : {sample_id} = {94};
+name : {chinese} = {端午节我们去割高高的艾蒿。};
+name : {pinyin} = {duān wǔ jié wǒ men qù gē gāo gāo de ài hāo.};
+name : {english} = {We went to cut tall mugwort on the Dragon boat festival.};
+ index.js:245
+name : {grammar_id} = {37};
+name : {grammar_text} = {形容词重叠 (Adj. Reduplication) Xíng róng cí chóng dié 表示程度深或加强的描写，有时有喜爱的色彩。（When the adj. word is reduplicated, it indicates a deep degree, usually with affection. It is usually used to make a description.）};
+name : {lesson_id} = {148};
+name : {sample_id} = {95};
+name : {chinese} = {初五那天河边早早的就站满了人。};
+name : {pinyin} = {chū wǔ nà tiān hé biān zǎo zǎo de jiù zhàn mǎn le rén.};
+name : {english} = {There were full of people by the river early on the fifth day.};
+ index.js:245
+name : {grammar_id} = {37};
+name : {grammar_text} = {形容词重叠 (Adj. Reduplication) Xíng róng cí chóng dié 表示程度深或加强的描写，有时有喜爱的色彩。（When the adj. word is reduplicated, it indicates a deep degree, usually with affection. It is usually used to make a description.）};
+name : {lesson_id} = {148};
+name : {sample_id} = {96};
+name : {chinese} = { 高 — 高高的 = 很高};
+name : {pinyin} = {Gāo — gāo gāo de = hěn gāo};
+name : {english} = {High - Very high};
+ index.js:245
+name : {grammar_id} = {37};
+name : {grammar_text} = {形容词重叠 (Adj. Reduplication) Xíng róng cí chóng dié 表示程度深或加强的描写，有时有喜爱的色彩。（When the adj. word is reduplicated, it indicates a deep degree, usually with affection. It is usually used to make a description.）};
+name : {lesson_id} = {148};
+name : {sample_id} = {97};
+name : {chinese} = { 红 — 红红的 = 很红};
+name : {pinyin} = {Hóng — hóng hóng de = hěn hóng};
+name : {english} = {Red - Very red};
+ index.js:245
+name : {grammar_id} = {37};
+name : {grammar_text} = {形容词重叠 (Adj. Reduplication) Xíng róng cí chóng dié 表示程度深或加强的描写，有时有喜爱的色彩。（When the adj. word is reduplicated, it indicates a deep degree, usually with affection. It is usually used to make a description.）};
+name : {lesson_id} = {148};
+name : {sample_id} = {98};
+name : {chinese} = {长 — 长长的 = 很长};
+name : {pinyin} = {Chǎng — chǎng chǎng de = hěn chǎng};
+name : {english} = {Long - Very long};
+ index.js:245
+name : {grammar_id} = {38};
+name : {grammar_text} = {为了in order to (Wèi le)
+“为了” 多出现在句首。
+Wèi le duō chū xiàn zài jù shǒu.
+(This word is often used at the beginning of the sentence）};
+name : {lesson_id} = {148};
+name : {sample_id} = {99};
+name : {chinese} = {为了参加比赛，他每天学习到很晚。};
+name : {pinyin} = {wèi le cān jiā bǐ sài, tā měi tiān xué xí dào hěn wǎn.};
+name : {english} = {To participate in the competition, he studied late every day late.};
+ index.js:245
+name : {grammar_id} = {38};
+name : {grammar_text} = {为了in order to (Wèi le)
+“为了” 多出现在句首。
+Wèi le duō chū xiàn zài jù shǒu.
+(This word is often used at the beginning of the sentence）};
+name : {lesson_id} = {148};
+name : {sample_id} = {100};
+name : {chinese} = {为了学习汉语，他来到了中国。};
+name : {pinyin} = {wèi le xué xí hàn yǔ, tā lái dào le zhōng guó.};
+name : {english} = {He came to China in order to learn Chinese.};
+ index.js:245
+name : {grammar_id} = {38};
+name : {grammar_text} = {为了in order to (Wèi le)
+“为了” 多出现在句首。
+Wèi le duō chū xiàn zài jù shǒu.
+(This word is often used at the beginning of the sentence）};
+name : {lesson_id} = {148};
+name : {sample_id} = {101};
+name : {chinese} = {为了纪念屈原，每年端午节我们家乡都举办龙舟赛。};
+name : {pinyin} = {wèi le jì niàn qū yuán, měi nián duān wǔ jié wǒ men jiā xiāng dōu jǔ bàn lóng zhōu sài.};
+name : {english} = {We hold the dragon boat race annually in order to commemorate Qu Yuan.};
+ index.js:245
+name : {grammar_id} = {39};
+name : {grammar_text} = {Verb+来/去 ——表示动作的方向：“来”表示向着说话人运动，“去”表示背着说话人运动。
+(Verb + lái/qù —— biǎo shì dòng zuò de fāng xiàng: “Lái” biǎo shì xiàng zhe shuō huà rén yùn dòng, “qù” biǎo shì bèi zhe shuō huà rén yùn dòng.)
+（“V + 来/去” indicates the direction of the action. “来” indicates that the agent moves towards the speaker, while “去” indicates that the agent moves away from the speaker.）
+
+常用的动词（General verbs）：进、上、下、出、过、回、起 。
+Cháng yòng de dòng cí: Jìn, shàng, xià, chū,guò, huí, qǐ.};
+name : {lesson_id} = {148};
+name : {sample_id} = {102};
+name : {chinese} = {我们回去吧。};
+name : {pinyin} = {Wǒ men huí qù ba.};
+name : {english} = {Let's go back.};
+ index.js:245
+name : {grammar_id} = {39};
+name : {grammar_text} = {Verb+来/去 ——表示动作的方向：“来”表示向着说话人运动，“去”表示背着说话人运动。
+(Verb + lái/qù —— biǎo shì dòng zuò de fāng xiàng: “Lái” biǎo shì xiàng zhe shuō huà rén yùn dòng, “qù” biǎo shì bèi zhe shuō huà rén yùn dòng.)
+（“V + 来/去” indicates the direction of the action. “来” indicates that the agent moves towards the speaker, while “去” indicates that the agent moves away from the speaker.）
+
+常用的动词（General verbs）：进、上、下、出、过、回、起 。
+Cháng yòng de dòng cí: Jìn, shàng, xià, chū,guò, huí, qǐ.};
+name : {lesson_id} = {148};
+name : {sample_id} = {103};
+name : {chinese} = {我们在楼上，你快上来吧。};
+name : {pinyin} = {wǒ men zài lóu shàng, nǐ kuài shàng lái ba.};
+name : {english} = {We are upstairs, come on.};
+ index.js:245
+name : {grammar_id} = {39};
+name : {grammar_text} = {Verb+来/去 ——表示动作的方向：“来”表示向着说话人运动，“去”表示背着说话人运动。
+(Verb + lái/qù —— biǎo shì dòng zuò de fāng xiàng: “Lái” biǎo shì xiàng zhe shuō huà rén yùn dòng, “qù” biǎo shì bèi zhe shuō huà rén yùn dòng.)
+（“V + 来/去” indicates the direction of the action. “来” indicates that the agent moves towards the speaker, while “去” indicates that the agent moves away from the speaker.）
+
+常用的动词（General verbs）：进、上、下、出、过、回、起 。
+Cháng yòng de dòng cí: Jìn, shàng, xià, chū,guò, huí, qǐ.};
+name : {lesson_id} = {148};
+name : {sample_id} = {104};
+name : {chinese} = {快起来吧，要迟到了。};
+name : {pinyin} = {Kuài qǐ lái ba, yào chí dào le.};
+name : {english} = {Get up quickly, you are late.};
+ index.js:245
+name : {grammar_id} = {40};
+name : {grammar_text} = {好不容易/好容易才 — 表示很不容易才获得结果或达到目的。
+Hǎo bù róng yì/hǎo róng yì cái — biǎo shì hěn bù róng yì cái huò dé jié guǒ huò dá dào mù dì.
+（This phrase is used to indicate that it takes a great effort to achieve some target.）“好不容易/好容易” means very difficult, “才” is used to strengthen the tone.）};
+name : {lesson_id} = {148};
+name : {sample_id} = {105};
+name : {chinese} = {我好不容易才挤到岸边。};
+name : {pinyin} = {wǒ hǎo bù róng yì cái jǐ dào àn biān.};
+name : {english} = {I pushed to the shore difficultly.};
+ index.js:245
+name : {grammar_id} = {40};
+name : {grammar_text} = {好不容易/好容易才 — 表示很不容易才获得结果或达到目的。
+Hǎo bù róng yì/hǎo róng yì cái — biǎo shì hěn bù róng yì cái huò dé jié guǒ huò dá dào mù dì.
+（This phrase is used to indicate that it takes a great effort to achieve some target.）“好不容易/好容易” means very difficult, “才” is used to strengthen the tone.）};
+name : {lesson_id} = {148};
+name : {sample_id} = {106};
+name : {chinese} = {我好不容易才买到这次音乐会的票。};
+name : {pinyin} = {Wǒ hǎo bù róng yì cái mǎi dào zhè cì yīn yuè huì de piào.};
+name : {english} = {It took me a great effort to buy a ticket for this concert.};
+ index.js:245
+name : {grammar_id} = {40};
+name : {grammar_text} = {好不容易/好容易才 — 表示很不容易才获得结果或达到目的。
+Hǎo bù róng yì/hǎo róng yì cái — biǎo shì hěn bù róng yì cái huò dé jié guǒ huò dá dào mù dì.
+（This phrase is used to indicate that it takes a great effort to achieve some target.）“好不容易/好容易” means very difficult, “才” is used to strengthen the tone.）};
+name : {lesson_id} = {148};
+name : {sample_id} = {107};
+name : {chinese} = {他好不容易才爬到山顶。};
+name : {pinyin} = {tā hǎo bù róng yì cái pá dào shān dǐng.};
+name : {english} = {It took him a great effort to climb on the top of the mountain.};
+ index.js:245
+name : {grammar_id} = {41};
+name : {grammar_text} = {真是 (Zhēn shì) It's really… 加强语气 (Jiā qiáng yǔ qì) Emphasize the mood};
+name : {lesson_id} = {148};
+name : {sample_id} = {108};
+name : {chinese} = {真是太有趣了。};
+name : {pinyin} = {zhēn shì tài yǒu qù le.};
+name : {english} = {It’s really funny.};
+ index.js:245
+name : {grammar_id} = {41};
+name : {grammar_text} = {真是 (Zhēn shì) It's really… 加强语气 (Jiā qiáng yǔ qì) Emphasize the mood};
+name : {lesson_id} = {148};
+name : {sample_id} = {109};
+name : {chinese} = { 你能来真是太好了。};
+name : {pinyin} = {nǐ néng lái zhēn shì tài hǎo le.};
+name : {english} = {It’s great for you to come.};
+ index.js:245
+name : {grammar_id} = {41};
+name : {grammar_text} = {真是 (Zhēn shì) It's really… 加强语气 (Jiā qiáng yǔ qì) Emphasize the mood};
+name : {lesson_id} = {148};
+name : {sample_id} = {110};
+name : {chinese} = {音乐会取消了真是太糟糕了。};
+name : {pinyin} = {yīn yuè huì qǔ xiāo le zhēn shì tài zāo gāo le.};
+name : {english} = {It’s really awful that the concert has been canceled.};
+ index.js:245
+name : {grammar_id} = {42};
+name : {grammar_text} = {该，应该 (Gāi, yīng gāi) Should
+};
+name : {lesson_id} = {148};
+name : {sample_id} = {111};
+name : {chinese} = {我们该回去了。};
+name : {pinyin} = {wǒ men gāi huí qù le.};
+name : {english} = {We should go back.};
+ index.js:245
+name : {grammar_id} = {42};
+name : {grammar_text} = {该，应该 (Gāi, yīng gāi) Should
+};
+name : {lesson_id} = {148};
+name : {sample_id} = {112};
+name : {chinese} = {已经八点了，小明该上学去了。};
+name : {pinyin} = {yǐ jīng bā diǎn le, xiǎo míng gāi shàng xué qù le.};
+name : {english} = {It's 8 o'clock, Xiao Ming should go to school.};
+ index.js:245
+name : {grammar_id} = {42};
+name : {grammar_text} = {该，应该 (Gāi, yīng gāi) Should
+};
+name : {lesson_id} = {148};
+name : {sample_id} = {113};
+name : {chinese} = {你应该早点回家。};
+name : {pinyin} = {nǐ yīng gāi zǎo diǎn huí jiā.};
+name : {english} = {You should go back early.};
+ index.js:245
+name : {grammar_id} = {43};
+name : {grammar_text} = {像……一样（A is like B）Xiàng……yī yàng};
+name : {lesson_id} = {150};
+name : {sample_id} = {114};
+name : {chinese} = {她像花儿一样美丽。};
+name : {pinyin} = {Tā xiàng huā er yī yàng měi lì.};
+name : {english} = {She is as beautiful as flowers.};
+ index.js:245
+name : {grammar_id} = {43};
+name : {grammar_text} = {像……一样（A is like B）Xiàng……yī yàng};
+name : {lesson_id} = {150};
+name : {sample_id} = {115};
+name : {chinese} = {我们像小鸟一样自由。};
+name : {pinyin} = {Wǒ men xiàng xiǎo niǎo yī yàng zì yóu.};
+name : {english} = {We are as free as birds.};
+ index.js:245
+name : {grammar_id} = {44};
+name : {grammar_text} = {四字成语（Four character idioms）Sì zì chéng yǔ
+四字成语是汉语词汇中一部分定型的词组或短句。
+Sì zì chéng yǔ shì hàn yǔ cí huì zhōng yī bù fèn dìng xíng de cí zǔ huò duǎn jù. 
+Four character idioms are a part of Chinese vocabulary in set phrases or sentences. 
+
+心灰意冷 Xīn huī yì lěng
+春风得意 Chūn fēng dé yì
+痛不欲生 Tòng bù yù shēng
+名落孙山 Míng luò sūn shān
+闻鸡起舞 Wén jī qǐ wǔ};
+name : {lesson_id} = {150};
+name : {sample_id} = {116};
+name : {chinese} = {大伟比赛失利后心灰意冷。};
+name : {pinyin} = {Dà wěi bǐ sài shī lì hòu xīn huī yì lěng.};
+name : {english} = {DaWei is disheartened after losing the game.};
+ index.js:245
+name : {grammar_id} = {44};
+name : {grammar_text} = {四字成语（Four character idioms）Sì zì chéng yǔ
+四字成语是汉语词汇中一部分定型的词组或短句。
+Sì zì chéng yǔ shì hàn yǔ cí huì zhōng yī bù fèn dìng xíng de cí zǔ huò duǎn jù. 
+Four character idioms are a part of Chinese vocabulary in set phrases or sentences. 
+
+心灰意冷 Xīn huī yì lěng
+春风得意 Chūn fēng dé yì
+痛不欲生 Tòng bù yù shēng
+名落孙山 Míng luò sūn shān
+闻鸡起舞 Wén jī qǐ wǔ};
+name : {lesson_id} = {150};
+name : {sample_id} = {117};
+name : {chinese} = {王涛每天“闻鸡起舞”，刻苦练琴。};
+name : {pinyin} = {Wáng tāo měi tiān “wén jī qǐ wǔ”, kè kǔ liàn qín.};
+name : {english} = {Wang Tao practices very hard every day.};
+ index.js:245
+name : {grammar_id} = {45};
+name : {grammar_text} = {一度 （Used to be） Yīdù};
+name : {lesson_id} = {150};
+name : {sample_id} = {118};
+name : {chinese} = {这个市场一度是个寺庙。};
+name : {pinyin} = {Zhè ge shì chǎng yī dù shì gè sì miào.};
+name : {english} = {This market used to be a temple.};
+ index.js:245
+name : {grammar_id} = {45};
+name : {grammar_text} = {一度 （Used to be） Yīdù};
+name : {lesson_id} = {150};
+name : {sample_id} = {119};
+name : {chinese} = {他失败之后一度心灰意冷。};
+name : {pinyin} = {Tā shī bài zhī hòu yī dù xīn huī yì lěng.};
+name : {english} = {He used to be downhearted after his failure.};
+ index.js:245
+name : {grammar_id} = {46};
+name : {grammar_text} = {又……又Yòu……yòu
+连接形容词或动词，表示两种性质状态或动作行为同时存在。
+
+Lián jiē xíng róng cí huò dòng cí, biǎo shì liǎng zhǒng xìng zhì zhuàng tài huò dòng zuò xíng wéi tóng shí cún zài.
+(This pattern is used to connect adjectives or verbs, indicating two states or actions occur at the same time.）};
+name : {lesson_id} = {150};
+name : {sample_id} = {120};
+name : {chinese} = {刘明长得又高又大。};
+name : {pinyin} = {Liú míng zhǎng de yòu gāo yòu dà.};
+name : {english} = {Li Ming is high and big.};
+ index.js:245
+name : {grammar_id} = {46};
+name : {grammar_text} = {又……又Yòu……yòu
+连接形容词或动词，表示两种性质状态或动作行为同时存在。
+
+Lián jiē xíng róng cí huò dòng cí, biǎo shì liǎng zhǒng xìng zhì zhuàng tài huò dòng zuò xíng wéi tóng shí cún zài.
+(This pattern is used to connect adjectives or verbs, indicating two states or actions occur at the same time.）};
+name : {lesson_id} = {150};
+name : {sample_id} = {121};
+name : {chinese} = {小玲又唱又跳，高兴极了。};
+name : {pinyin} = {Xiǎo líng yòu chàng yòu tiào, gāo xìng jí le.};
+name : {english} = {Xiao Ling is so happy,singing and jumping.};
+ index.js:245
+name : {grammar_id} = {47};
+name : {grammar_text} = {当…….时候（When；While）Dāng……. Shíhou};
+name : {lesson_id} = {150};
+name : {sample_id} = {122};
+name : {chinese} = {每当我想起你的时候，我就看看你送我的手表。};
+name : {pinyin} = {Měi dāng wǒ xiǎng qǐ nǐ de shí hou, wǒ jiù kàn kàn nǐ sòng wǒ de shǒu biǎo.};
+name : {english} = {Every time when I missed you I would look at the watch you gave me. };
+ index.js:245
+name : {grammar_id} = {47};
+name : {grammar_text} = {当…….时候（When；While）Dāng……. Shíhou};
+name : {lesson_id} = {150};
+name : {sample_id} = {123};
+name : {chinese} = {当大伟看到小美的时候，他的眼泪流了出来。};
+name : {pinyin} = {Dāng dà wěi kàn dào xiǎo měi de shí hou, tā de yǎn lèi liú le chū lái.};
+name : {english} = {When Da Wei saw Xiao Mei, his tears rolled down.};
+ index.js:245
+name : {grammar_id} = {48};
+name : {grammar_text} = {除了…….都（Except）Chú le……. Dōu};
+name : {lesson_id} = {150};
+name : {sample_id} = {124};
+name : {chinese} = {除了张琳，大家都要去听音乐会。};
+name : {pinyin} = {Chú le zhāng lín, dà jiā dōu yào qù tīng yīn yuè huì.};
+name : {english} = {Everyone will go to the concert except ZhangLin.};
+ index.js:245
+name : {grammar_id} = {48};
+name : {grammar_text} = {除了…….都（Except）Chú le……. Dōu};
+name : {lesson_id} = {150};
+name : {sample_id} = {125};
+name : {chinese} = {除了周日，其它时间大伟都要学习。};
+name : {pinyin} = {Chú le zhōu rì, qí tā shí jiān dà wěi dōu yào xué xí.};
+name : {english} = {DaWei studies every day except Sunday.};
+ index.js:245
+name : {grammar_id} = {49};
+name : {grammar_text} = {真是（Really. Emphasize sentence）Zhēn shì};
+name : {lesson_id} = {150};
+name : {sample_id} = {126};
+name : {chinese} = {你能来真是太好了。};
+name : {pinyin} = {Nǐ néng lái zhēn shì tài hǎo le.};
+name : {english} = {It’s really nice that you can come.};
+ index.js:245
+name : {grammar_id} = {49};
+name : {grammar_text} = {真是（Really. Emphasize sentence）Zhēn shì};
+name : {lesson_id} = {150};
+name : {sample_id} = {127};
+name : {chinese} = {这幅画真是太漂亮了。};
+name : {pinyin} = {Zhè fú huà zhēn shì tài piào liang le.};
+name : {english} = {};
+ index.js:245
+name : {grammar_id} = {50};
+name : {grammar_text} = {越来越……(More and more) Yuè lái yuè…};
+name : {lesson_id} = {150};
+name : {sample_id} = {128};
+name : {chinese} = {你越来越漂亮了。};
+name : {pinyin} = {Nǐ yuè lái yuè piào liang le.};
+name : {english} = {You are more and more beautiful.};
+ index.js:245
+name : {grammar_id} = {50};
+name : {grammar_text} = {越来越……(More and more) Yuè lái yuè…};
+name : {lesson_id} = {150};
+name : {sample_id} = {129};
+name : {chinese} = {天气越来越冷。};
+name : {pinyin} = {Tiān qì yuè lái yuè lěng.};
+name : {english} = {It’s colder and colder.};
+ index.js:245
+name : {grammar_id} = {51};
+name : {grammar_text} = {原来(It turned out to be; It was) Yuán lái};
+name : {lesson_id} = {150};
+name : {sample_id} = {130};
+name : {chinese} = {原来大伟昨天没来是因为他病了。};
+name : {pinyin} = {Yuán lái dà wěi zuó tiān méi lái shì yīn wèi tā bìng le.};
+name : {english} = {DaWei didn’t come yesterday because he was ill.};
+ index.js:245
+name : {grammar_id} = {51};
+name : {grammar_text} = {原来(It turned out to be; It was) Yuán lái};
+name : {lesson_id} = {150};
+name : {sample_id} = {131};
+name : {chinese} = {原来是你修好了教室的锁。};
+name : {pinyin} = {Yuán lái shì nǐ xiū hǎo le jiào shì de suǒ.};
+name : {english} = {It was you that fixed the lock of  the classroom.};
+ index.js:245
+name : {grammar_id} = {52};
+name : {grammar_text} = {用得着/用不着 Yòng de zháo/yòng bù zháo - Need/Don’t need};
+name : {lesson_id} = {153};
+name : {sample_id} = {132};
+name : {chinese} = {这套茶具她不一定能用得着。};
+name : {pinyin} = {Zhè tào chá jù tā bù yī dìng néng yòng de zháo.};
+name : {english} = {She may not in need of this set of tea ware.};
+ index.js:245
+name : {grammar_id} = {52};
+name : {grammar_text} = {用得着/用不着 Yòng de zháo/yòng bù zháo - Need/Don’t need};
+name : {lesson_id} = {153};
+name : {sample_id} = {133};
+name : {chinese} = {谁都用得着钱。};
+name : {pinyin} = {Shuí dōu yòng de zháo qián.};
+name : {english} = {Everyone is in need of money.};
+ index.js:245
+name : {grammar_id} = {52};
+name : {grammar_text} = {用得着/用不着 Yòng de zháo/yòng bù zháo - Need/Don’t need};
+name : {lesson_id} = {153};
+name : {sample_id} = {134};
+name : {chinese} = {你工作用不着那么卖力。};
+name : {pinyin} = {Nǐ gōng zuò yòng bù zháo nà me mài lì.};
+name : {english} = {You don’t need to work so hard.};
+ index.js:245
+name : {grammar_id} = {53};
+name : {grammar_text} = {依 Yī According
+有一些固定搭配，如 “依我看”、“依我说” “依你看” 等。
+Yǒu yī xiē gù dìng dā pèi, rú “yī wǒ kàn”, “yī wǒ shuō” “yī nǐ kàn” děng.
+There are some regular collocations, e.g. “依我看”、“依我说” “依你看” etc...};
+name : {lesson_id} = {153};
+name : {sample_id} = {135};
+name : {chinese} = {依我看钱是最合适的礼物。};
+name : {pinyin} = {Yī wǒ kàn qián shì zuì hé shì de lǐ wù.};
+name : {english} = {In my opinion money is the most appropriate gift.};
+ index.js:245
+name : {grammar_id} = {53};
+name : {grammar_text} = {依 Yī According
+有一些固定搭配，如 “依我看”、“依我说” “依你看” 等。
+Yǒu yī xiē gù dìng dā pèi, rú “yī wǒ kàn”, “yī wǒ shuō” “yī nǐ kàn” děng.
+There are some regular collocations, e.g. “依我看”、“依我说” “依你看” etc...};
+name : {lesson_id} = {153};
+name : {sample_id} = {136};
+name : {chinese} = {依你说，咱明天去哪玩好？};
+name : {pinyin} = {Yī nǐ shuō, zán míng tiān qù nǎ wán hǎo?};
+name : {english} = {Where shall we go for some fun tomorrow in your opinion?};
+ index.js:245
+name : {grammar_id} = {53};
+name : {grammar_text} = {依 Yī According
+有一些固定搭配，如 “依我看”、“依我说” “依你看” 等。
+Yǒu yī xiē gù dìng dā pèi, rú “yī wǒ kàn”, “yī wǒ shuō” “yī nǐ kàn” děng.
+There are some regular collocations, e.g. “依我看”、“依我说” “依你看” etc...};
+name : {lesson_id} = {153};
+name : {sample_id} = {137};
+name : {chinese} = {依法打击犯罪分子。};
+name : {pinyin} = {Yī fǎ dǎ jí fàn zuì fēn zǐ.};
+name : {english} = {We fight against criminals according to the law.};
+ index.js:245
+name : {grammar_id} = {54};
+name : {grammar_text} = {由Yóu - Up to
+指出责任归属，某事归某人去做。
+Zhǐ chū zé rèn guī shǔ, mǒu shì guī mǒu rén qù zuò.
+Pointed out that the attribution of responsibility; something should be done by someone.
+};
+name : {lesson_id} = {153};
+name : {sample_id} = {138};
+name : {chinese} = {想买什么由自己决定。};
+name : {pinyin} = {Xiǎng mǎi shén me yóu zì jǐ jué dìng.};
+name : {english} = {You decide what to buy by yourself.};
+ index.js:245
+name : {grammar_id} = {54};
+name : {grammar_text} = {由Yóu - Up to
+指出责任归属，某事归某人去做。
+Zhǐ chū zé rèn guī shǔ, mǒu shì guī mǒu rén qù zuò.
+Pointed out that the attribution of responsibility; something should be done by someone.
+};
+name : {lesson_id} = {153};
+name : {sample_id} = {139};
+name : {chinese} = {这次会议由张涛主持。};
+name : {pinyin} = {Zhè cì huì yì yóu zhāng tāo zhǔ chí.};
+name : {english} = {The meeting was chaired by Zhang Tao.};
+ index.js:245
+name : {grammar_id} = {54};
+name : {grammar_text} = {由Yóu - Up to
+指出责任归属，某事归某人去做。
+Zhǐ chū zé rèn guī shǔ, mǒu shì guī mǒu rén qù zuò.
+Pointed out that the attribution of responsibility; something should be done by someone.
+};
+name : {lesson_id} = {153};
+name : {sample_id} = {140};
+name : {chinese} = {公司的事不由我一人做决定。};
+name : {pinyin} = {Gōng sī de shì bù yóu wǒ yī rén zuò jué dìng.};
+name : {english} = {Decisions on the matters of our company cannot be made by me.};
+ index.js:245
+name : {grammar_id} = {55};
+name : {grammar_text} = {除了…都 Chú le… Dōu（Except）};
+name : {lesson_id} = {153};
+name : {sample_id} = {141};
+name : {chinese} = {除了李玲，大家都参加了会议。};
+name : {pinyin} = {Chú le li líng, dà jiā dōu cān jiā le huì yì.};
+name : {english} = {Everyone attended the meeting except Li Ling};
+ index.js:245
+name : {grammar_id} = {55};
+name : {grammar_text} = {除了…都 Chú le… Dōu（Except）};
+name : {lesson_id} = {153};
+name : {sample_id} = {142};
+name : {chinese} = {除了周日，其他时间我都要上班。};
+name : {pinyin} = {Chú le zhōu rì, qí tā shí jiān wǒ dōu yào shàng bān.};
+name : {english} = {I need to work every day except Sunday.};
+ index.js:245
+name : {grammar_id} = {55};
+name : {grammar_text} = {除了…都 Chú le… Dōu（Except）};
+name : {lesson_id} = {153};
+name : {sample_id} = {143};
+name : {chinese} = {除了钱，其他礼物都可能不合适。};
+name : {pinyin} = {Chú le qián, qí tā lǐ wù dōu kě néng bù hé shì.};
+name : {english} = {Any gift may be inappropriate except money.};
+ index.js:245
+name : {grammar_id} = {56};
+name : {grammar_text} = {自然 Zì rán Of course};
+name : {lesson_id} = {153};
+name : {sample_id} = {144};
+name : {chinese} = {我们曾是同学，自然比别人关系亲密。};
+name : {pinyin} = {Wǒ men céng shì tong xué, zì rán bǐ bié rén guān xì qīn mì};
+name : {english} = {We were classmate so naturally we have intimate relationship than others.};
+ index.js:245
+name : {grammar_id} = {56};
+name : {grammar_text} = {自然 Zì rán Of course};
+name : {lesson_id} = {153};
+name : {sample_id} = {145};
+name : {chinese} = {小美第一次登台演出，自然很紧张。};
+name : {pinyin} = {Xiǎo měi dì yī cì dēng tái yǎn chū, zì rán hěn jǐn zhāng.};
+name : {english} = {When Xiao Mei performed on the stage for the first time, she was certainly very nervous.};
+ index.js:245
+name : {grammar_id} = {56};
+name : {grammar_text} = {自然 Zì rán Of course};
+name : {lesson_id} = {153};
+name : {sample_id} = {146};
+name : {chinese} = {大伟输掉了比赛，自然心里不高兴。};
+name : {pinyin} = {Dà wěi shū diào le bǐ sài, zì rán xīn lǐ bù gāo xìng.};
+name : {english} = {Da Wei lost the game; of course he was not happy.};
+ index.js:245
+name : {grammar_id} = {57};
+name : {grammar_text} = {只能 Zhǐ néng Can only
+表示能力或条件限制，不能做更多。
+Biǎo shì néng lì huò tiáo jiàn xiàn zhì, bù néng zuò gèng duō.
+Expresses that one can not do more because being limited by ability or condition. 
+};
+name : {lesson_id} = {153};
+name : {sample_id} = {147};
+name : {chinese} = {我们只能送钱做礼物了。};
+name : {pinyin} = {Wǒ men zhǐ néng sòng qián zuò lǐ wù le.};
+name : {english} = {We have to send money as a gift.};
+ index.js:245
+name : {grammar_id} = {57};
+name : {grammar_text} = {只能 Zhǐ néng Can only
+表示能力或条件限制，不能做更多。
+Biǎo shì néng lì huò tiáo jiàn xiàn zhì, bù néng zuò gèng duō.
+Expresses that one can not do more because being limited by ability or condition. 
+};
+name : {lesson_id} = {153};
+name : {sample_id} = {148};
+name : {chinese} = {这周去悉尼的票已经没有了，你只能买下周的了。};
+name : {pinyin} = {Zhè zhōu qù xī ní de piào yǐ jīng méi yǒu le, nǐ zhǐ néng mǎi xià zhōu de le.};
+name : {english} = {The tickets to Sydney for this week have been sold out. You can only buy the ticket for next week.};
+ index.js:245
+name : {grammar_id} = {57};
+name : {grammar_text} = {只能 Zhǐ néng Can only
+表示能力或条件限制，不能做更多。
+Biǎo shì néng lì huò tiáo jiàn xiàn zhì, bù néng zuò gèng duō.
+Expresses that one can not do more because being limited by ability or condition. 
+};
+name : {lesson_id} = {153};
+name : {sample_id} = {149};
+name : {chinese} = {这篇文章太难了，我只能看懂第一页。};
+name : {pinyin} = {Zhè piān wén zhāng tài nán le, wǒ zhǐ néng kàn dǒng dì yī yè.};
+name : {english} = {This article is too difficult. I can only understand the first page.};
+ index.js:245
+name : {grammar_id} = {58};
+name : {grammar_text} = {V + 着 + O - 表示动作持续的状态。
+(V + zhe + O - biǎo shì dòng zuò chí xù de zhuàng tài.) This expression is usually used to describe a state of continuous actions.};
+name : {lesson_id} = {159};
+name : {sample_id} = {150};
+name : {chinese} = {张琳望着天空，喝着饮料。};
+name : {pinyin} = {Zhāng lín wàng zhe tiān kōng, hē zhe yǐn liào.};
+name : {english} = {Zhang Lin is looking at the sky while sipping drinks.};
+ index.js:245
+name : {grammar_id} = {58};
+name : {grammar_text} = {V + 着 + O - 表示动作持续的状态。
+(V + zhe + O - biǎo shì dòng zuò chí xù de zhuàng tài.) This expression is usually used to describe a state of continuous actions.};
+name : {lesson_id} = {159};
+name : {sample_id} = {151};
+name : {chinese} = {李玲骑着一辆自行车。};
+name : {pinyin} = {Li Líng qí zhe yī liàng zì xíng chē.};
+name : {english} = {Li Ling is riding a bicycle.};
+ index.js:245
+name : {grammar_id} = {59};
+name : {grammar_text} = {“比” 字句 (“Bǐ” zì jù) Sentences with “比”};
+name : {lesson_id} = {159};
+name : {sample_id} = {152};
+name : {chinese} = {你比我高。 A 比 B + Adj. (“A bǐ B + Adj.) A is more adj. than B};
+name : {pinyin} = {Nǐ bǐ wǒ gāo.};
+name : {english} = {You are taller than I am.};
+ index.js:245
+name : {grammar_id} = {59};
+name : {grammar_text} = {“比” 字句 (“Bǐ” zì jù) Sentences with “比”};
+name : {lesson_id} = {159};
+name : {sample_id} = {153};
+name : {chinese} = {北京城比青岛的城市大。};
+name : {pinyin} = {Běi jīng chéng bǐ qīng dǎo de chéng shì dà.};
+name : {english} = {The Beijing city is bigger than the city of Qingdao.};
+ index.js:245
+name : {grammar_id} = {59};
+name : {grammar_text} = {“比” 字句 (“Bǐ” zì jù) Sentences with “比”};
+name : {lesson_id} = {159};
+name : {sample_id} = {154};
+name : {chinese} = {你比我高多了。 A 比 B + Adj. + 多了 (“A bǐ B + Adj.+ duō le”) A is much more Adj. than B.};
+name : {pinyin} = {Nǐ bǐ wǒ gāo duō le.};
+name : {english} = {You are much taller than I am.};
+ index.js:245
+name : {grammar_id} = {59};
+name : {grammar_text} = {“比” 字句 (“Bǐ” zì jù) Sentences with “比”};
+name : {lesson_id} = {159};
+name : {sample_id} = {155};
+name : {chinese} = {这件蓝裙子比那件黄裙子漂亮多了。};
+name : {pinyin} = {Zhè jiàn lán qún zi bǐ nà jiàn huáng qún zi piào liang duō le.};
+name : {english} = {This blue shirt is much more beautiful than that yellow one.};
+ index.js:245
+name : {grammar_id} = {60};
+name : {grammar_text} = {多么 — 表示感叹 (Duō me — Biǎo shì gǎn tàn) Describing exclamation, which means very much.};
+name : {lesson_id} = {159};
+name : {sample_id} = {156};
+name : {chinese} = {多么可爱的玫瑰花啊！};
+name : {pinyin} = {Duō me kě ài de méi guī huā a!};
+name : {english} = {What lovely roses!};
+ index.js:245
+name : {grammar_id} = {60};
+name : {grammar_text} = {多么 — 表示感叹 (Duō me — Biǎo shì gǎn tàn) Describing exclamation, which means very much.};
+name : {lesson_id} = {159};
+name : {sample_id} = {157};
+name : {chinese} = {你是多么的勇敢啊！};
+name : {pinyin} = {Nǐ shì duō me de yǒng gǎn a!};
+name : {english} = {How brave you are.};
+ index.js:245
+name : {grammar_id} = {61};
+name : {grammar_text} = {不得了- 表示情况严重 (Bù dé liǎo — biǎo shì qíng kuàng yán zhòng) Terrible; ；extremely (Expressing the serious situation)};
+name : {lesson_id} = {159};
+name : {sample_id} = {158};
+name : {chinese} = {天冷的不得了。};
+name : {pinyin} = {Tiān lěng de bù dé liǎo.};
+name : {english} = {It is awfully cold.};
+ index.js:245
+name : {grammar_id} = {61};
+name : {grammar_text} = {不得了- 表示情况严重 (Bù dé liǎo — biǎo shì qíng kuàng yán zhòng) Terrible; ；extremely (Expressing the serious situation)};
+name : {lesson_id} = {159};
+name : {sample_id} = {159};
+name : {chinese} = {我高兴的不得了了。};
+name : {pinyin} = {Wǒ gāo xìng de bù dé liǎo le.};
+name : {english} = {I’m extremely happy.};
+ index.js:245
+name : {grammar_id} = {62};
+name : {grammar_text} = {以前 (Yǐ qián) Before};
+name : {lesson_id} = {159};
+name : {sample_id} = {160};
+name : {chinese} = {六点以前我们要回到学校。};
+name : {pinyin} = {Liù diǎn yǐ qián wǒ men yào huí dào xué xiào.};
+name : {english} = {We should go back to school before six.};
+ index.js:245
+name : {grammar_id} = {62};
+name : {grammar_text} = {以前 (Yǐ qián) Before};
+name : {lesson_id} = {159};
+name : {sample_id} = {161};
+name : {chinese} = {吃饭以前要洗手。};
+name : {pinyin} = {Chī fàn yǐ qián yào xǐ shǒu.};
+name : {english} = {Wash your hands before eating.};
+ index.js:245
+name : {grammar_id} = {62};
+name : {grammar_text} = {以前 (Yǐ qián) Before};
+name : {lesson_id} = {159};
+name : {sample_id} = {162};
+name : {chinese} = {以前我住在广州，今年我搬到了上海。};
+name : {pinyin} = {Yǐ qián wǒ zhù zài guǎng zhōu, jīn nián wǒ bān dào le shàng hǎi.};
+name : {english} = {I lived in Guang Zhou before, I moved to Shang Hai this year.};
+ index.js:245
+name : {grammar_id} = {62};
+name : {grammar_text} = {以前 (Yǐ qián) Before};
+name : {lesson_id} = {159};
+name : {sample_id} = {163};
+name : {chinese} = {以前我早上散步，现在我晚上散步。};
+name : {pinyin} = {Yǐ qián wǒ zǎo shang sàn bù, xiàn zài wǒ wǎn shàng sàn bù.};
+name : {english} = {I went for a walk in the morning before, I walk in the evening now.};
+ index.js:245
+name : {grammar_id} = {63};
+name : {grammar_text} = {离 (Lí) Away from};
+name : {lesson_id} = {159};
+name : {sample_id} = {164};
+name : {chinese} = {山东离西藏比较远。};
+name : {pinyin} = {Shān dōng lí xī zàng bǐ jiào yuǎn.};
+name : {english} = {Shang Dong is far away from Tibet. };
+ index.js:245
+name : {grammar_id} = {63};
+name : {grammar_text} = {离 (Lí) Away from};
+name : {lesson_id} = {159};
+name : {sample_id} = {165};
+name : {chinese} = {我家离学校很近。};
+name : {pinyin} = {Wǒ jiā lí xué xiào hěn jìn.};
+name : {english} = {My house is near the school. };
+ index.js:245
+name : {grammar_id} = {63};
+name : {grammar_text} = {离 (Lí) Away from};
+name : {lesson_id} = {159};
+name : {sample_id} = {166};
+name : {chinese} = {那家咖啡馆离这不远。};
+name : {pinyin} = {Nà jiā kā fēi guǎn lí zhè bù yuǎn.};
+name : {english} = {That coffee bar is not far away.};
+ index.js:245
+name : {grammar_id} = {64};
+name : {grammar_text} = {有 - 存在句 (Yǒu — cún zài jù) There be (Existential Sentences) “处所词+有+O”，表示某处存在某人或某物。(“Chù suǒ cí + yǒu + O”, biǎo shì mǒu chù cún zài mǒu rén huò mǒu wù.) Place + 有 + O. This expression is used to indicate there is something or somebody in some place.};
+name : {lesson_id} = {159};
+name : {sample_id} = {167};
+name : {chinese} = {那边有几个女孩子。};
+name : {pinyin} = {Nà biān yǒu jǐ gè nǚ hái zi.};
+name : {english} = {There are a few girls there.};
+ index.js:245
+name : {grammar_id} = {64};
+name : {grammar_text} = {有 - 存在句 (Yǒu — cún zài jù) There be (Existential Sentences) “处所词+有+O”，表示某处存在某人或某物。(“Chù suǒ cí + yǒu + O”, biǎo shì mǒu chù cún zài mǒu rén huò mǒu wù.) Place + 有 + O. This expression is used to indicate there is something or somebody in some place.};
+name : {lesson_id} = {159};
+name : {sample_id} = {168};
+name : {chinese} = {书包里有几个橘子。};
+name : {pinyin} = {Shū bāo li yǒu jǐ gè jú zi.};
+name : {english} = {There are some oranges in the schoolbag.};
+ index.js:245
+name : {grammar_id} = {64};
+name : {grammar_text} = {有 - 存在句 (Yǒu — cún zài jù) There be (Existential Sentences) “处所词+有+O”，表示某处存在某人或某物。(“Chù suǒ cí + yǒu + O”, biǎo shì mǒu chù cún zài mǒu rén huò mǒu wù.) Place + 有 + O. This expression is used to indicate there is something or somebody in some place.};
+name : {lesson_id} = {159};
+name : {sample_id} = {169};
+name : {chinese} = {桌子上有一把刀子。};
+name : {pinyin} = {Zhuō zi shàng yǒu yī bǎ dāo zi.};
+name : {english} = {There is a knife on the table.};
+ index.js:245
+name : {grammar_id} = {65};
+name : {grammar_text} = {几 — 概数 (Jǐ — gài shù) A few; a little (Approximate points)};
+name : {lesson_id} = {159};
+name : {sample_id} = {170};
+name : {chinese} = {桌子上有几本书。};
+name : {pinyin} = {Zhuō zi shàng yǒu jǐ běn shū.};
+name : {english} = {There are a few books on the desk.};
+ index.js:245
+name : {grammar_id} = {65};
+name : {grammar_text} = {几 — 概数 (Jǐ — gài shù) A few; a little (Approximate points)};
+name : {lesson_id} = {159};
+name : {sample_id} = {171};
+name : {chinese} = {小玲有十几岁，很可爱。};
+name : {pinyin} = {Xiǎo líng yǒu shí jǐ suì, hěn kě ài.};
+name : {english} = {Xiao Ling is in her teens and is lovely.};
+ index.js:245
+name : {grammar_id} = {66};
+name : {grammar_text} = {一旦 (Yī dàn) In case; once};
+name : {lesson_id} = {159};
+name : {sample_id} = {172};
+name : {chinese} = {一旦你找到我的书，请给我打电话。};
+name : {pinyin} = {Yī dàn nǐ zhǎo dào wǒ de shū, qǐng gěi wǒ dǎ diàn huà.};
+name : {english} = {Once you find my book, please call me.};
+ index.js:245
+name : {grammar_id} = {66};
+name : {grammar_text} = {一旦 (Yī dàn) In case; once};
+name : {lesson_id} = {159};
+name : {sample_id} = {173};
+name : {chinese} = {一旦你有困难，我们会来帮助你的。};
+name : {pinyin} = {yī dàn nǐ yǒu kùn nán, wǒ men huì lái bāng zhù nǐ de.};
+name : {english} = {In case you have difficulties, we will come to help you. };
+ index.js:245
+name : {grammar_id} = {67};
+name : {grammar_text} = {像… 这么（那么）+ Adj. Xiàng… Zhè me (nà me) + Adj. };
+name : {lesson_id} = {160};
+name : {sample_id} = {174};
+name : {chinese} = {奶奶做了一个像脸盆那么大的一个枣饽饽。};
+name : {pinyin} = {Nǎi nai zuò le yī gè xiàng liǎn pén nà me dà de yī gè zǎo bō bo.};
+name : {english} = {My granny made a jujube cake as big as a washing basin.};
+ index.js:245
+name : {grammar_id} = {67};
+name : {grammar_text} = {像… 这么（那么）+ Adj. Xiàng… Zhè me (nà me) + Adj. };
+name : {lesson_id} = {160};
+name : {sample_id} = {175};
+name : {chinese} = {小商店的东西不像大商场那么齐全。};
+name : {pinyin} = {Xiǎo shāng diàn de dōng xi bù xiàng dà shāng chǎng nà me qí quán.};
+name : {english} = {The goods in small shops are not as complete as in big malls.};
+ index.js:245
+name : {grammar_id} = {67};
+name : {grammar_text} = {像… 这么（那么）+ Adj. Xiàng… Zhè me (nà me) + Adj. };
+name : {lesson_id} = {160};
+name : {sample_id} = {176};
+name : {chinese} = {我从没见过像你这么傻的人。};
+name : {pinyin} = {Wǒ cóng méi jiàn guò xiàng nǐ zhè me shǎ de rén.};
+name : {english} = {I have never seen a man as stupid as you.};
+ index.js:245
+name : {grammar_id} = {68};
+name : {grammar_text} = {一 + V Yī + V
+表示经过某一短暂动作后，出现或得到某种结果或结论，前面往往有信息背景。
+Biǎo shì jīng guò mǒu yī duǎn zàn dòng zuò hòu, chū xiàn huò dé dào mǒu zhǒng jié guǒ huò jié lùn, qián miàn wǎng wǎng yǒu xìn xī bèijǐng.
+It express that after a short action, some result or conclusion comes. There is usually a a background before.};
+name : {lesson_id} = {160};
+name : {sample_id} = {177};
+name : {chinese} = {我一听是够热闹的。};
+name : {pinyin} = {Wǒ yī tīng shì gòu rè nào de.};
+name : {english} = {It’s really lively on hearing this.};
+ index.js:245
+name : {grammar_id} = {68};
+name : {grammar_text} = {一 + V Yī + V
+表示经过某一短暂动作后，出现或得到某种结果或结论，前面往往有信息背景。
+Biǎo shì jīng guò mǒu yī duǎn zàn dòng zuò hòu, chū xiàn huò dé dào mǒu zhǒng jié guǒ huò jié lùn, qián miàn wǎng wǎng yǒu xìn xī bèijǐng.
+It express that after a short action, some result or conclusion comes. There is usually a a background before.};
+name : {lesson_id} = {160};
+name : {sample_id} = {178};
+name : {chinese} = {我到家一看，爸爸不在家又去跳舞了。};
+name : {pinyin} = {Wǒ dào jiā yì kàn, bà ba bù zài jiā yòu qù tiào wǔ le.};
+name : {english} = {When I got home and saw that Dad was not in. He went to dance again.};
+ index.js:245
+name : {grammar_id} = {68};
+name : {grammar_text} = {一 + V Yī + V
+表示经过某一短暂动作后，出现或得到某种结果或结论，前面往往有信息背景。
+Biǎo shì jīng guò mǒu yī duǎn zàn dòng zuò hòu, chū xiàn huò dé dào mǒu zhǒng jié guǒ huò jié lùn, qián miàn wǎng wǎng yǒu xìn xī bèijǐng.
+It express that after a short action, some result or conclusion comes. There is usually a a background before.};
+name : {lesson_id} = {160};
+name : {sample_id} = {179};
+name : {chinese} = {我仔细一想，李玲不就是王欣的表姐嘛。};
+name : {pinyin} = {Wǒ zǐ xì yī xiǎng, li líng bù jiù shì wáng xīn de biǎo jie ma.};
+name : {english} = {I think it over and see that Li Ling is just Wang Xin’s cousin.};
+ index.js:245
+name : {grammar_id} = {69};
+name : {grammar_text} = {哪儿Nǎ'er
+表示所有的地方或方面，后面常用“都”或“也”。
+Biǎo shì suǒ yǒu de dì fāng huò fāng miàn, hòu miàn cháng yòng“dōu”huò“yě”.
+“哪儿” used with “都 or“也” afterward to mean every place or every aspect.};
+name : {lesson_id} = {160};
+name : {sample_id} = {180};
+name : {chinese} = {四面八方哪儿都是鞭炮声。};
+name : {pinyin} = {Sì miàn bā fāng nǎ'er dōu shì biān pào shēng.};
+name : {english} = {There is sound of firecrackers in all directions.};
+ index.js:245
+name : {grammar_id} = {69};
+name : {grammar_text} = {哪儿Nǎ'er
+表示所有的地方或方面，后面常用“都”或“也”。
+Biǎo shì suǒ yǒu de dì fāng huò fāng miàn, hòu miàn cháng yòng“dōu”huò“yě”.
+“哪儿” used with “都 or“也” afterward to mean every place or every aspect.};
+name : {lesson_id} = {160};
+name : {sample_id} = {181};
+name : {chinese} = {他这人哪儿都好，就是办事粗心。};
+name : {pinyin} = {Tā zhè rén nǎ 'er dōu hǎo, jiù shì bàn shì cū xīn.};
+name : {english} = {He is a good man in all aspects except that he is very careless.};
+ index.js:245
+name : {grammar_id} = {69};
+name : {grammar_text} = {哪儿Nǎ'er
+表示所有的地方或方面，后面常用“都”或“也”。
+Biǎo shì suǒ yǒu de dì fāng huò fāng miàn, hòu miàn cháng yòng“dōu”huò“yě”.
+“哪儿” used with “都 or“也” afterward to mean every place or every aspect.};
+name : {lesson_id} = {160};
+name : {sample_id} = {182};
+name : {chinese} = {我刚来中国的时候，哪儿也不认识。};
+name : {pinyin} = {Wǒ gāng lái zhōng guó de shí hou, nǎ' er yě bù rèn shi.};
+name : {english} = {I knew nowhere when I just came to China };
+ index.js:245
+name : {grammar_id} = {70};
+name : {grammar_text} = {果然 Guǒrán
+表示事实与所说或所预料的相符合。
+Biǎo shì shì shí yù suǒ shuō huò suǒ yù liào de xiāng fú hé.
+Sure enough, really as expected};
+name : {lesson_id} = {160};
+name : {sample_id} = {183};
+name : {chinese} = {春节果然是热闹有趣。};
+name : {pinyin} = {Chūn jié guǒ rán shì rè nào yǒu qù.};
+name : {english} = {There is really lots of fun on Spring Festival.};
+ index.js:245
+name : {grammar_id} = {70};
+name : {grammar_text} = {果然 Guǒrán
+表示事实与所说或所预料的相符合。
+Biǎo shì shì shí yù suǒ shuō huò suǒ yù liào de xiāng fú hé.
+Sure enough, really as expected};
+name : {lesson_id} = {160};
+name : {sample_id} = {184};
+name : {chinese} = {早就听说大理很美，到这一看果然不错。};
+name : {pinyin} = {Zǎo jiù tīng shuō dà lǐ hěn měi, dào zhè yī kàn guǒ rán bù cuò.};
+name : {english} = {I heard that Dali is very beautiful long ago and it really is when I come to see.};
+ index.js:245
+name : {grammar_id} = {70};
+name : {grammar_text} = {果然 Guǒrán
+表示事实与所说或所预料的相符合。
+Biǎo shì shì shí yù suǒ shuō huò suǒ yù liào de xiāng fú hé.
+Sure enough, really as expected};
+name : {lesson_id} = {160};
+name : {sample_id} = {185};
+name : {chinese} = {天气预报说今天下雪，你看果然下雪了。};
+name : {pinyin} = {Tiān qì yù bào shuō jīn tiān xià xuě, nǐ kàn guǒ rán xià xuě le.};
+name : {english} = {The weather forecast said it would snow today and you see it is snowing now.};
+ index.js:245
+name : {grammar_id} = {71};
+name : {grammar_text} = {哪知道 Nǎ zhī dào - unexpected};
+name : {lesson_id} = {160};
+name : {sample_id} = {186};
+name : {chinese} = {我以前听说春节好玩，哪知道会这么热闹。};
+name : {pinyin} = {Wǒ yǐ qián tīng shuō chūn jié hǎo wán, nǎ zhī dào huì zhè me rè nào.};
+name : {english} = {I heard that there was lots of fun about Spring Festival before but I did not know it would be so lively!};
+ index.js:245
+name : {grammar_id} = {71};
+name : {grammar_text} = {哪知道 Nǎ zhī dào - unexpected};
+name : {lesson_id} = {160};
+name : {sample_id} = {187};
+name : {chinese} = {我来找张琳聊天，哪知道她去了天坛。};
+name : {pinyin} = {Wǒ lái zhǎo zhāng lín liáo tiān, nǎ zhī dào tā qù le tiān tán.};
+name : {english} = {I came and wanted to chat with Zhang Lin but she went to the Temple of Heaven.};
+ index.js:245
+name : {grammar_id} = {71};
+name : {grammar_text} = {哪知道 Nǎ zhī dào - unexpected};
+name : {lesson_id} = {160};
+name : {sample_id} = {188};
+name : {chinese} = {预报说今天阴天，哪知道下起这么大的雨。};
+name : {pinyin} = {Yù bào shuō jīn tiān yīn tiān, nǎ zhī dào xià qǐ zhè me dà de yǔ.};
+name : {english} = {The weather forecast said it would be cloudy today but it is raining so hard unexpectedly.};
+ index.js:245
+name : {grammar_id} = {72};
+name : {grammar_text} = {Measure word: 套 tào set};
+name : {lesson_id} = {171};
+name : {sample_id} = {189};
+name : {chinese} = {一套房子};
+name : {pinyin} = {yī tào  fáng zi};
+name : {english} = {An apartment};
+ index.js:245
+name : {grammar_id} = {72};
+name : {grammar_text} = {Measure word: 套 tào set};
+name : {lesson_id} = {171};
+name : {sample_id} = {190};
+name : {chinese} = {一套西服};
+name : {pinyin} = {yī tào xī fú};
+name : {english} = {A suit };
+ index.js:245
+name : {grammar_id} = {72};
+name : {grammar_text} = {Measure word: 套 tào set};
+name : {lesson_id} = {171};
+name : {sample_id} = {191};
+name : {chinese} = {一套餐具};
+name : {pinyin} = {yī tào cān jù};
+name : {english} = {A set of dishes};
+ index.js:245
+name : {grammar_id} = {73};
+name : {grammar_text} = {Confirmation particle ‘le 了’};
+name : {lesson_id} = {171};
+name : {sample_id} = {192};
+name : {chinese} = {你的房子租好了吗？};
+name : {pinyin} = {nǐ de fáng zǐ zū hǎo le ma?};
+name : {english} = {Have you decided which apartment to rent?};
+ index.js:245
+name : {grammar_id} = {73};
+name : {grammar_text} = {Confirmation particle ‘le 了’};
+name : {lesson_id} = {171};
+name : {sample_id} = {193};
+name : {chinese} = {还没有.};
+name : {pinyin} = {hái méi yǒu};
+name : {english} = {Not yet. };
+ index.js:245
+name : {grammar_id} = {73};
+name : {grammar_text} = {Confirmation particle ‘le 了’};
+name : {lesson_id} = {171};
+name : {sample_id} = {194};
+name : {chinese} = {吃了};
+name : {pinyin} = {chī le};
+name : {english} = {Yes, I have.};
+ index.js:245
+name : {grammar_id} = {73};
+name : {grammar_text} = {Confirmation particle ‘le 了’};
+name : {lesson_id} = {171};
+name : {sample_id} = {195};
+name : {chinese} = {你吃饭了没有？};
+name : {pinyin} = {nǐ chī fàn le méi yǒu?};
+name : {english} = {Have you eaten?};
+ index.js:245
+name : {grammar_id} = {74};
+name : {grammar_text} = {Top comment sentences.};
+name : {lesson_id} = {173};
+name : {sample_id} = {196};
+name : {chinese} = {您的旗袍已经做好了。};
+name : {pinyin} = {nín de qí páo yǐ jīng zuò hǎo le 。};
+name : {english} = {Your qipao was done};
+ index.js:245
+name : {grammar_id} = {74};
+name : {grammar_text} = {Top comment sentences.};
+name : {lesson_id} = {173};
+name : {sample_id} = {197};
+name : {chinese} = {雨下了起来。};
+name : {pinyin} = {Yǔ xià le qǐ lái. };
+name : {english} = {It started to rain.};
+ index.js:245
+name : {grammar_id} = {74};
+name : {grammar_text} = {Top comment sentences.};
+name : {lesson_id} = {173};
+name : {sample_id} = {198};
+name : {chinese} = {火车票买上了。};
+name : {pinyin} = {Huǒ chē piào mǎi shàng le};
+name : {english} = {We’ve got the train ticket.};
+ index.js:245
+name : {grammar_id} = {75};
+name : {grammar_text} = {…只有…才… (Only … be/do…)
+This is a inversion structure in Chinese. The subject appears before the verb.};
+name : {lesson_id} = {174};
+name : {sample_id} = {199};
+name : {chinese} = {只有他放的牛才是他的真朋友。};
+name : {pinyin} = {Zhǐ yǒu tā fàng de niú cái shì tā de zhēn péng yǒu.};
+name : {english} = {Only the cow was his real friend.};
+ index.js:245
+name : {grammar_id} = {75};
+name : {grammar_text} = {…只有…才… (Only … be/do…)
+This is a inversion structure in Chinese. The subject appears before the verb.};
+name : {lesson_id} = {174};
+name : {sample_id} = {200};
+name : {chinese} = {只有辛勤的工作才能换来成功。};
+name : {pinyin} = {Zhǐ yǒu xīn qín de gōng zuò cái néng huàn lái chéng gōng.};
+name : {english} = {Only hard work can bring one success.};
+ index.js:245
+name : {grammar_id} = {75};
+name : {grammar_text} = {…只有…才… (Only … be/do…)
+This is a inversion structure in Chinese. The subject appears before the verb.};
+name : {lesson_id} = {174};
+name : {sample_id} = {201};
+name : {chinese} = {只有麦克可以完成这个项目。};
+name : {pinyin} = {Zhǐ yǒu mài kè kě yǐ wán chéng zhè ge xiàng mù.};
+name : {english} = {Only Mike can finish this project.};
+ index.js:245
+name : {grammar_id} = {76};
+name : {grammar_text} = {至于… (As with…; … go so far as to…)
+This phrase has two meanings, and both are very common.};
+name : {lesson_id} = {174};
+name : {sample_id} = {202};
+name : {chinese} = {至于织女呢，她是玉帝的女儿。。。};
+name : {pinyin} = {Zhì yú zhī nǚ ne, tā shì yù dì de nǚ' ér. . .};
+name : {english} = {As with Zhinü, she’s the daughter of Yudi (Chinese Emperor of the heaven)…};
+ index.js:245
+name : {grammar_id} = {76};
+name : {grammar_text} = {至于… (As with…; … go so far as to…)
+This phrase has two meanings, and both are very common.};
+name : {lesson_id} = {174};
+name : {sample_id} = {203};
+name : {chinese} = {你要是多努力一点，考试成绩也不至于这么差。};
+name : {pinyin} = {Nǐ yào shi duō nǔ lì yī diǎn, kǎo shì chéng jī yě bù zhì yú zhè me chà.};
+name : {english} = {If you study a bit harder, your test scores won’t be this low (go so far as this low).};
+ index.js:245
+name : {grammar_id} = {76};
+name : {grammar_text} = {至于… (As with…; … go so far as to…)
+This phrase has two meanings, and both are very common.};
+name : {lesson_id} = {174};
+name : {sample_id} = {204};
+name : {chinese} = {她如果性格能温柔一点，也不至于到35岁还是单身。};
+name : {pinyin} = {Tā rú guǒ xìng gé néng wēn róu yī diǎn, yě bù zhì yú dào 35 suì hái shì dān shēn.};
+name : {english} = {If her personality can be a little gentler, she won’t still be single until 35.};
+ index.js:245
+name : {grammar_id} = {77};
+name : {grammar_text} = {怎么… (How…)
+With the help of怎么, a normal question can be transformed into a rhetorical question.};
+name : {lesson_id} = {174};
+name : {sample_id} = {205};
+name : {chinese} = {玉帝的女儿怎么可能跟放牛的搞在一起？};
+name : {pinyin} = {Yù dì de nǚ' ér zěn me kě néng gēn fàng niú de gǎo zài yī qǐ?};
+name : {english} = {How can Yudi’s daughter end up with a cowboy?};
+ index.js:245
+name : {grammar_id} = {77};
+name : {grammar_text} = {怎么… (How…)
+With the help of怎么, a normal question can be transformed into a rhetorical question.};
+name : {lesson_id} = {174};
+name : {sample_id} = {206};
+name : {chinese} = {银河附近怎么会有芦苇？};
+name : {pinyin} = {Yín hé fù jìn zěn me huì yǒu lú wěi?};
+name : {english} = {How can there be any reeds near the Milky Way?};
+ index.js:245
+name : {grammar_id} = {77};
+name : {grammar_text} = {怎么… (How…)
+With the help of怎么, a normal question can be transformed into a rhetorical question.};
+name : {lesson_id} = {174};
+name : {sample_id} = {207};
+name : {chinese} = {两千年前的人怎么会知道银河是个星系啊？};
+name : {pinyin} = {Liǎng qiān nián qián de rén zěn me huì zhī dào yín hé shì gè xīng xì a?};
+name : {english} = {How could the people two thousand years ago know that the Milky Way is actually a galaxy?};
+ index.js:245
+name : {grammar_id} = {77};
+name : {grammar_text} = {怎么… (How…)
+With the help of怎么, a normal question can be transformed into a rhetorical question.};
+name : {lesson_id} = {174};
+name : {sample_id} = {208};
+name : {chinese} = {还有几天就是情人节了，你打算怎么跟我过？};
+name : {pinyin} = {Hái yǒu jǐ tiān jiù shì qíng rén jié le, nǐ dǎ suàn zěn me gēn wǒ guò?};
+name : {english} = {It’s Valentine’s Day in a few days, how do you plan to celebrate with me? (In this situation, 怎么simply means “how”, without being rhetorical.)};
+ index.js:245
+name : {grammar_id} = {78};
+name : {grammar_text} = {verb + 的 Meaning a career with the corresponding verb as daily job. However, this structure is commonly used in casual situations and could be impolite sometimes.};
+name : {lesson_id} = {174};
+name : {sample_id} = {209};
+name : {chinese} = {牛郎是个放牛的。};
+name : {pinyin} = {Niú láng shì gè fàng niú de.};
+name : {english} = {Niulang made a living by grazing a cow. (放fàng, to release, to walk; 牛niú, cow; formal term for 放牛的 should be 牧童Mùtóng)};
+ index.js:245
+name : {grammar_id} = {78};
+name : {grammar_text} = {verb + 的 Meaning a career with the corresponding verb as daily job. However, this structure is commonly used in casual situations and could be impolite sometimes.};
+name : {lesson_id} = {174};
+name : {sample_id} = {210};
+name : {chinese} = {我爷爷是个教书的。};
+name : {pinyin} = {Wǒ yé ye shì gè jiāo shū de.};
+name : {english} = {My grandpa is a teacher. (教jiāo, to teach; 书shū, a book; formal term for 教书的should be 教师/老师)};
+ index.js:245
+name : {grammar_id} = {78};
+name : {grammar_text} = {verb + 的 Meaning a career with the corresponding verb as daily job. However, this structure is commonly used in casual situations and could be impolite sometimes.};
+name : {lesson_id} = {174};
+name : {sample_id} = {211};
+name : {chinese} = {杀人凶手是个卖肉的。};
+name : {pinyin} = {Shā rén xiōng shǒu shì gè mài ròu de.};
+name : {english} = {The murder is a butcher. (卖mài, to sell; 肉ròu, meat; formal term for 卖肉的should be 屠夫)};
+ index.js:245
+name : {grammar_id} = {79};
+name : {grammar_text} = {…也就是…(… namely …)
+也就是 is commonly used to connect appositives.};
+name : {lesson_id} = {174};
+name : {sample_id} = {212};
+name : {chinese} = {玉帝的老婆，也就是王母娘娘，知道了这件事情后非常气愤。};
+name : {pinyin} = {Yù dì de lǎo pó, yě jiù shì wáng mǔ niáng niang, zhī dào le zhè jiàn shì qíng hòu fēi cháng qì fèn.};
+name : {english} = {Yudi’s wife, namely, Wangmuniangniang, was very angry after knowing this.};
+ index.js:245
+name : {grammar_id} = {79};
+name : {grammar_text} = {…也就是…(… namely …)
+也就是 is commonly used to connect appositives.};
+name : {lesson_id} = {174};
+name : {sample_id} = {213};
+name : {chinese} = {玉帝和王母娘娘不忍心看见她这样，就允许他们每年相见一次，也就是在农历七月七日这一天。};
+name : {pinyin} = {Yù dì hé wáng mǔ niáng niang bù rěn xīn kàn jiàn tā zhè yàng, jiù yǔn xǔ tā men měi nián xiāng jiàn yī cì, yě jiù shì zài nóng lì qī yuè qī rì zhè yī tiān.};
+name : {english} = {Yudi and his wife didn’t have the heart to see her like this forever, and allowed Niulang and Zhinü to meet once a year, which is July seventh of lunar calendar.};
+ index.js:245
+name : {grammar_id} = {79};
+name : {grammar_text} = {…也就是…(… namely …)
+也就是 is commonly used to connect appositives.};
+name : {lesson_id} = {174};
+name : {sample_id} = {214};
+name : {chinese} = {安吉丽娜茱莉又收养了一个埃塞俄比亚孤儿，也就是她的养女扎哈拉。};
+name : {pinyin} = {Ān jí lì nà zhū lì yòu shōu yǎng le yī gè āi sāi' é bǐ yǎ gū' ér, yě jiù shì tā de yǎng nǚ zhā hā lā.};
+name : {english} = {Angelina Jolie adopted another Ethiopian orphan, namely, her daughter Zahara.};
+ index.js:245
+name : {grammar_id} = {80};
+name : {grammar_text} = {1)  be to able to};
+name : {lesson_id} = {175};
+name : {sample_id} = {215};
+name : {chinese} = {听说看电影的人很多，买得到票吗？};
+name : {pinyin} = {tīng shuō kàn diàn yǐng de rén hěn duō ，mǎi dé dào piào ma ？};
+name : {english} = {I hear that many people are going to see that film. Will we be able to get tickets?};
+ index.js:245
+name : {grammar_id} = {80};
+name : {grammar_text} = {1)  be to able to};
+name : {lesson_id} = {175};
+name : {sample_id} = {216};
+name : {chinese} = {平时买得到，但是周末的时候买不到。};
+name : {pinyin} = {Píng shí mǎi dé dào, dàn shì zhōu mò de shí hou mǎi bù dào.};
+name : {english} = {Normally we can get it but we can’t on weekends.};
+ index.js:245
+name : {grammar_id} = {80};
+name : {grammar_text} = {1)  be to able to};
+name : {lesson_id} = {175};
+name : {sample_id} = {217};
+name : {chinese} = {明天下午你回得来吗？};
+name : {pinyin} = {Míng tiān xià wǔ nǐ huí de lái ma? };
+name : {english} = {Can you be back tomorrow afternoon?};
+ index.js:245
+name : {grammar_id} = {80};
+name : {grammar_text} = {1)  be to able to};
+name : {lesson_id} = {175};
+name : {sample_id} = {218};
+name : {chinese} = {回不来，我要见一个客户。};
+name : {pinyin} = {Huí bù lái, wǒ yào jiàn yī gè kè hù.};
+name : {english} = {I can’t. I have to meet my client.};
+ index.js:245
+name : {grammar_id} = {80};
+name : {grammar_text} = {1)  be to able to};
+name : {lesson_id} = {175};
+name : {sample_id} = {219};
+name : {chinese} = {汉语学得会吗？};
+name : {pinyin} = {Hàn yǔ xué de huì ma? };
+name : {english} = {Can you learn Chinese?};
+ index.js:245
+name : {grammar_id} = {80};
+name : {grammar_text} = {1)  be to able to};
+name : {lesson_id} = {175};
+name : {sample_id} = {220};
+name : {chinese} = {你看得见看不见？};
+name : {pinyin} = {Nǐ kàn dé jiàn kàn bù jiàn?};
+name : {english} = {Can you see it?};
+ index.js:245
+name : {grammar_id} = {80};
+name : {grammar_text} = {1)  be to able to};
+name : {lesson_id} = {175};
+name : {sample_id} = {221};
+name : {chinese} = {中文报纸我还看不懂。};
+name : {pinyin} = {Zhōng wén bào zhǐ wǒ hái kàn bù dǒng.};
+name : {english} = {I can’t read Chinese newspaper yet.};
+ index.js:245
+name : {grammar_id} = {80};
+name : {grammar_text} = {1)  be to able to};
+name : {lesson_id} = {175};
+name : {sample_id} = {222};
+name : {chinese} = {房子太贵了。我买不起。};
+name : {pinyin} = {Fáng zi tài guì le. Wǒ mǎi bù qǐ};
+name : {english} = {The house is too expensive to afford.};
+ index.js:245
+name : {grammar_id} = {81};
+name : {grammar_text} = {zǎo jiù 早就，cóng xiǎo jiù 从小就};
+name : {lesson_id} = {175};
+name : {sample_id} = {223};
+name : {chinese} = {我早就想看英国电影了.};
+name : {pinyin} = {wǒ zǎo jiù xiǎng kàn yīng guó diàn yǐng le };
+name : {english} = {I’ve wanted to see a English film for a long time.};
+ index.js:245
+name : {grammar_id} = {81};
+name : {grammar_text} = {zǎo jiù 早就，cóng xiǎo jiù 从小就};
+name : {lesson_id} = {175};
+name : {sample_id} = {224};
+name : {chinese} = {这件事我早就知道了。};
+name : {pinyin} = {Zhè jiàn shì wǒ zǎo jiù zhī dào le.};
+name : {english} = {I knew this long time ago.};
+ index.js:245
+name : {grammar_id} = {81};
+name : {grammar_text} = {zǎo jiù 早就，cóng xiǎo jiù 从小就};
+name : {lesson_id} = {175};
+name : {sample_id} = {225};
+name : {chinese} = {他这个人从小就喜欢滑冰。};
+name : {pinyin} = {tā zhè ge rén cóng xiǎo jiù xǐ huan huá bīng.};
+name : {english} = {He liked ice-skating when he was a kid.};
+ index.js:245
+name : {grammar_id} = {81};
+name : {grammar_text} = {zǎo jiù 早就，cóng xiǎo jiù 从小就};
+name : {lesson_id} = {175};
+name : {sample_id} = {226};
+name : {chinese} = {那个孩子从小就聪明。};
+name : {pinyin} = {nà gè hái zi cóng xiǎo jiù cōng míng};
+name : {english} = {That kid was very smart when he was a baby.};
+ index.js:245
+the property : {0} = { undefined};
+the property : {1} = { undefined};
+the property : {2} = { undefined};
+the property : {3} = { undefined};
+the property : {4} = { undefined};
+the property : {5} = { undefined};
+the property : {6} = { undefined};
+the property : {7} = { undefined};
+the property : {8} = { undefined};
+the property : {9} = { undefined};
+the property : {10} = { undefined};
+the property : {11} = { undefined};
+the property : {12} = { undefined};
+the property : {13} = { undefined};
+the property : {14} = { undefined};
+the property : {15} = { undefined};
+the property : {16} = { undefined};
+the property : {17} = { undefined};
+the property : {18} = { undefined};
+the property : {19} = { undefined};
+the property : {20} = { undefined};
+the property : {21} = { undefined};
+the property : {22} = { undefined};
+the property : {23} = { undefined};
+the property : {24} = { undefined};
+the property : {25} = { undefined};
+the property : {26} = { undefined};
+the property : {27} = { undefined};
+the property : {28} = { undefined};
+the property : {29} = { undefined};
+the property : {30} = { undefined};
+the property : {31} = { undefined};
+the property : {32} = { undefined};
+the property : {33} = { undefined};
+the property : {34} = { undefined};
+the property : {35} = { undefined};
+the property : {36} = { undefined};
+the property : {37} = { undefined};
+the property : {38} = { undefined};
+the property : {39} = { undefined};
+the property : {40} = { undefined};
+the property : {41} = { undefined};
+the property : {42} = { undefined};
+the property : {43} = { undefined};
+the property : {44} = { undefined};
+the property : {45} = { undefined};
+the property : {46} = { undefined};
+the property : {47} = { undefined};
+the property : {48} = { undefined};
+the property : {49} = { undefined};
+the property : {50} = { undefined};
+the property : {51} = { undefined};
+the property : {52} = { undefined};
+the property : {53} = { undefined};
+the property : {54} = { undefined};
+the property : {55} = { undefined};
+the property : {56} = { undefined};
+the property : {57} = { undefined};
+the property : {58} = { undefined};
+the property : {59} = { undefined};
+the property : {60} = { undefined};
+the property : {61} = { undefined};
+the property : {62} = { undefined};
+the property : {63} = { undefined};
+the property : {64} = { undefined};
+the property : {65} = { undefined};
+the property : {66} = { undefined};
+the property : {67} = { undefined};
+the property : {68} = { undefined};
+the property : {69} = { undefined};
+the property : {70} = { undefined};
+the property : {71} = { undefined};
+the property : {72} = { undefined};
+the property : {73} = { undefined};
+the property : {74} = { undefined};
+the property : {75} = { undefined};
+the property : {76} = { undefined};
+the property : {77} = { undefined};
+the property : {78} = { undefined};
+the property : {79} = { undefined};
+the property : {80} = { undefined};
+the property : {81} = { undefined};
+the property : {82} = { undefined};
+the property : {83} = { undefined};
+the property : {84} = { undefined};
+the property : {85} = { undefined};
+the property : {86} = { undefined};
+the property : {87} = { undefined};
+the property : {88} = { undefined};
+the property : {89} = { undefined};
+the property : {90} = { undefined};
+the property : {91} = { undefined};
+the property : {92} = { undefined};
+the property : {93} = { undefined};
+the property : {94} = { undefined};
+the property : {95} = { undefined};
+the property : {96} = { undefined};
+the property : {97} = { undefined};
+the property : {98} = { undefined};
+the property : {99} = { undefined};
+the property : {100} = { undefined};
+the property : {101} = { undefined};
+the property : {102} = { undefined};
+the property : {103} = { undefined};
+the property : {104} = { undefined};
+the property : {105} = { undefined};
+the property : {106} = { undefined};
+the property : {107} = { undefined};
+the property : {108} = { undefined};
+the property : {109} = { undefined};
+the property : {110} = { undefined};
+the property : {111} = { undefined};
+the property : {112} = { undefined};
+the property : {113} = { undefined};
+the property : {114} = { undefined};
+the property : {115} = { undefined};
+the property : {116} = { undefined};
+the property : {117} = { undefined};
+the property : {118} = { undefined};
+the property : {119} = { undefined};
+the property : {120} = { undefined};
+the property : {121} = { undefined};
+the property : {122} = { undefined};
+the property : {123} = { undefined};
+the property : {124} = { undefined};
+the property : {125} = { undefined};
+the property : {126} = { undefined};
+the property : {127} = { undefined};
+the property : {128} = { undefined};
+the property : {129} = { undefined};
+the property : {130} = { undefined};
+the property : {131} = { undefined};
+the property : {132} = { undefined};
+the property : {133} = { undefined};
+the property : {134} = { undefined};
+the property : {135} = { undefined};
+the property : {136} = { undefined};
+the property : {137} = { undefined};
+the property : {138} = { undefined};
+the property : {139} = { undefined};
+the property : {140} = { undefined};
+the property : {141} = { undefined};
+the property : {142} = { undefined};
+the property : {143} = { undefined};
+the property : {144} = { undefined};
+the property : {145} = { undefined};
+the property : {146} = { undefined};
+the property : {147} = { undefined};
+the property : {148} = { undefined};
+the property : {149} = { undefined};
+the property : {150} = { undefined};
+the property : {151} = { undefined};
+the property : {152} = { undefined};
+the property : {153} = { undefined};
+the property : {154} = { undefined};
+the property : {155} = { undefined};
+the property : {156} = { undefined};
+the property : {157} = { undefined};
+the property : {158} = { undefined};
+the property : {159} = { undefined};
+the property : {160} = { undefined};
+the property : {161} = { undefined};
+the property : {162} = { undefined};
+the property : {163} = { undefined};
+the property : {164} = { undefined};
+the property : {165} = { undefined};
+the property : {166} = { undefined};
+the property : {167} = { undefined};
+the property : {168} = { undefined};
+the property : {169} = { undefined};
+the property : {170} = { undefined};
+the property : {171} = { undefined};
+the property : {172} = { undefined};
+the property : {173} = { undefined};
+the property : {174} = { undefined};
+the property : {175} = { undefined};
+the property : {176} = { undefined};
+the property : {177} = { undefined};
+the property : {178} = { undefined};
+the property : {179} = { undefined};
+the property : {180} = { undefined};
+the property : {181} = { undefined};
+the property : {182} = { undefined};
+the property : {183} = { undefined};
+the property : {184} = { undefined};
+the property : {185} = { undefined};
+the property : {186} = { undefined};
+the property : {187} = { undefined};
+the property : {188} = { undefined};
+the property : {189} = { undefined};
+the property : {190} = { undefined};
+the property : {191} = { undefined};
+the property : {192} = { undefined};
+the property : {193} = { undefined};
+the property : {194} = { undefined};
+the property : {195} = { undefined};
+the property : {196} = { undefined};
+the property : {197} = { undefined};
+the property : {198} = { undefined};
+the property : {199} = { undefined};
+the property : {200} = { undefined};
+the property : {201} = { undefined};
+the property : {202} = { undefined};
+the property : {203} = { undefined};
+the property : {204} = { undefined};
+the property : {205} = { undefined};
+the property : {206} = { undefined};
+the property : {207} = { undefined};
+the property : {208} = { undefined};
+the property : {209} = { undefined};
+the property : {210} = { undefined};
+the property : {211} = { undefined};
+the property : {212} = { undefined};
+the property : {213} = { undefined};
+the property : {214} = { undefined};
+the property : {215} = { undefined};
+the property : {216} = { undefined};
+the property : {217} = { undefined};
+the property : {218} = { undefined};
+the property : {219} = { undefined};
+the property : {220} = { undefined};
+the property : {221} = { undefined};
+the property : {222} = { undefined};
+the property : {223} = { undefined};
+the property : {224} = { undefined};
+the property : {225} = { undefined};
+ index.js:245
