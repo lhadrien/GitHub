@@ -63,6 +63,8 @@ var app = {
 					post.display($(this).data("post"));
 				});
 				
+	//			$(document).on('pagebeforeshow', '#post', dashboard.display);
+				
 				$('body').on('click', 'a.playSound', function() {
 					console.log('click on sound : ' + $(this).data("sound"));
 					
@@ -71,10 +73,10 @@ var app = {
 				
 				var prevSelection = "tab1";
 				$('#lessonNavBar ul li').on('click', function(e) {
-					var newSelection = $(e).children('a').attr('data-tab-class');
-					$('.' + prevSelection).addClass('ui-screen-hidden');
-					$('.' + newSelection).removeClass('ui-screen-hidden');
-					prevSelection = newSelection;
+//					var newSelection = $(e).children('a').attr('data-tab-class');
+//					$('.' + prevSelection).addClass('ui-screen-hidden');
+//					$('.' + newSelection).removeClass('ui-screen-hidden');
+//					prevSelection = newSelection;
 				});
 				break;
         }

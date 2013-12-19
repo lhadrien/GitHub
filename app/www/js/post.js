@@ -20,6 +20,7 @@ var post = {
 		console.log('function post: disp: idPost = ' + idPost);
 		if (typeof idPost !== 'undefined')
 		{
+			$( "#myPost  ul[data-role=listview]" ).listview();
 			$( "#headpost" ).empty();		// clear the title page from the previous post
 			$( "#myPost" ).empty();			// clear the content from the previous post
 			$( "#lessonNavBar" ).empty();	// clear the previous navbar for lesson
@@ -32,7 +33,7 @@ var post = {
 			} else {
 				$( "#myPost" ).append(post.postContents[idPost]); //	new content already formated in array
 			}
-//			$( "#myPost" ).listview();
+//		$( "#myPost  ul[data-role=listview]" ).listview().listview('refresh');
 			post.idPost = idPost;
 		}
 		console.log('function post: disp: -> Im outside the IF, end');
@@ -230,12 +231,13 @@ var post = {
 		var navbar = '';
 	
 		navbar = '<div data-role="navbar"><ul>';
-		navbar += '<li><a href="#" data-tab-class="tab1" class="ui-btn-active">Dialogues</a></li>';
-		navbar += '<li><a href="#" data-tab-class="tab2" >Vocabulary</a></li>';
-		navbar += '<li><a href="#" data-tab-class="tab3">Grammar</a></li>';
-		navbar += '<li><a href="#" data-tab-class="tab4">Exercice</a></li>';
+		navbar += '<li><a href="#myText" data-tab-class="tab1" class="ui-btn-active">Dialogues</a></li>';
+		navbar += '<li><a href="#myVocab" data-tab-class="tab2" >Vocabulary</a></li>';
+		navbar += '<li><a href="#myGrammar" data-tab-class="tab3">Grammar</a></li>';
+		navbar += '<li><a href="#myExercice" data-tab-class="tab4">Exercice</a></li>';
 		navbar += '</ul></div>';
-		$( "#lessonNavBar" ).append(navbar);
+		navbar = $(navbar).appendTo('#lessonNavBar2');
+		$( "#lessonNavBar" ).append(navbar).trigger('create');;
 		console.log('function post: addnavbar: navbar added');
 	},
 	
@@ -243,14 +245,13 @@ var post = {
 		var lovelyLesson = '';
 		
 		console.log('function post: addlesson: start with idPost : ' + idPost);
-		lovelyLesson = '<div class="tab-content"><div class="tab1">';
+		lovelyLesson = '<div id="myText" class="tab-content"><div class="tab1">';
 		lovelyLesson += post.lessonsText[idPost];
-		lovelyLesson += '</div><div class="tab2 ui-screen-hidden">';
+		lovelyLesson += '</div><div id="myVocab" class="tab2 ui-screen-hidden">';
 		lovelyLesson += post.lessonsVocab[idPost];
-		lovelyLesson += '</div><div class="tab3 ui-screen-hidden">';
-		lovelyLesson += 'My Grammar Soon, seriously';
+		lovelyLesson += '</div><div id="myGrammar" class="tab3 ui-screen-hidden">';
 		lovelyLesson += post.lessonsGrammar[idPost];
-		lovelyLesson += '</div><div class="tab4 ui-screen-hidden">';
+		lovelyLesson += '</div><div id="myExercice" class="tab4 ui-screen-hidden">';
 		lovelyLesson += 'My Exercice Soon, seriously';
 //		lovelyLesson += post.lessonsExercice[idPost];
 		lovelyLesson += '</div></div>';
