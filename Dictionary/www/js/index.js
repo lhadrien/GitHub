@@ -1,21 +1,3 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
 var app = {
     // Application Constructor
     initialize: function() {
@@ -37,44 +19,23 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        /*
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
-
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-        console.log('Received Event: ' + id);
-        */
-        
-  
     }
 };
 
 /**
- * From: http://phpjs.org/functions
- * original by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
- */
-function nl2br(str, is_xhtml) {
-    var breakTag = (is_xhtml || typeof is_xhtml === 'undefined') ? '<br ' + '/>' : '<br>'; // Adjust comment to avoid issue on phpjs.org display
-    return (str + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1' + breakTag + '$2');
-}
-
-/**
  * Search Dictionary
  */
-$(document).on('submit', '#search', function() { // Catch the form's submit event
+$(document).on('submit', 'form.search', function() { // Catch the form's submit event
     $('#listview').html('');
+    $('.app').html('');
+    $('form.extended').hide();
 
     $.ajax({
         type: 'POST',
         dataType: 'json',
         crossDomain: true,
         url: 'http://www.pandamanda.com/pm/wp-admin/admin-ajax.php',
-        data: { 
-            action: 'app_dict_search',
-            q: $('#q').val()
-        },
+        data: $(this).serialize(),
         beforeSend: function() {
             // Show spinner
             $.mobile.loading('show', {
@@ -92,12 +53,45 @@ $(document).on('submit', '#search', function() { // Catch the form's submit even
         },
         success: function(data) { // if success then do...
             var output = '';
+
+            output += '<li>' + data.length + ' results</li>';
+            
             $.each(data, function(key, val) {
-                output += '<div data-role="collapsible"><h3>' + val.simplified + ' <span class="pinyin">(' + val.pinyin_tones + ')</span> <span class="english">' + val.english + '</span></h3><p>' + nl2br(val.english, true) + '</p></div>';
+                output += '<li>' +
+                            '<div class="sound"><a href="http://api.voicerss.org/?key=7f4987b0d4ce417d9404c58c4fb07ca8&src=' + val.simplified + '&hl=zh-cn&f=12khz_16bit_stereo&r=-5&ext=.mp3" class="sm2_button"></a></div>' +
+                            '<h3 class="chinese" style="margin-bottom:15px">' + val.simplified + ' <span class="pinyin">' + val.pinyin_tones + '</span></h3>' +
+                            '<p class="english" style="margin-left:15px">' + nl2br(val.english, true) + '</p>' +
+                            '</li>';
             });
-            $('#listview').append(output).trigger('create');
+            
+            $('#listview').append(output).listview('refresh');
+            
+            if ($('#q2').val() == '') {
+                $('form.extended').show();
+                $('#q2').val($('#q1').val());
+            }
+            
+            soundManager.setup({
+                url: 'js/soundmanager2/swf/',
+                onready: function() {
+                    soundManager.reboot();
+                }
+            });
         }
     });
 
     return false;
 });
+
+/**
+ * From: http://phpjs.org/functions
+ * original by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
+ * 
+ * @param {type} str
+ * @param {type} is_xhtml
+ * @returns {String}
+ */
+function nl2br(str, is_xhtml) {
+    var breakTag = (is_xhtml || typeof is_xhtml === 'undefined') ? '<br ' + '/>' : '<br>'; // Adjust comment to avoid issue on phpjs.org display
+    return (str + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1' + breakTag + '$2');
+}
