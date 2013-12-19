@@ -57,11 +57,16 @@ var app = {
 				console.log('device ready : success');
                 $('#loginForm').on('submit', login.process);
 				$(document).on('pageinit', '#dashboard', dashboard.display);
-				$(document).on('pageshow', '#post', post.display);
-				$(".showDash").click(function(){
-					alert($(this).data("post"));
+				$('body').on('click', 'a.showDash', function() {
+					console.log('click on post number : ' + $(this).data("post"));
+					post.display($(this).data("post"));
 				});
-            break;
+				$('body').on('click', 'a.playSound', function() {
+					console.log('click on sound : ' + $(this).data("sound"));
+					
+					post.playsound($(this).data("sound"));
+				});
+				break;
         }
     }
 };
@@ -135,9 +140,16 @@ var login = {
 		
 };
 
+/**
+ * Dashboard
+ */
 var dashboard = {
 
 	postList: null,
+	lessonsText: null,
+	lessonsGrammar: null,
+	lessonsVocabs: null,
+	lessonsExercice: null,
 
 	display: function(e) {
 		console.log('function dashboard: -> start');
@@ -166,10 +178,14 @@ var dashboard = {
 				navigator.notification.alert('Unable to load feed, Incorrect path or invalid feed');
 			},
 			success: function(data) {
-				console.log('function dashboard: ajax: success: ' + data.dashboard);
-				if (data.dashboard == true)
+				console.log('function dashboard: ajax: success: ' + data.got_dashboard);
+				if (data.got_dashboard == true)
 				{
-					dashboard.postList = data.response;
+					dashboard.postList = data.dashboard;
+					dashboard.lessonsText = data.dialogues;
+					dashboard.lessonsGrammar = data.grammar;
+					dashboard.lessonsVocabs = data.vocabs;
+					dashboard.lessonsExercice = data.exercices;
 					var html = '<ul id="dash" data-role="listview" data-filter="true">'; 
 					for (var i = 0; i < 20; i++) // display 20 posts
 					{
@@ -229,11 +245,18 @@ var dashboard = {
 
 };
 
+/**
+ * Post
+ */
 var post = {
 
 	idPost: 0,
 	postContents: new Array(),
 	postTitles: new Array(),
+	lessonsText: new Array(),
+	lessonsVocab: new Array(),
+	lessonsExercice: new Array(),
+	lessonsGrammar: new Array(),
 	
 	myTest: function (e) {
 		console.log($(e).data("post"));
@@ -244,32 +267,32 @@ var post = {
 		console.log('function post: disp: idPost = ' + idPost);
 		if (typeof idPost !== 'undefined')
 		{
-			console.log('function post: disp: -> Im inside the IF');
 			$( "#headpost" ).empty();		// clear the title page from the previous post
 			$( "#myPost" ).empty();			// clear the content from the previous post
-			$( "#headpost" ).append(post.postTitles[idPost]);	//  new title
+			console.log('function post: disp: empty done');
+			$( "#headpost" ).append(post.postTitles[idPost]);			//  new title
+//			post.addnavbar();
 			$( "#myPost" ).append(post.postContents[idPost]); //	new content already formated in array
-			$( "#myPost ul[data-role=listview]" ).listview();
 			post.idPost = idPost;
 		}
 		console.log('function post: disp: -> Im outside the IF, end');
+		$.mobile.changePage( $('#post'), { transition: 'slide', changeHash: false });
 		return false;
 	},
 
 	formatpost: function (myPostContent) {
 		var contentArr = new Array(),
 			arrLength = 0,
-			html = '<ul id="sound" data-role="listview" data-filter="false">',
+			html = '<ul id="post" data-role="listview" data-filter="false">',
 			contentArrInside = new Array();
 
 		contentArr = myPostContent.split("\r");
 		arrLength = contentArr.length;
 		
-		for (var i = 0; i < arrLength; i++)
-		{
+		for (var i = 0; i < arrLength; i++) {
 			contentArrInside = contentArr[i].split("|");
 			html += '<li>';
-			html += '<a href="#current">';
+			html += '<a href="#" class="playSound" data-sound="' + contentArrInside[1] + '">';
 			html += '<div class="entry"><h2>' + contentArrInside[1] + '</h2></div>' ;
 			html += '<div class="entry"><p>' + contentArrInside[0] + '</p></div>' ;
 			html += '<div class="entry"><p><strong>' + contentArrInside[2] + '</strong></p></div>';
@@ -280,57 +303,80 @@ var post = {
 		return (html);
 	},
 
-// function test
-/* $('#sound').on('click', gnegne);
-
-function gnegne()
-{
-	alert("gnegne");
-	return false;
-}
-*/
-
-// $('#sound a').live('click', function(e) {
-//	alert("ouch");
-// });
-/*
-$('#sound a').live('click', function(e) {
-	var textSound = $(e).find('h2').text(); // $(e) or $(this) ?
-	alert(textSound);
-	var linkSound = "http://api.voicerss.org/?key=7f4987b0d4ce417d9404c58c4fb07ca8&src=" + textSound + "&hl=zh-cn&f=12khz_16bit_stereo&r=-5&ext=.mp3";
-	var clickSound = createsound(linkSound);
-});
-*/
-	createsound: function (sound) {
-		var audio = document.createElement('audio');
-		
-			var sourceElement = document.createElement('source');
-			sourceElement.setAttribute('src', arguments[0]);
-			sourceElement.setAttribute('type', 'audio/mpeg');
-			audio.appendChild(sourceElement);
-			audio.load();
-			audio.playclip = function() {
-				audio.pause();
-				audio.currentTime = 0;
-				audio.play();
-			};
-			return (audio);
-	},
-// var clicksound = createsound(linkSound);
-// var clicksound = createsound("http://api.voicerss.org/?key=7f4987b0d4ce417d9404c58c4fb07ca8&src=%E6%9C%9B%E7%9D%80&hl=zh-cn&f=12khz_16bit_stereo&r=-5&ext=.mp3");
+	playsound: function(textSound) {
+	    var audioElement = document.createElement('audio'),
+			linkSound = "http://api.voicerss.org/?key=7f4987b0d4ce417d9404c58c4fb07ca8&src=" + textSound + "&hl=zh-cn&f=12khz_16bit_stereo&r=-5&ext=.mp3";
+			console.log('linksound = ' + linkSound);
+        audioElement.setAttribute('src', linkSound);
+        audioElement.setAttribute('autoplay', 'autoplay');
+        audioElement.play();
+		},
 
 	handlepost: function (idPost) {
-		var myPost;
+		var myPost,
+			myLesson;
 
 		myPost = dashboard.postList[idPost];
-//		console.log('post_title = ' + myPost.post_title);
-		post.postTitles[idPost] = myPost.post_title;
-		post.postContents[idPost] = post.formatpost(myPost.post_content);
+//		if (myPost.post_type === 'lesson') {
+//			post.formatlesson(myPost.ID, idPost);
+//		} else {
+			post.postContents[idPost] = post.formatpost(myPost.post_content);
+			post.postTitles[idPost] = myPost.post_title;
+//		}
 		if (typeof post.postContents[idPost] === 'undefined')
 		{
 			return false;
 		}
 		return true;
 	}
-
+/*	
+	findID: function (myArray, myId) {
+		var nbElem = myArray.length;
+	
+		for (var i = 0; i < nbElem; i++) {
+			if (myArray[i].ID === myId) {
+				return (myArray[i]);
+			}
+		}
+		return (0);
+	},
+	
+	formatlesson: function (myId, idPost) {
+		var myText,
+			myExercice,
+			myGrammar,
+			myVocab;
+		
+		myText = post.findID(dashboard.lessonsText, myId);
+		myExercice = post.findID(dashboard.lessonsExercice, myId);
+		myGrammar = post.findID(dashboard.lessonsGrammar, myId);
+		myVocab = post.findID(dashboard.lessonsVocabs, myId);
+		
+		if (myText === -1) {
+			console.log('error myText has not the good ID');
+		}
+		if (myExercice === -1) {
+			console.log('error myExercice has not the good ID');
+		}
+		if (myGrammar === -1) {
+			console.log('error myGrammar has not the good ID');
+		}
+		if (myVocab === -1) {
+			console.log('error myVocab has not the good ID');
+		}
+		
+		post.lessonsText[idPost] = post.formatpost(myText.post_content);
+		post.lessonsExercice[idPost] = post.formatpost(myExercice.post_content);
+		post.lessonsGrammar[idPost] = post.formatpost(myGrammar.post_content);
+		post.lessonsVocab[idPost] = post.formatpost(myVocab.post_content);
+		
+	},
+	
+	addnavbar: function (postTitle) {
+		var navbar = '';
+	
+		navbar = '<div data-role="navbar"><ul><li><a href="#">One</a></li><li><a href="#">Two</a></li><li><a href="#">Three</a></li></ul></div>';
+	//	$( "#headpost" ).append(navbar);
+	}
+	*/
 };
