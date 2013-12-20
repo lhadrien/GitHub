@@ -4,6 +4,7 @@
 var post = {
 
 	idPost: 0,
+	prevSelection: 'myText',
 	postContents: new Array(),
 	postTitles: new Array(),
 	lessonsText: new Array(),
@@ -273,10 +274,16 @@ var post = {
             // Get the DOM element click and find the href attribute of the parent
             var id = $(e.target).closest('a').attr('href').substring(1); // Remove the #
 				console.log('function on click navbar: id = ' + id);
+				
             // Once we get the id, we display the content
             $('#myPost')
-                .find('div').hide().end() // Hide all divs
-                .find('#' + id).show();   // Show selected div
+				console.log('prevSelection : ' + post.prevSelection);
+				console.log('newSelection : ' + id);
+					$('#' + post.prevSelection).addClass('ui-screen-hidden');
+					$('#' + id).removeClass('ui-screen-hidden');
+					post.prevSelection = id;
+           //     .find('div').hide().end() // Hide all divs
+            //    .find('#' + id).show();   // Show selected div
         });
 	}
 

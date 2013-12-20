@@ -72,7 +72,7 @@ var app = {
 				});
 				
 				var prevSelection = "tab1";
-				$('#post').on('click', '#lessonNavBar', function(e) {
+/*				$('#post').on('click', '#lessonNavBar', function(e) {
 					console.log('tab clicked ?');
 					var newSelection = $(this).find('a').attr("id");
 					console.log('prevSelection : ' + prevSelection);
@@ -80,7 +80,7 @@ var app = {
 					$('.' + prevSelection).addClass('ui-screen-hidden');
 					$('.' + newSelection).removeClass('ui-screen-hidden');
 					prevSelection = newSelection;
-				}); 
+				}); */
 				break;
         }
     }
