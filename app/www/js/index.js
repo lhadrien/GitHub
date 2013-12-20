@@ -80,7 +80,7 @@ var app = {
 					$('.' + prevSelection).addClass('ui-screen-hidden');
 					$('.' + newSelection).removeClass('ui-screen-hidden');
 					prevSelection = newSelection;
-				});
+				}); 
 				break;
         }
     }
@@ -166,6 +166,7 @@ var dashboard = {
 	lessonsVocabs: null,
 	lessonsExercice: null,
 
+	// start to get all the data from the website before display them
 	display: function(e) {
 		console.log('function dashboard: -> start');
 		if (login._login == null) {
@@ -178,6 +179,7 @@ var dashboard = {
 		}
 	},
 	
+	// fetch the dashboard and all the content from the website
 	ajax: function(e) {
 		console.log('function dashboard: ajax: -> start');
 		$.ajax({
@@ -197,7 +199,7 @@ var dashboard = {
 				if (data.got_dashboard == true)
 				{
 					login._login = true;
-					dashboard.postList = data.dashboard;
+					dashboard.postList = data.dashboard; // we put all the data inside vars
 					dashboard.lessonsText = data.dialogues;
 					dashboard.lessonsGrammar = data.grammar;
 					dashboard.lessonsVocab = data.vocabs;
@@ -235,21 +237,26 @@ var dashboard = {
 		});
 	},
 
-	varDump: function (o) {
+	// debug function to display the properties inside an array
+	varDump: function (o, bool) { // bool is boolean | true for recursif | false for iteratif only
 		var str='';
 
 		for (var p in o) {
-			if(typeof o[p] == 'string'){
+			if (typeof o[p] == 'string') {
 				str += 'name : {' + p + '} = {' + o[p] + "};\n";
-			}else{
-				str += 'the property : {' + p + '} = { ' + dashboard.varDump(o[p]) + "};\n";
-			//	str += 'the property : {' + p + '} = { I wont go further ' + "};\n";
+			} else {
+				if (bool) {
+					str += 'the property : {' + p + '} = { ' + dashboard.varDump(o[p], bool) + "};\n";
+				} else {
+					str += 'the property : {' + p + '} = { I wont go further ' + "};\n";
+				}
 			}
 		}
 		
 		console.log(str);
 	},
 	
+	// add a color to the type of post (never worked)
 	get_color_type: function(data_type)
 	{ // function to get a background color for the type of the post
 		var color = '';
@@ -274,6 +281,7 @@ var dashboard = {
 		};
 	},
 	
+	// function to capitalize the first letter of the Type of post (flashcard, survival, lesson etc...)
 	capFLetter: function(string) {
 		return string.charAt(0).toUpperCase() + string.slice(1);
 	}
