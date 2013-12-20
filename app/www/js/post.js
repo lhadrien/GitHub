@@ -31,11 +31,12 @@ var post = {
 			} else {
 				$( "#myPost" ).append(post.postContents[idPost]); //	new content already formated in array
 			}
-//		$( "#myPost  ul[data-role=listview]" ).listview().listview('refresh');
+//		$( "#myPost  ul[data-role=listview]" ).listview();
 			post.idPost = idPost;
 		}
 		console.log('function post: disp: -> Im outside the IF, end');
 		$.mobile.changePage( $('#post'), { transition: 'slide', changeHash: false }); // change page to #post
+		$( "#myPost  ul[data-role=listview]" ).listview();
 		return false;
 	},
 
