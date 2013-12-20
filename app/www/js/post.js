@@ -230,14 +230,16 @@ var post = {
 	addnavbar: function (postTitle) {
 		var navbar = '';
 	
-		navbar = '<div data-role="navbar"><ul>';
-		navbar += '<li><a href="#myText" data-tab-class="tab1" class="ui-btn-active">Dialogues</a></li>';
-		navbar += '<li><a href="#myVocab" data-tab-class="tab2" >Vocabulary</a></li>';
-		navbar += '<li><a href="#myGrammar" data-tab-class="tab3">Grammar</a></li>';
-		navbar += '<li><a href="#myExercice" data-tab-class="tab4">Exercice</a></li>';
-		navbar += '</ul></div>';
+		navbar = '<div data-role="navbar">' +
+                     '<ul>' +
+                         '<li><a href="#myText" data-tab-class="tab1" class="ui-btn-active">Dialogues</a></li>' +
+                         '<li><a href="#myVocab" data-tab-class="tab2">Vocabulary</a></li>' +
+                         '<li><a href="#myGrammar" data-tab-class="tab3">Grammar</a></li>' +
+                         '<li><a href="#myExercice" data-tab-class="tab4">Exercice</a></li>' +
+                     '</ul>' +
+                 '</div>';
 		navbar = $(navbar).appendTo('#lessonNavBar');
-		$( "#lessonNavBar" ).append(navbar).trigger('create');;
+		$( "#lessonNavBar" ).append(navbar).trigger('create');
 		console.log('function post: addnavbar: navbar added');
 	},
 	
@@ -245,18 +247,28 @@ var post = {
 		var lovelyLesson = '';
 		
 		console.log('function post: addlesson: start with idPost : ' + idPost);
-		lovelyLesson = '<div class="tab1">';
-		lovelyLesson += post.lessonsText[idPost];
-		lovelyLesson += '</div><div name="myVocab" class="tab2 ui-screen-hidden">';
-		lovelyLesson += post.lessonsVocab[idPost];
-		lovelyLesson += '</div><div id="myGrammar" class="tab3 ui-screen-hidden">';
-		lovelyLesson += post.lessonsGrammar[idPost];
+		lovelyLesson = '<div id="myText" class="tab1">Text';
+//		lovelyLesson += post.lessonsText[idPost];
+		lovelyLesson += '</div><div id="myVocab" class="tab2 ui-screen-hidden">Vocab';
+//		lovelyLesson += post.lessonsVocab[idPost];
+		lovelyLesson += '</div><div id="myGrammar" class="tab3 ui-screen-hidden">Grammar';
+//		lovelyLesson += post.lessonsGrammar[idPost];
 		lovelyLesson += '</div><div id="myExercice" class="tab4 ui-screen-hidden">';
 		lovelyLesson += 'My Exercice Soon, seriously';
 //		lovelyLesson += post.lessonsExercice[idPost];
 		lovelyLesson += '</div>';
 		
 		$( "#myPost" ).append(lovelyLesson);
+        
+        // Display right content on click on the navbar
+        $('[data-role="navbar"] a').on('click', function(e) {
+            // Get the DOM element click and find the href attribute of the parent
+            var id = $(e.target).closest('a').attr('href').substring(1); // Remove the #
+            // Once we get the id, we display the content
+            $('#myPost')
+                .find('div').hide().end() // Hide all divs
+                .find('#' + id).show();   // Show selected div
+        });
 	}
 
 };
