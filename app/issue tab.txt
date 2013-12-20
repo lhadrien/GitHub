@@ -1,0 +1,115 @@
+When we go to a lesson, we have 4 tab.
+<dialogues> <vocab> <grammar> <exercice>
+with content inside each of them.
+
+All of this are created dynamically.
+
+here is the HTML part
+--------------------------------------
+
+<div data-role="page" id="post">
+	<div data-theme="a" data-role="header">
+		<h1 id="headpost"></h1>
+		<span id="lessonNavBar">
+		<!--- elements dynamic -->
+			<div data-role="navbar">
+				<ul>
+					<li>
+						<a href="#myText" data-tab-class="tab1" class="ui-btn-active">Dialogues</a>
+					</li>
+					<li>
+						<a href="#myVocab" data-tab-class="tab2" >Vocabulary</a>
+					</li>
+					<li>
+						<a href="#myGrammar" data-tab-class="tab3">Grammar</a>
+					</li>
+					<li>
+						<a href="#myExercice" data-tab-class="tab4">Exercice</a>
+					</li>
+				</ul>
+			</div>
+			<!--- end of the navbar dynamic -->
+		</span>
+	</div>
+	<div data-theme="c" data-role="content" id="myPost">
+	<!--- content dynamic -->
+		<div id="myText" myclass="tab1">
+			content tab1
+		</div>
+		<div id="myVocab" class="tab2 ui-screen-hidden">
+			content tab2
+		</div>
+		<div id="myGrammar" class="tab3 ui-screen-hidden">
+			content tab3
+		</div>
+		<div id="myExercice" class="tab4 ui-screen-hidden">
+			content tab4
+		</div>
+
+		<!-- end of content dynamic -->
+	</div>
+	<div data-theme="a" data-role="footer" data-position="fixed">
+		<h1>
+			&copy; Pandamanda
+		</h1>
+		<a href="#dashboard" data-transition="slide" data-direction="reverse" data-role="button"  data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+			Back
+		</a>
+	</div>
+</div>
+----------------
+
+
+and here is the JS to get the event (I actually get the event, but thats all)
+index.js, line 74
+ ----------------
+var prevSelection = "tab1";
+$('#post').on('click', '#lessonNavBar', function(e) {
+	console.log('tab clicked ?');
+	var newSelection = $(this).find('a').attr("id");
+	console.log('prevSelection : ' + prevSelection);
+	console.log('newSelection : ' + newSelection);
+	$('.' + prevSelection).addClass('ui-screen-hidden');
+	$('.' + newSelection).removeClass('ui-screen-hidden');
+	prevSelection = newSelection;
+});
+
+and here is the JS to implement the navbar and the content
+post.js, line 230.
+---------------------
+
+	addnavbar: function (postTitle) {
+		var navbar = '';
+	
+		navbar = '<div data-role="navbar"><ul>';
+		navbar += '<li><a href="#myText" data-tab-class="tab1" class="ui-btn-active">Dialogues</a></li>';
+		navbar += '<li><a href="#myVocab" data-tab-class="tab2" >Vocabulary</a></li>';
+		navbar += '<li><a href="#myGrammar" data-tab-class="tab3">Grammar</a></li>';
+		navbar += '<li><a href="#myExercice" data-tab-class="tab4">Exercice</a></li>';
+		navbar += '</ul></div>';
+		navbar = $(navbar).appendTo('#lessonNavBar');
+		$( "#lessonNavBar" ).append(navbar).trigger('create');;
+		console.log('function post: addnavbar: navbar added');
+	},
+	
+	addlesson: function (idPost) {
+		var lovelyLesson = '';
+		
+		console.log('function post: addlesson: start with idPost : ' + idPost);
+		lovelyLesson = '<div class="tab1">';
+		lovelyLesson += post.lessonsText[idPost];
+		lovelyLesson += '</div><div name="myVocab" class="tab2 ui-screen-hidden">';
+		lovelyLesson += post.lessonsVocab[idPost];
+		lovelyLesson += '</div><div id="myGrammar" class="tab3 ui-screen-hidden">';
+		lovelyLesson += post.lessonsGrammar[idPost];
+		lovelyLesson += '</div><div id="myExercice" class="tab4 ui-screen-hidden">';
+		lovelyLesson += 'My Exercice Soon, seriously';
+//		lovelyLesson += post.lessonsExercice[idPost];
+		lovelyLesson += '</div>';
+		
+		$( "#myPost" ).append(lovelyLesson);
+	}
+
+------------- I just github this version.
+
+Can you take a look please ?
