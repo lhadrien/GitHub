@@ -72,11 +72,14 @@ var app = {
 				});
 				
 				var prevSelection = "tab1";
-				$('#lessonNavBar ul li').on('click', function(e) {
-//					var newSelection = $(e).children('a').attr('data-tab-class');
-//					$('.' + prevSelection).addClass('ui-screen-hidden');
-//					$('.' + newSelection).removeClass('ui-screen-hidden');
-//					prevSelection = newSelection;
+				$('#post').on('click', '#lessonNavBar', function(e) {
+					console.log('tab clicked ?');
+					var newSelection = $(this).find('a').attr("id");
+					console.log('prevSelection : ' + prevSelection);
+					console.log('newSelection : ' + newSelection);
+					$('.' + prevSelection).addClass('ui-screen-hidden');
+					$('.' + newSelection).removeClass('ui-screen-hidden');
+					prevSelection = newSelection;
 				});
 				break;
         }
