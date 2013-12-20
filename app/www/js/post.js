@@ -199,7 +199,7 @@ var post = {
 			myGrammarById = post.findID(myGrammar, gramIds[i], false); // find all the grammar with the same ID, "false" because "true" is already for the lessons
 			gramByIdLength = myGrammarById.length;
 			
-			lovelyGrammar += '<div data-role="collapsible" data-collapsed="false" data-theme="a" data-content-theme="c"><h3>'; // add a header part to a list
+			lovelyGrammar += '<div data-role="collapsible" data-collapsed="false" data-theme="b" data-content-theme="c"><h3>'; // add a header part to a list
 			lovelyGrammar += myGrammarById[0].grammar_text; // display the title of the grammar ID
 //			console.log('function formatGrammar: the title is : ' + myGrammarById[0].grammar_text);
 			lovelyGrammar += '</h3><ul data-role="listview" data-filter="false">'; // add a list

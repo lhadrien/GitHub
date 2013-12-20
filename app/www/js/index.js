@@ -193,10 +193,24 @@ var dashboard = {
 			data: { 
 					'action': 'dashboard_app'
 				},
-			error: function() {
-				console.log('function dashboard: ajax: error: fail');
-				navigator.notification.alert('Unable to load feed, Incorrect path or invalid feed');
+			beforeSend: function() {
+            // Show spinner
+				console.log('function dashboard: ajax: searching...');
+				$.mobile.loading('show', {
+					text: 'Searching...',
+					textVisible: true,
+					theme: 'a',
+					textonly: false
+				});
+			}, 
+			complete: function() {
+				// Hide spinner
+				$.mobile.loading('hide');
 			},
+			error: function() {
+					console.log('function dashboard: ajax: error: fail');
+					navigator.notification.alert('Unable to load feed, Incorrect path or invalid feed');
+				},
 			success: function(data) {
 				console.log('function dashboard: ajax: success: ' + data.got_dashboard);
 				if (data.got_dashboard == true)
@@ -211,7 +225,7 @@ var dashboard = {
 					console.log('your lessonsVocab = ');
 //					dashboard.varDump(dashboard.lessonsGrammar);
 
-					var html = '<ul id="dash" data-role="listview" data-filter="true">'; 
+					var html = '<ul data-theme="a" id="dash" data-role="listview" data-filter="true">'; 
 					for (var i = 0; i < 20; i++) // display 20 posts
 					{
 						var entry = dashboard.postList[i];
