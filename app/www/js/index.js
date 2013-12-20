@@ -54,6 +54,7 @@ var app = {
        
         switch (id) {
             case 'deviceready':
+	//			$.mobile.changePage( $('#dashboard'), { transition: 'pop', changeHash: false });
 				console.log('device ready : success');
                 $('#loginForm').on('submit', login.process);
 				$(document).on('pagebeforeshow', '#dashboard', dashboard.display);
@@ -62,7 +63,9 @@ var app = {
 					console.log('click on post number : ' + $(this).data("post"));
 					post.display($(this).data("post"));
 				});
-				
+				$('#loginPage').click(function(e) {
+				$.mobile.changePage( $('#dashboard'), { transition: 'pop', changeHash: false });
+				});
 	//			$(document).on('pagebeforeshow', '#post', dashboard.display);
 				
 				$('body').on('click', 'a.playSound', function() {
