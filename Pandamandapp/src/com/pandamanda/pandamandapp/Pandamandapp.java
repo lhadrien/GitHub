@@ -22,7 +22,7 @@ package com.pandamanda.pandamandapp;
 import android.os.Bundle;
 import org.apache.cordova.*;
 
-public class Pandamandapp extends DroidGap
+public class pandamandapp extends DroidGap
 {
     @Override
     public void onCreate(Bundle savedInstanceState)
