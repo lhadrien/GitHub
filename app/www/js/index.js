@@ -54,7 +54,6 @@ var app = {
        
         switch (id) {
             case 'deviceready':
-	//			$.mobile.changePage( $('#dashboard'), { transition: 'pop', changeHash: false });
 				console.log('device ready : success');
                 $('#loginForm').on('submit', login.process);
 				$(document).on('pagebeforeshow', '#dashboard', dashboard.display);
@@ -208,10 +207,11 @@ var dashboard = {
 				$.mobile.loading('hide');
 			},
 			error: function() {
-					console.log('function dashboard: ajax: error: fail');
-					navigator.notification.alert('Unable to load feed, Incorrect path or invalid feed');
-				},
+				console.log('function dashboard: ajax: error: fail');
+				navigator.notification.alert('Unable to load feed, Incorrect path or invalid feed');
+			},
 			success: function(data) {
+			
 				console.log('function dashboard: ajax: success: ' + data.got_dashboard);
 				if (data.got_dashboard == true)
 				{
@@ -232,8 +232,8 @@ var dashboard = {
 						html += '<li>';
 						html += '<a href="#" class="showDash" data-post="' + i + '" data-transition="slide">';
 						html += '<div class="entry"><h2>' + entry.post_title + '</h2></div>' ;
-						html += '<div class="entry"><p>' + 'Date : ' + entry.post_date + '</p></div>' ;
-						html += '<div class="entry"><p><strong>' + 'Type : <span color=#FFFFFF backgroundColor=#' + dashboard.get_color_type(entry.post_type) + '>' + dashboard.capFLetter(entry.post_type) + '</span></p></strong></div>'; // get_color_type() does not work yet
+//						html += '<div class="entry"><p>' + 'Date : ' + entry.post_date + '</p></div>' ;
+						html += '<div class="entry"><p><strong>' + 'Type : <span color=#FFFFFF backgroundColor=#' + dashboard.get_color_type(entry.post_type) + '>' + dashboard.capFLetter(entry.post_type) + '</span></strong></p></div>'; // get_color_type() does not work yet
 						html += '<div class="entry"><p>' + 'Comments : ' + entry.comment_count + '</p></div>';
 						html += '</a>';
 						html += '</li>';

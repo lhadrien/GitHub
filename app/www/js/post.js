@@ -16,6 +16,7 @@ var post = {
 	// function to display the page #post
 	display: function (idPost) {
 		console.log('function post: disp: idPost = ' + idPost);
+		post.prevSelection =  'myText'; // reinitialize the first tab active variable.
 		if (typeof idPost !== 'undefined')
 		{
 			$( "#myPost  ul[data-role=listview]" ).listview();
@@ -23,6 +24,7 @@ var post = {
 			$( "#myPost" ).empty();			// clear the content from the previous post
 			$( "#lessonNavBar" ).empty();	// clear the previous navbar for lesson
 			console.log('function post: disp: empty done');
+			console.log('The title is : ' + post.postTitles[idPost]);
 			$( "#headpost" ).append(post.postTitles[idPost]);			//  new title
 			if (dashboard.postList[idPost].post_type == 'lesson') { // display in a different way if its a Lesson
 				console.log('function post: display: my post is a lesson');
@@ -84,8 +86,8 @@ var post = {
 			post.formatlesson(myPost.ID, idPost);
 		} else {
 			post.postContents[idPost] = post.formatpost(myPost.post_content); // else we format it in a general way
-			post.postTitles[idPost] = myPost.post_title;
 		}
+		post.postTitles[idPost] = myPost.post_title;
 		if (typeof post.postContents[idPost] === 'undefined')
 		{
 			return false;
@@ -199,7 +201,7 @@ var post = {
 			myGrammarById = post.findID(myGrammar, gramIds[i], false); // find all the grammar with the same ID, "false" because "true" is already for the lessons
 			gramByIdLength = myGrammarById.length;
 			
-			lovelyGrammar += '<div data-role="collapsible" data-collapsed="false" data-theme="b" data-content-theme="c"><h3>'; // add a header part to a list
+			lovelyGrammar += '<div data-theme="a" data-content-theme="a"><h3>'; // add a header part to a list
 			lovelyGrammar += myGrammarById[0].grammar_text; // display the title of the grammar ID
 //			console.log('function formatGrammar: the title is : ' + myGrammarById[0].grammar_text);
 			lovelyGrammar += '</h3><ul data-role="listview" data-filter="false">'; // add a list
@@ -281,8 +283,11 @@ var post = {
 				console.log('prevSelection : ' + post.prevSelection);
 				console.log('newSelection : ' + id);
 					$('#' + post.prevSelection).addClass('ui-screen-hidden');
+					$('#' + id + '_nav').addClass('ui-btn-active');
 					$('#' + id).removeClass('ui-screen-hidden');
+					$('#' + post.prevSelection + '_nav').removeClass('ui-btn-active');
 					post.prevSelection = id;
+					$( "#myPost  ul[data-role=listview]" ).listview();
            //     .find('div').hide().end() // Hide all divs
             //    .find('#' + id).show();   // Show selected div
         });
