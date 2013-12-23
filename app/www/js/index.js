@@ -225,22 +225,29 @@ var dashboard = {
 					console.log('your lessonsVocab = ');
 //					dashboard.varDump(dashboard.lessonsGrammar);
 
-					var html = '<ul data-theme="a" id="dash" data-role="listview" data-filter="true">'; 
+					var lovelyhtml = '<ul id="dash" data-role="listview" data-filter="true">'; 
 					for (var i = 0; i < 20; i++) // display 20 posts
 					{
 						var entry = dashboard.postList[i];
-						html += '<li>';
-						html += '<a href="#" class="showDash" data-post="' + i + '" data-transition="slide">';
-						html += '<div class="entry"><h2>' + entry.post_title + '</h2></div>' ;
-//						html += '<div class="entry"><p>' + 'Date : ' + entry.post_date + '</p></div>' ;
-						html += '<div class="entry"><p><strong>' + 'Type : <span color=#FFFFFF backgroundColor=#' + dashboard.get_color_type(entry.post_type) + '>' + dashboard.capFLetter(entry.post_type) + '</span></strong></p></div>'; // get_color_type() does not work yet
-						html += '<div class="entry"><p>' + 'Comments : ' + entry.comment_count + '</p></div>';
-						html += '</a>';
-						html += '</li>';
+						lovelyhtml += functions.switchBackLi(true); // insert <li> with the correct theme to alternate the CSS (blue, darkblue...); True for dashboard format, false for posts
+						lovelyhtml += '<a href="#" class="showDash" data-post="' + i + '" data-transition="slide">' +
+											'<div class="entry">' +
+												'<h2>' + entry.post_title + '</h2>' +
+											'</div>' +
+											'<div class="entry">' +
+												'<p><strong>' + 'Type : <span color=#FFFFFF backgroundColor=#' + functions.get_color_type(entry.post_type) + '>' + functions.capFLetter(entry.post_type) + '</span>' +
+												'</strong></p>' +
+											'</div>' + // get_color_type() does not work yet
+											'<div class="entry">' +
+												'<p>' + 'Comments : ' + entry.comment_count + '</p>' +
+											'</div>' +
+										'</a>' +
+									'</li>';
 						post.handlepost(i); // put the posts content inside a var
 					}
-					html += '</ul>';
-					$( "#postlist" ).append(html); // append the whole html 
+					lovelyhtml += '</ul>';
+					functions.swtichBackDash = false;
+					$( "#postlist" ).append(lovelyhtml); // append the whole html 
 					$( "#postlist ul[data-role=listview]" ).listview();
 					return true;
 				}
@@ -254,26 +261,13 @@ var dashboard = {
 		});
 	},
 
-	// debug function to display the properties inside an array
-	varDump: function (o, bool) { // bool is boolean | true for recursif | false for iteratif only
-		var str='';
+};
 
-		for (var p in o) {
-			if (typeof o[p] == 'string') {
-				str += 'name : {' + p + '} = {' + o[p] + "};\n";
-			} else {
-				if (bool) {
-					str += 'the property : {' + p + '} = { ' + dashboard.varDump(o[p], bool) + "};\n";
-				} else {
-					str += 'the property : {' + p + '} = { I wont go further ' + "};\n";
-				}
-			}
-		}
-		
-		console.log(str);
-	},
+var functions = {
+
+	switchBackDash: false,
+	switchBackPost: false,
 	
-	// add a color to the type of post (never worked)
 	get_color_type: function(data_type)
 	{ // function to get a background color for the type of the post
 		var color = '';
@@ -297,10 +291,47 @@ var dashboard = {
 			return (color);
 		};
 	},
+
+		varDump: function (o, bool) { // bool is boolean | true for recursif | false for iteratif only
+		var str='';
+
+		for (var p in o) {
+			if (typeof o[p] == 'string') {
+				str += 'name : {' + p + '} = {' + o[p] + "};\n";
+			} else {
+				if (bool) {
+					str += 'the property : {' + p + '} = { ' + functions.varDump(o[p], bool) + "};\n";
+				} else {
+					str += 'the property : {' + p + '} = { I wont go further ' + "};\n";
+				}
+			}
+		}
+		console.log(str);
+	},
 	
 	// function to capitalize the first letter of the Type of post (flashcard, survival, lesson etc...)
 	capFLetter: function(string) {
 		return string.charAt(0).toUpperCase() + string.slice(1);
+	},
+	
+	switchBackLi: function (isDash) { // if we format the dashboard, then we use the var switchBackDash
+		if (isDash) {
+			if (functions.switchBackDash == false) {
+				functions.switchBackDash = true;
+				return ('<li data-theme="a">');
+			} else {
+				functions.switchBackDash = false;
+				return ('<li data-theme="c">');
+			}
+		} else {
+			if (functions.switchBackPost == false) {
+				functions.switchBackPost = true;
+				return ('<li data-theme="a">');
+			} else {
+				functions.switchBackPost = false;
+				return ('<li data-theme="b">');
+			}
+		}
 	}
-
+	
 };

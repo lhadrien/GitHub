@@ -46,7 +46,7 @@ var post = {
 	formatpost: function (myPostContent, invert) { // this boolean will invert chinese and pinyin
 		var contentArr = new Array(),
 			arrLength = 0,
-			html = '<ul id="post" data-role="listview" data-filter="false">',
+			lovelyhtml = '<ul id="post" data-role="listview" data-filter="false">',
 			contentArrInside = new Array();
 
 		contentArr = myPostContent.split("\r"); // split the string when it finds "\r"
@@ -54,16 +54,18 @@ var post = {
 		
 		for (var i = 0; i < arrLength; i++) { // format every part
 			contentArrInside = contentArr[i].split("|"); // split the string when it finds "|"
-			html += '<li>';
-			html += '<a href="#" class="playSound ui-btn ui-shadow ui-corner-all ui-icon-audio ui-btn-icon-right" data-sound="' + contentArrInside[1 - invert] + '">';
-			html += '<div class="entry"><h2>' + contentArrInside[1 - invert] + '</h2></div>' ;
-			html += '<div class="entry"><p>' + contentArrInside[0 + invert] + '</p></div>' ;
-			html += '<div class="entry"><p><strong>' + contentArrInside[2] + '</strong></p></div>';
-			html += '</a>';
-			html += '</li>';
+			lovelyhtml += functions.switchBackLi(false); // insert <li> with the correct theme to alternate the CSS (blue, darkblue...); True for dashboard format, false for posts
+			lovelyhtml += '<a href="#" class="playSound ui-btn ui-shadow ui-icon-audio ui-btn-icon-right" data-sound="' + contentArrInside[1 - invert] + '">';
+			lovelyhtml += '<div class="entry"><h2>' + contentArrInside[1 - invert] + '</h2></div>' ;
+			lovelyhtml += '<div class="entry"><p>' + contentArrInside[0 + invert] + '</p></div>' ;
+			lovelyhtml += '<div class="entry"><p><strong>' + contentArrInside[2] + '</strong></p></div>';
+			lovelyhtml += '</a>';
+			lovelyhtml += '</li>';
 		}
-		html += '</ul>';
-		return (html);
+		lovelyhtml += '</ul>';
+		console.log(lovelyhtml);
+//		functions.switchBackPost = false; // reset the format to the default blue;
+		return (lovelyhtml);
 	},
 
 	// clever function to text to speach the text inside the link
@@ -169,8 +171,8 @@ var post = {
 		
 		for (var i = 0; i < arrLength; i++) {
 
-			lovelyhtml += '<li>';
-			lovelyhtml += '<a href="#" class="playSound ui-btn ui-shadow ui-corner-all ui-icon-audio ui-btn-icon-right" data-sound="' + myText[i].chinese + '">';
+			lovelyhtml += functions.switchBackLi(false); // insert <li> with the correct theme to alternate the CSS (blue, darkblue...); True for dashboard format, false for posts
+			lovelyhtml += '<a href="#" class="playSound ui-btn ui-shadow ui-icon-audio ui-btn-icon-right" data-sound="' + myText[i].chinese + '">';
 			if (typeof myText[i].text_person === 'undefined') { // add a <div> if there is a person who talks
 				lovelyhtml += '<div></div>';
 			} else {
@@ -183,6 +185,7 @@ var post = {
 			lovelyhtml += '</li>';
 		}
 		lovelyhtml += '</ul>';
+		functions.switchBackPost = false;
 		return (lovelyhtml);
 		
 	},
@@ -215,8 +218,8 @@ var post = {
 			
 			for (var j = 0; j < gramByIdLength; j++) {
 
-				lovelyGrammar += '<li>' +
-									'<a href="#" class="playSound ui-btn ui-shadow ui-corner-all ui-icon-audio ui-btn-icon-right" data-sound="' + myGrammarById[j].chinese + '">' +
+				lovelyGrammar += functions.switchBackLi(false) + // insert <li> with the correct theme to alternate the CSS (blue, darkblue...); True for dashboard format, false for posts
+									'<a href="#" class="playSound ui-btn ui-shadow ui-icon-audio ui-btn-icon-right" data-sound="' + myGrammarById[j].chinese + '">' +
 										'<div class="entry"><h2>' + myGrammarById[j].chinese + '</h2></div>' +
 										'<div class="entry"><p>' + myGrammarById[j].pinyin + '</p></div>' +
 										'<div class="entry"><p><strong>' + myGrammarById[j].english + '</strong></p></div>' +
@@ -224,8 +227,8 @@ var post = {
 								'</li>';
 			}
 			lovelyGrammar += '</ol></div>';
+			functions.switchBackPost = false; // reset the default blue
 		}
-		
 		return (lovelyGrammar);
 	
 	},
