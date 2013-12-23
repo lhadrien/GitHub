@@ -55,7 +55,7 @@ var post = {
 		for (var i = 0; i < arrLength; i++) { // format every part
 			contentArrInside = contentArr[i].split("|"); // split the string when it finds "|"
 			html += '<li>';
-			html += '<a href="#" class="playSound" data-sound="' + contentArrInside[1 - invert] + '">';
+			html += '<a href="#" class="playSound ui-btn ui-shadow ui-corner-all ui-icon-audio ui-btn-icon-right" data-sound="' + contentArrInside[1 - invert] + '">';
 			html += '<div class="entry"><h2>' + contentArrInside[1 - invert] + '</h2></div>' ;
 			html += '<div class="entry"><p>' + contentArrInside[0 + invert] + '</p></div>' ;
 			html += '<div class="entry"><p><strong>' + contentArrInside[2] + '</strong></p></div>';
@@ -170,7 +170,7 @@ var post = {
 		for (var i = 0; i < arrLength; i++) {
 
 			lovelyhtml += '<li>';
-			lovelyhtml += '<a href="#" class="playSound" data-sound="' + myText[i].chinese + '">';
+			lovelyhtml += '<a href="#" class="playSound ui-btn ui-shadow ui-corner-all ui-icon-audio ui-btn-icon-right" data-sound="' + myText[i].chinese + '">';
 			if (typeof myText[i].text_person === 'undefined') { // add a <div> if there is a person who talks
 				lovelyhtml += '<div></div>';
 			} else {
@@ -211,19 +211,19 @@ var post = {
 			lovelyGrammar += '<div data-theme="a" data-content-theme="a"><h3>'; // add a header part to a list
 			lovelyGrammar += myGrammarById[0].grammar_text; // display the title of the grammar ID
 //			console.log('function formatGrammar: the title is : ' + myGrammarById[0].grammar_text);
-			lovelyGrammar += '</h3><ul data-role="listview" data-filter="false">'; // add a list
+			lovelyGrammar += '</h3><ol data-role="listview" data-filter="false">'; // add a list
 			
 			for (var j = 0; j < gramByIdLength; j++) {
 
 				lovelyGrammar += '<li>' +
-									'<a href="#" class="playSound" data-sound="' + myGrammarById[j].chinese + '">' +
+									'<a href="#" class="playSound ui-btn ui-shadow ui-corner-all ui-icon-audio ui-btn-icon-right" data-sound="' + myGrammarById[j].chinese + '">' +
 										'<div class="entry"><h2>' + myGrammarById[j].chinese + '</h2></div>' +
 										'<div class="entry"><p>' + myGrammarById[j].pinyin + '</p></div>' +
 										'<div class="entry"><p><strong>' + myGrammarById[j].english + '</strong></p></div>' +
 									'</a>' +
 								'</li>';
 			}
-			lovelyGrammar += '</ul></div>';
+			lovelyGrammar += '</ol></div>';
 		}
 		
 		return (lovelyGrammar);
