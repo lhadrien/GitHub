@@ -316,20 +316,20 @@ var functions = {
 	
 	switchBackLi: function (isDash) { // if we format the dashboard, then we use the var switchBackDash
 		if (isDash) {
-			if (functions.switchBackDash == false) {
+			if (functions.switchBackDash == false) { // if the var switchBackDash is at false , then theme A and the var is at true
 				functions.switchBackDash = true;
 				return ('<li data-theme="a">');
 			} else {
-				functions.switchBackDash = false;
+				functions.switchBackDash = false; // if the var switchBackDash is at true, then theme C and the var is at false
 				return ('<li data-theme="c">');
 			}
 		} else {
-			if (functions.switchBackPost == false) {
+			if (functions.switchBackPost == false) { // same
 				functions.switchBackPost = true;
 				return ('<li data-theme="a">');
 			} else {
-				functions.switchBackPost = false;
-				return ('<li data-theme="b">');
+				functions.switchBackPost = false; // same
+				return ('<li data-theme="c">');
 			}
 		}
 	}
