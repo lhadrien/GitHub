@@ -27,10 +27,11 @@
         <link rel="stylesheet" type="text/css" href="//code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
 
         <link rel="stylesheet" type="text/css" href="css/index.css" /> -->
+		
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.0.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.4.0.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile.icons-1.4.0.css" />
 		<link rel="stylesheet" href="css/theme_beta/pandatheme.css" />
-		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.2.min.css" />
-
-		<link rel="stylesheet" href="css/theme_beta/jquery.mobile.icons.min.css" />
         <title>Pandamandapp</title>
     </head>
     <body>
@@ -78,12 +79,14 @@
 
 	<!-- Dashboard page -->
 		<div data-role="page" id="dashboard">
-			<div data-theme="a" data-role="header">
-				<h1 id="header">
-					Pandashboard
-				</h1>
+			<div class="ui-bar ui-bar-b">
+				<div style="float:left">
+					<h3>Lesson Title</h3>
+				</div>
+				<div style="float:right">
+					<h3>Lesson Type</h3>
+				</div>
 			</div>
-			
 			<div data-theme="a" data-role="content" id="postlist"> </div>
 			<div data-theme="a" data-role="footer" data-position="fixed">
 				<h1>
@@ -100,13 +103,15 @@
 			</div>
 			<div data-theme="a" data-role="content" id="myPost">
 			</div>
-			<div data-theme="a" data-role="footer" data-position="fixed">
-				<h1>
-					&copy; Pandamanda
-				</h1><div data-theme="b">
-				<a href="#dashboard" data-transition="slide" data-theme="b" data-direction="reverse" data-role="button"  data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
-					Back
-				</a></div>
+			<div data-role="footer" data-mini="true" data-position="fixed">
+				<div>
+					<h3>
+						<a href="#dashboard" data-transition="slide" data-theme="b" data-direction="reverse" data-role="button" data-mini="true" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">Back</a>
+					</h3>
+				</div>
+				<div>
+					<img />
+				</div>
 			</div>
 		</div>
 
@@ -149,7 +154,7 @@
         <script type="text/javascript" src="cordova.js"></script>
         -->
         <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/jquery.mobile-1.3.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.0.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
 		<script type="text/javascript" src="js/post.js"></script>
         <script type="text/javascript">
