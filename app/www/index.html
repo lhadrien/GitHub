@@ -30,7 +30,7 @@
 		<link rel="stylesheet" href="css/theme_beta/pandatheme.css" />
 		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.2.min.css" />
 
-		<link rel="stylesheet" href="css/theme-beta/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="css/theme_beta/jquery.mobile.icons.min.css" />
         <title>Pandamandapp</title>
     </head>
     <body>
@@ -93,20 +93,20 @@
 		</div>
 		
 	<!-- Post page -->
-		<div data-role="page" id="post">
+		<div data-role="page" id="post" data-theme="a" >
 			<div data-theme="a" data-role="header">
 				<h1 id="headpost"></h1>
                 <span id="lessonNavBar"></span>
 			</div>
 			<div data-theme="a" data-role="content" id="myPost">
 			</div>
-			<div data-theme="b" data-role="footer" data-position="fixed">
+			<div data-theme="a" data-role="footer" data-position="fixed">
 				<h1>
 					&copy; Pandamanda
-				</h1>
+				</h1><div data-theme="b">
 				<a href="#dashboard" data-transition="slide" data-theme="b" data-direction="reverse" data-role="button"  data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
 					Back
-				</a>
+				</a></div>
 			</div>
 		</div>
 
@@ -120,8 +120,8 @@
 				<h1>The Dashboard can't load</h1>
 				<p>We are sorry for this inconvenient, but we have failed to get data from the server. Maybe you can retry now or later.</p>
 				<p>You could also check if you have an internet connection</p>
-				<a href="#dashboard" data-role="button" data-rel="back" data-theme="b">Ok</a>       
-				<a href="#dashboard" data-role="button" data-rel="back" data-theme="c">Later...</a>    
+				<a href="#dashboard" data-role="button" data-rel="back" data-theme="a">Ok</a>       
+				<a href="#dashboard" data-role="button" data-rel="back" data-theme="b">Later...</a>    
 			</div>
 		</div>
 

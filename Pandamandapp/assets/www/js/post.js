@@ -210,7 +210,7 @@ var post = {
 
 				lovelyGrammar += '<li>' +
 									'<a href="#" class="playSound" data-sound="' + myGrammarById[j].chinese + '">' +
-										'<div class="entry"><h2>' + myGrammar[j].chinese + '</h2></div>' +
+										'<div class="entry"><h2>' + myGrammarById[j].chinese + '</h2></div>' +
 										'<div class="entry"><p>' + myGrammarById[j].pinyin + '</p></div>' +
 										'<div class="entry"><p><strong>' + myGrammarById[j].english + '</strong></p></div>' +
 									'</a>' +

@@ -43,7 +43,7 @@ var post = {
 	},
 
 	// format the post if its not a Lesson
-	formatpost: function (myPostContent) {
+	formatpost: function (myPostContent, invert) { // this boolean will invert chinese and pinyin
 		var contentArr = new Array(),
 			arrLength = 0,
 			html = '<ul id="post" data-role="listview" data-filter="false">',
@@ -55,9 +55,9 @@ var post = {
 		for (var i = 0; i < arrLength; i++) { // format every part
 			contentArrInside = contentArr[i].split("|"); // split the string when it finds "|"
 			html += '<li>';
-			html += '<a href="#" class="playSound" data-sound="' + contentArrInside[1] + '">';
-			html += '<div class="entry"><h2>' + contentArrInside[1] + '</h2></div>' ;
-			html += '<div class="entry"><p>' + contentArrInside[0] + '</p></div>' ;
+			html += '<a href="#" class="playSound" data-sound="' + contentArrInside[1 - invert] + '">';
+			html += '<div class="entry"><h2>' + contentArrInside[1 - invert] + '</h2></div>' ;
+			html += '<div class="entry"><p>' + contentArrInside[0 + invert] + '</p></div>' ;
 			html += '<div class="entry"><p><strong>' + contentArrInside[2] + '</strong></p></div>';
 			html += '</a>';
 			html += '</li>';
@@ -82,10 +82,17 @@ var post = {
 			myLesson;
 
 		myPost = dashboard.postList[idPost];
-		if (myPost.post_type === 'lesson') { // if the post is a lesson, then format it with the following function
-			post.formatlesson(myPost.ID, idPost);
-		} else {
-			post.postContents[idPost] = post.formatpost(myPost.post_content); // else we format it in a general way
+		
+		switch (myPost.post_type) {
+            case 'lesson': // if the post is a lesson, then format it with the following function
+				post.formatlesson(myPost.ID, idPost);
+				break;
+			case 'survival':
+				post.postContents[idPost] = post.formatpost(myPost.post_content, true); // else we format it in a general way but with a boolean true
+				break;
+			case 'flashcard':
+				post.postContents[idPost] = post.formatpost(myPost.post_content, false); // else we format it in a general way but with a booloean false
+				break;
 		}
 		post.postTitles[idPost] = myPost.post_title;
 		if (typeof post.postContents[idPost] === 'undefined')
@@ -210,7 +217,7 @@ var post = {
 
 				lovelyGrammar += '<li>' +
 									'<a href="#" class="playSound" data-sound="' + myGrammarById[j].chinese + '">' +
-										'<div class="entry"><h2>' + myGrammar[j].chinese + '</h2></div>' +
+										'<div class="entry"><h2>' + myGrammarById[j].chinese + '</h2></div>' +
 										'<div class="entry"><p>' + myGrammarById[j].pinyin + '</p></div>' +
 										'<div class="entry"><p><strong>' + myGrammarById[j].english + '</strong></p></div>' +
 									'</a>' +
