@@ -1,0 +1,67 @@
+/*
+Theme Name: Cuirsetlacets
+Theme URI: http://www.cuirsetlacets.com
+Author: the WordPress team & Hadrien
+Author URI: 
+Description: Great theme !
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: Hadrien, twentythirteen, cuirs, lacets
+Text Domain: twentythirteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/*
+agag
+*/
+
+.background {
+	clear:					both !important;
+	background:				url(img/background_parcho.png);
+	background-repeat:		no-repeat;
+	background-size:		90% 100%;
+	background-position:	center;
+	height:					720px;
+}
+
+#coussin_fr {
+	margin-left:			12%;
+}
+
+#coussin_en {
+	margin-left:			8%;
+}
+
+.coussin {
+	position:				relative;
+	top:					300px !important;
+}
+
+body {
+	background-color:		#cca;
+	color:					#152;
+}
+
+body a {
+	color:					#448;
+}
+
+body div {
+	background-color:		#fff;
+}
+/*
+.nav {
+	background-color:		#fea;
+}
+*/
+::selection {
+	color:					#eee;
+	background:				#7b8;
+}
+::-moz-selection {
+	color:					#eee;
+	background:				#7b8;
+}
