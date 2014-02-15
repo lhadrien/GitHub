@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+        <!--
+        <link rel="stylesheet" type="text/css" href="//code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+
+        <link rel="stylesheet" type="text/css" href="css/index.css" /> -->
+		<link rel="stylesheet" href="css/theme_beta/pandatheme.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.2.min.css" />
+
+		<link rel="stylesheet" href="css/theme-beta/jquery.mobile.icons.min.css" />
+        <title>Pandamandapp</title>
+    </head>
+    <body>
+	
+	<!-- login page -->
+		<div data-role="page" id="loginPage">
+			<div data-theme="a" data-role="header">
+				<h1 id="header">
+					Pandamandapp
+				</h1>
+			</div>
+			<div data-role="content">
+				<form id="loginForm">
+					<div data-role="fieldcontain" data-theme="a" class="login_panda">
+						<label for="username">
+							Your ID :
+						</label>
+						<input name="username" id="username" placeholder="Username" type="text" value="" />
+					</div>
+					<div data-role="fieldcontain" data-theme="a" class="login_panda">
+						<label for="password">
+							Your password :
+						</label>
+						<input name="password" id="password" placeholder="Password" value="" type="password" />
+					</div>
+					<input id="submitButton" type="submit" data-theme="a" value="Login" class="login_panda" />
+					<h3 style="text-align: center;">
+						or
+					</h3>
+					<a data-role="button" data-theme="a" href="#" data-icon="star" data-iconpos="left" id="fb-root">
+						Login with Facebook
+					</a>
+				</form>
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+				<h1>
+					<span class="copyright">&copy;</span> Pandamanda
+				</h1>
+			</div>
+		</div>
+
+	<!-- home page -->
+		<div id="home" data-role="page" data-mini="true">
+		</div>
+
+	<!-- Dashboard page -->
+		<div data-role="page" id="dashboard">
+			<div data-theme="a" data-role="header">
+				<h1 id="header">
+					Pandashboard
+				</h1>
+			</div>
+			
+			<div data-theme="a" data-role="content" id="postlist"> </div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+				<h1>
+					<span class="copyright">&copy;</span> Pandamanda
+				</h1>
+			</div>
+		</div>
+		
+	<!-- Post page -->
+		<div data-role="page" id="post" data-theme="a" >
+			<div data-theme="a" data-role="header">
+				<h1 id="headpost"></h1>
+                <span id="lessonNavBar"></span>
+			</div>
+			<div data-theme="a" data-role="content" id="myPost">
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+				<h1>
+					&copy; Pandamanda
+				</h1><div data-theme="b">
+				<a href="#dashboard" data-transition="slide" data-theme="b" data-direction="reverse" data-role="button"  data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+					Back
+				</a></div>
+			</div>
+		</div>
+
+	<!-- myPopup -->
+		<div data-role="page" id="myPopup">
+			<div data-role="header" data-theme="a">
+				<h1>Pandamanda</h1>
+
+			</div>
+			<div data-role="content" data-theme="a">
+				<h1>The Dashboard can't load</h1>
+				<p>We are sorry for this inconvenient, but we have failed to get data from the server. Maybe you can retry now or later.</p>
+				<p>You could also check if you have an internet connection</p>
+				<a href="#dashboard" data-role="button" data-rel="back" data-theme="a">Ok</a>       
+				<a href="#dashboard" data-role="button" data-rel="back" data-theme="b">Later...</a>    
+			</div>
+		</div>
+
+	<!-- New page -->
+		<div data-role="page" id="futur">
+			<div data-theme="a" data-role="header">
+				<h1 id="header">
+					Pandamandapp
+				</h1>
+			</div>
+			<div data-theme="a" data-role="content">
+			An awesome page here soon
+			</div>
+			<div data-theme="a" data-role="footer" data-position="fixed">
+				<h1>
+					<span class="copyright">&copy;</span> Pandamanda
+				</h1>
+				<a data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+					Back
+				</a>
+			</div>
+		</div>		
+        
+        <!--
+        <script type="text/javascript" src="cordova.js"></script>
+        -->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.3.2.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/post.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
