@@ -29,9 +29,19 @@
  * @see twentythirteen_content_width() for template-specific adjustments.
  */
  
- 
+if (is_admin()) {
+    require_once( 'functions/admin.php' );
+}
 require_once( dirname(__FILE__) . "/config.php" );
 require_once( 'wp_bootstrap_navwalker.php' );
+
+$requires = array(
+    'init', 'admin'
+);
+foreach ($requires as $require) {
+    require_once( 'functions/' . $require . '.php' );
+}
+
 
 // desactivate the wordpress navbar
 add_filter('show_admin_bar', '__return_false');
@@ -39,7 +49,12 @@ add_filter('show_admin_bar', '__return_false');
 // INIT Classes
 require_once( 'includes/class-cl-user.php' );
 $cl_user = new CL_User();
-$cl_user->test = "test pourri";
+require_once( 'includes/class-cl-creation.php' );
+$cl_creation = new CL_Creation();
+
+// INIT the website
+add_action( 'init', 'cuirs_init' );
+add_action('admin_init', 'cuirs_admin_init');
 
 
 if ( ! isset( $content_width ) )
@@ -50,85 +65,6 @@ if ( ! isset( $content_width ) )
  */
 require get_template_directory() . '/inc/custom-header.php';
 
-/**
- * Twenty Thirteen only works in WordPress 3.6 or later.
- */
-if ( version_compare( $GLOBALS['wp_version'], '3.6-alpha', '<' ) )
-	require get_template_directory() . '/inc/back-compat.php';
-
-/**
- * Twenty Thirteen setup.
- *
- * Sets up theme defaults and registers the various WordPress features that
- * Twenty Thirteen supports.
- *
- * @uses load_theme_textdomain() For translation/localization support.
- * @uses add_editor_style() To add Visual Editor stylesheets.
- * @uses add_theme_support() To add support for automatic feed links, post
- * formats, and post thumbnails.
- * @uses register_nav_menu() To add support for a navigation menu.
- * @uses set_post_thumbnail_size() To set a custom post thumbnail size.
- *
- * @since Twenty Thirteen 1.0
- *
- * @return void
- */
- 
-function cuirs_init() {
-
-	register_nav_menus(
-		array(
-		  'menu-principal' => __( 'Menu Principal' ),
-		  'menu-boutique' => __( 'Menu Boutique' )
-		)
-	);
-	wp_enqueue_script( 'bootstrap', WP_THEME . '/bootstrap/' . BOOTSTRAP_VERSION . '/js/bootstrap.min.js', null, null, true);
-	
-	// Creations
-	register_post_type( 'creations', array(
-			'labels' => array(
-				'name'					=> __( 'Creations Wapapa' ),
-				'singular_name' 		=> __( 'Creation' ),
-				'add_new'				=> __( 'Ajouter une Creation' ),
-				'edit_item'				=> __( 'Editer une Creation' ),
-				'menu_name'				=> __( 'Creations' ),
-				'view_item'				=> __( 'Voir les Creations' ),
-				'search_items'			=> __( 'Gno, on cherche' ),
-				'not_found'				=> __( "Ouin, rien n'a ete trouve" ),
-				'not_found_in_trash'	=> __( 'Rien dans la corbeille' )
-			),
-			'public'				=> true,
-			'publicly_queryable'	=> true,
-			'show_ui'				=> true,
-			'menu_position'			=> 5,
-			'has_archive'			=> true,
-			'hierarchical'			=> true,
-			'label'					=> 'Question',
-			'rewrite'				=> array(
-				'slug'			=> 'creations',
-				'with_front' 	=> true
-			),
-			'supports'		=> array(
-				'comments',
-				'title',
-				'editor',
-				'editor',
-				'custom-fields',
-				'thumbnail'
-			),
-		)
-	);
-	register_taxonomy("type", array("creations"), array(
-				"hierarchical"		=> true,
-				"label"				=> "Types",
-				"singular_label" 	=> "Type",
-				"rewrite" 			=> true
-				)
-	);
-}
-
-
-add_action( 'init', 'cuirs_init' );
 
 
 function twentythirteen_setup() {
