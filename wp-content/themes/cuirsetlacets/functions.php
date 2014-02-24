@@ -54,7 +54,7 @@ $cl_creation = new CL_Creation();
 
 // INIT the website
 add_action( 'init', 'cuirs_init' );
-add_action('admin_init', 'cuirs_admin_init');
+add_action( 'admin_init', 'cuirs_admin_init');
 
 
 if ( ! isset( $content_width ) )

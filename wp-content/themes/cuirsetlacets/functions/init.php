@@ -39,7 +39,6 @@ function cuirs_init() {
 				'editor',
 				'thumbnail'
 			),
-			'register_meta_box_cb' => 'add_events_metaboxes'
 		)
 	);
 	register_taxonomy(	"type",
@@ -108,7 +107,7 @@ function description_meta() {
 	<?php
 }
 
-function title_english() {
+function title_english_meta() {
 
 	global $post, $cl_creation;
 
@@ -119,7 +118,16 @@ function title_english() {
 	echo '<input type="text" name="title_en" value="' . $title_en  . '" class="widefat" />';
 }
 
-function add_events_metaboxes() {
+function images_meta() {
 
-
+	global $post, $cl_creation;	
+	
+	echo '<input type="file" name="images_meta" value"prout" class="widefat" />';
+	?>
+		<p>
+			<label for="meta-image" class="prfx-row-title"><?php _e( 'Example File Upload', 'prfx-textdomain' )?></label>
+			<input type="text" name="meta-image" id="meta-image" value="<?php if ( isset ( $prfx_stored_meta['meta-image'] ) ) echo $prfx_stored_meta['meta-image'][0]; ?>" />
+			<input type="button" id="meta-image-button" class="button" value="Telecharge une image" />
+		</p>
+	<?php
 }
