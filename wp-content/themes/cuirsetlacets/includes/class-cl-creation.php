@@ -12,11 +12,11 @@ class CL_Creation {
 		$data = array(
 			$key => $value
 		);
-		$return = $wpdb->update( 'cl_creations', $data, $post_id );
-		error_log( 'retour' );
-		if ( ! $return ) {
-			error_log( 'true' );
-		}
+		$where = array(
+			'post_id' => $post_id
+		);
+		$return = $wpdb->update( 'cl_creations', $data, $where );
+		return ( $return );
 	}
 	
 	public function add_creation_meta( $post_id, $key, $value ) {

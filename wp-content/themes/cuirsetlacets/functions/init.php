@@ -37,20 +37,20 @@ function cuirs_init() {
 			'supports'		=> array(
 				'title',
 				'editor',
-				'custom-fields',
 				'thumbnail'
 			),
 			'register_meta_box_cb' => 'add_events_metaboxes'
 		)
 	);
-	register_taxonomy("type", array("creations"), array(
-				"hierarchical"		=> true,
-				"label"				=> "Types",
-				"singular_label" 	=> "Type",
-				"rewrite" 			=> true
-				)
+	register_taxonomy(	"type",
+						array( "creations" ),
+						array(
+							"hierarchical"		=> true,
+							"label"				=> "Types",
+							"singular_label" 	=> "Type",
+							"rewrite" 			=> true
+						)
 	);
-
 }
 
 
@@ -68,6 +68,7 @@ function save_creations_meta( $post_id, $post ) {
 	// make an array
 	$creation_meta[ 'content_fr' ] = $_POST[ 'content_fr' ];
 	$creation_meta[ 'content_en' ] = $_POST[ 'content_en' ];
+	$creation_meta[ 'title_en' ] = $_POST[ 'title_en' ];
 	// Add values of $events_meta as custom fields
 	foreach ( $creation_meta as $key => $value ) { // Cycle through the $events_meta array!
 	
@@ -77,9 +78,6 @@ function save_creations_meta( $post_id, $post ) {
 		$value = implode( ',', (array) $value ); // If $value is an array, make it a CSV (unlikely)
 		
 		if ( $cl_creation->get_creation_meta( $post->ID ) ) { // If the post exist
-			error_log( "im here" );
-			error_log( $value);
-			error_log( $key);
 			$cl_creation->update_creation_meta( $post->ID, $key, $value );
 		} else { // If the does not exist
 			$cl_creation->add_creation_meta( $post->ID, $key, $value );
@@ -110,16 +108,15 @@ function description_meta() {
 	<?php
 }
 
-function year_completed(){
+function title_english() {
 
-	global $post;
-	// Noncename needed to verify where the data originated
-	echo '<input type="hidden" name="edit_custom_creation" id="edit_custom_creation" value="' .
-	wp_create_nonce( plugin_basename(__FILE__) ) . '" />';
+	global $post, $cl_creation;
+
 	// Get the location data if its already been entered
-	$location = get_post_meta( $post->ID, '_location', true );
+	$metas = $cl_creation->get_creation_meta( $post->ID );
+	$title_en = $metas->title_en;
 	// Echo out the field
-	echo '<input type="text" name="_location" value="' . $location  . '" class="widefat" />';
+	echo '<input type="text" name="title_en" value="' . $title_en  . '" class="widefat" />';
 }
 
 function add_events_metaboxes() {

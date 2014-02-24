@@ -1,0 +1,17 @@
+[24-Feb-2014 10:06:38 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\includes\class-cl-creation.php on line 16
+[24-Feb-2014 10:06:51 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ')' in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\includes\class-cl-creation.php on line 17
+[24-Feb-2014 10:18:39 UTC] im here
+[24-Feb-2014 10:18:39 UTC] Ma description
+[24-Feb-2014 10:18:39 UTC] content_fr
+[24-Feb-2014 10:18:39 UTC] retour
+[24-Feb-2014 10:18:39 UTC] true
+[24-Feb-2014 10:18:39 UTC] im here
+[24-Feb-2014 10:18:39 UTC] fqegwe
+[24-Feb-2014 10:18:39 UTC] content_en
+[24-Feb-2014 10:18:39 UTC] retour
+[24-Feb-2014 10:34:30 UTC] PHP Notice:  Undefined index: title_en in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 71
+[24-Feb-2014 10:34:30 UTC] Erreur de la base de données WordPress Unknown column 'title_en' in 'field list' pour la requête UPDATE `cl_creations` SET `title_en` = '' WHERE `post_id` = 120 faite par edit_post, wp_update_post, wp_insert_post, do_action('save_post'), call_user_func_array, save_creations_meta, CL_Creation->update_creation_meta
+[24-Feb-2014 10:34:31 UTC] PHP Notice:  Undefined variable: cl_creation in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 116
+[24-Feb-2014 10:34:31 UTC] PHP Fatal error:  Call to a member function get_creation_meta() on a non-object in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 116
+[24-Feb-2014 10:35:55 UTC] PHP Notice:  Undefined variable: cl_creation in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 116
+[24-Feb-2014 10:35:55 UTC] PHP Fatal error:  Call to a member function get_creation_meta() on a non-object in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 116
