@@ -119,15 +119,27 @@ function title_english_meta() {
 }
 
 function images_meta() {
-
+	
 	global $post, $cl_creation;	
 	
-	echo '<input type="file" name="images_meta" value"prout" class="widefat" />';
+//	echo '<input type="file" name="images_meta" value"prout" class="widefat" />';
 	?>
 		<p>
 			<label for="meta-image" class="prfx-row-title"><?php _e( 'Example File Upload', 'prfx-textdomain' )?></label>
-			<input type="text" name="meta-image" id="meta-image" value="<?php if ( isset ( $prfx_stored_meta['meta-image'] ) ) echo $prfx_stored_meta['meta-image'][0]; ?>" />
+			<input type="file" name="meta-image" id="meta-image" value="<?php if ( isset ( $prfx_stored_meta['meta-image'] ) ) echo $prfx_stored_meta['meta-image'][0]; ?>" />
 			<input type="button" id="meta-image-button" class="button" value="Telecharge une image" />
 		</p>
+		<tr valign="top">
+			<th scope="row">Upload Image</th>
+		</tr>
+		<tr>
+			<td>
+				<label for="upload_image">
+					<input id="upload_image" class="upload_button" type="text" size="28" name="upload_image" value="" />
+					<input id="upload_image_button" type="file" value="Upload Image" />
+					<br />Enter an URL or upload an image for the banner.
+				</label>
+			</td>
+		</tr>
 	<?php
 }

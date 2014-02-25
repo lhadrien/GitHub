@@ -29,7 +29,7 @@
  * @see twentythirteen_content_width() for template-specific adjustments.
  */
  
-if (is_admin()) {
+if ( is_admin() ) {
     require_once( 'functions/admin.php' );
 }
 require_once( dirname(__FILE__) . "/config.php" );
@@ -38,7 +38,7 @@ require_once( 'wp_bootstrap_navwalker.php' );
 $requires = array(
     'init', 'admin'
 );
-foreach ($requires as $require) {
+foreach ( $requires as $require ) {
     require_once( 'functions/' . $require . '.php' );
 }
 
@@ -55,6 +55,24 @@ $cl_creation = new CL_Creation();
 // INIT the website
 add_action( 'init', 'cuirs_init' );
 add_action( 'admin_init', 'cuirs_admin_init');
+
+
+function my_admin_scripts() {
+	wp_enqueue_script( 'media-upload' );
+	wp_enqueue_script( 'thickbox' );
+	wp_register_script( 'my-upload', WP_THEME . '/js/my-script.js', array( 'jquery', 'media-upload', 'thickbox' ) );
+	wp_enqueue_script( 'my-upload' );
+}
+ 
+function my_admin_styles() {
+	wp_enqueue_style( 'thickbox' );
+}
+ 
+
+add_action( 'admin_print_scripts', 'my_admin_scripts' );
+add_action( 'admin_print_styles', 'my_admin_styles' );
+
+
 
 
 if ( ! isset( $content_width ) )
