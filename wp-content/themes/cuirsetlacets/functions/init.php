@@ -120,12 +120,12 @@ function save_creation_meta( $post_id, $post ) {
 		if ( $post->post_type == 'revision' ) {
 			return ( false ); // Don't store custom data twice
 		}
-		$value = implode( ',', (array) $value ); // If $value is an array, make it a CSV (unlikely)
+		$value = implode( ',', ( array ) $value ); // If $value is an array, make it a CSV (unlikely)
 		
-		if ( $cl_creation->get_creation_meta( $post->ID ) ) { // If the post exist
-			$cl_creation->update_creation_meta( $post->ID, $key, $value );
+		if ( $cl_creation->get_cuirs_meta( $post->ID, $table ) ) { // If the post exist
+			$cl_creation->update_cuirs_meta( $post->ID, $key, $value );
 		} else { // If the does not exist
-			$cl_creation->add_creation_meta( $post->ID, $key, $value );
+			$cl_creation->add_cuirs_meta( $post->ID, $key, $value );
 		}
 	}
 

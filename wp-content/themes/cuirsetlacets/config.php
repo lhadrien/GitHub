@@ -15,7 +15,8 @@ define( 'CL_PLUGINS' , ROOT . '/plugins' );
 define( 'WP_CONTENT', get_bloginfo( 'wpurl' ) . '/wp-content' );
 define( 'WP_MEDIA', WP_CONTENT . '/media' );
 define( 'WP_THEME', get_stylesheet_directory_uri() );
-define( 'CL_IMG', WP_THEME . '/img/' ); 
+define( 'CL_IMG', WP_THEME . '/img/' );
+define( 'PREF_DB', 'cl_' );
 
 // define emails
 define ( 'EMAIL_HADRIEN',  'lhadrien@gmail.com' );

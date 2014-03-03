@@ -1,8 +1,10 @@
 <?php
 
-class CL_Creation {
+class	CL_Custom_type {
 
-	public function update_creation_meta( $post_id, $key, $value ) {
+	public $type_post = '';
+
+	public function update_cuirs_meta( $post_id, $key, $value, $table ) {
 	
 		global $wpdb;
 		
@@ -15,11 +17,11 @@ class CL_Creation {
 		$where = array(
 			'post_id' => $post_id
 		);
-		$return = $wpdb->update( 'cl_creations', $data, $where );
+		$return = $wpdb->update( 'cl_' . $table, $data, $where );
 		return ( $return );
 	}
 	
-	public function add_creation_meta( $post_id, $key, $value ) {
+	public function add_cuirs_meta( $post_id, $key, $value, $table ) {
 
 		global $wpdb;
 		
@@ -31,23 +33,28 @@ class CL_Creation {
 			$key		=> $value
 		);
 		
-		$wpdb->insert( 'cl_creations', $data );
+		$wpdb->insert( 'cl_' . $table, $data );
 	}
 	
-	public function get_creation_meta( $post_id = 0 ) {
+	public function get_cuirs_meta( $post_id = 0, $table ) {
 	
 		global $wpdb;
 		
 		if ( $post_id == 0 ) {
 			return ( false );
 		}
+		if ( ! $table ) {
+			$table = $this->type_post;
+		}
+		$table = 'cl_' . $table;
 		return $wpdb->get_row( $wpdb->prepare(
 			"
 			SELECT	*
-			FROM	cl_creations
+			FROM	%s
 			WHERE	%d
 			LIMIT	1
 			",
+			$table,
 			$post_id
 		) );
 	}
