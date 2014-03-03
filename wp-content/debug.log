@@ -1,24 +1,39 @@
-[24-Feb-2014 10:06:38 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\includes\class-cl-creation.php on line 16
-[24-Feb-2014 10:06:51 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ')' in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\includes\class-cl-creation.php on line 17
-[24-Feb-2014 10:18:39 UTC] im here
-[24-Feb-2014 10:18:39 UTC] Ma description
-[24-Feb-2014 10:18:39 UTC] content_fr
-[24-Feb-2014 10:18:39 UTC] retour
-[24-Feb-2014 10:18:39 UTC] true
-[24-Feb-2014 10:18:39 UTC] im here
-[24-Feb-2014 10:18:39 UTC] fqegwe
-[24-Feb-2014 10:18:39 UTC] content_en
-[24-Feb-2014 10:18:39 UTC] retour
-[24-Feb-2014 10:34:30 UTC] PHP Notice:  Undefined index: title_en in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 71
-[24-Feb-2014 10:34:30 UTC] Erreur de la base de données WordPress Unknown column 'title_en' in 'field list' pour la requête UPDATE `cl_creations` SET `title_en` = '' WHERE `post_id` = 120 faite par edit_post, wp_update_post, wp_insert_post, do_action('save_post'), call_user_func_array, save_creations_meta, CL_Creation->update_creation_meta
-[24-Feb-2014 10:34:31 UTC] PHP Notice:  Undefined variable: cl_creation in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 116
-[24-Feb-2014 10:34:31 UTC] PHP Fatal error:  Call to a member function get_creation_meta() on a non-object in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 116
-[24-Feb-2014 10:35:55 UTC] PHP Notice:  Undefined variable: cl_creation in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 116
-[24-Feb-2014 10:35:55 UTC] PHP Fatal error:  Call to a member function get_creation_meta() on a non-object in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 116
-[24-Feb-2014 10:50:01 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 127
-[24-Feb-2014 10:50:04 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 127
-[24-Feb-2014 10:50:04 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 127
-[24-Feb-2014 10:50:19 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'add_events_metaboxes' not found or invalid function name in C:\xampp\htdocs\cuirsetlacets\wp-includes\plugin.php on line 429
-[24-Feb-2014 10:50:19 UTC] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, function 'title_english_meta' not found or invalid function name in C:\xampp\htdocs\cuirsetlacets\wp-admin\includes\template.php on line 924
-[24-Feb-2014 10:54:42 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'add_events_metaboxes' not found or invalid function name in C:\xampp\htdocs\cuirsetlacets\wp-includes\plugin.php on line 429
-[24-Feb-2014 10:54:49 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'add_events_metaboxes' not found or invalid function name in C:\xampp\htdocs\cuirsetlacets\wp-includes\plugin.php on line 429
+[28-Feb-2014 01:34:14 UTC] PHP Notice:  Undefined index: edit_custom_creation in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 103
+[28-Feb-2014 01:35:45 UTC] PHP Notice:  Undefined index: edit_custom_creation in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 93
+[28-Feb-2014 01:37:51 UTC] PHP Notice:  Undefined index: creations in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 93
+[28-Feb-2014 01:37:51 UTC] PHP Notice:  Undefined variable: slug in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 93
+[28-Feb-2014 01:37:51 UTC] PHP Notice:  Undefined index: edit_custom_creation in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 97
+[28-Feb-2014 01:39:22 UTC] PHP Notice:  Undefined index: creations in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 95
+[28-Feb-2014 01:39:23 UTC] PHP Notice:  Undefined variable: slug in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 95
+[28-Feb-2014 01:39:23 UTC] PHP Notice:  Undefined index: edit_custom_creation in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 99
+[28-Feb-2014 01:40:41 UTC] PHP Notice:  Undefined index: creations in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 95
+[28-Feb-2014 01:40:41 UTC] PHP Notice:  Undefined variable: slug in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 95
+[28-Feb-2014 01:40:41 UTC] PHP Notice:  Undefined index: edit_custom_creation in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 99
+[28-Feb-2014 01:40:58 UTC] PHP Notice:  Undefined index: creations in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 95
+[28-Feb-2014 01:40:58 UTC] PHP Notice:  Undefined variable: slug in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 95
+[28-Feb-2014 01:40:58 UTC] PHP Notice:  Undefined index: edit_custom_creation in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 99
+[28-Feb-2014 01:42:49 UTC] PHP Notice:  Undefined index: post_type in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 93
+[28-Feb-2014 01:42:49 UTC] PHP Notice:  Undefined index: post_type in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 95
+[28-Feb-2014 01:42:49 UTC] PHP Notice:  Undefined variable: slug in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 95
+[28-Feb-2014 01:42:49 UTC] PHP Notice:  Undefined index: edit_custom_creation in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 99
+[28-Feb-2014 01:43:56 UTC] PHP Notice:  Undefined variable: slug in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 95
+[28-Feb-2014 01:57:29 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 101
+[28-Feb-2014 01:59:29 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 101
+[28-Feb-2014 02:01:29 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 101
+[28-Feb-2014 02:03:29 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 100
+[28-Feb-2014 02:14:41 UTC] Erreur de la base de données WordPress Table 'cuirsetlacets_db.cl_sites_amis' doesn't exist pour la requête 
+			SELECT	*
+			FROM	cl_sites_amis
+			WHERE	135
+			LIMIT	1
+			 faite par include('C:\xampp\htdocs\cuirsetlacets\wp-admin\edit-form-advanced.php'), do_meta_boxes, call_user_func, url_amis, CL_Site_ami->get_site_ami_meta
+[28-Feb-2014 02:14:41 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 199
+[28-Feb-2014 02:14:41 UTC] PHP Notice:  Undefined variable: cl_creation in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 210
+[28-Feb-2014 02:14:41 UTC] PHP Fatal error:  Call to a member function get_site_ami_meta() on a non-object in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 210
+[28-Feb-2014 02:20:13 UTC] PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 199
+[28-Feb-2014 02:20:13 UTC] PHP Notice:  Undefined variable: cl_creation in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 210
+[28-Feb-2014 02:20:13 UTC] PHP Fatal error:  Call to a member function get_site_ami_meta() on a non-object in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 210
+[28-Feb-2014 02:24:12 UTC] PHP Notice:  Undefined variable: content_fr in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 215
+[28-Feb-2014 02:26:49 UTC] PHP Fatal error:  Call to undefined function save_site_ami_meta() in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 99
+[28-Feb-2014 03:03:13 UTC] PHP Parse error:  syntax error, unexpected ''fr ) {' (T_ENCAPSED_AND_WHITESPACE) in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\includes\class-cl-site-ami.php on line 76
+[28-Feb-2014 03:05:13 UTC] PHP Parse error:  syntax error, unexpected '}' in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\includes\class-cl-site-ami.php on line 83

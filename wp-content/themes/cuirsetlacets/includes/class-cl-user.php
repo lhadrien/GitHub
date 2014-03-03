@@ -2,7 +2,7 @@
 
 class CL_User {
 
-	public $language = 'b';
+	public $language = '';
 	public $test;
 	
 	public function choose_language_fr() {

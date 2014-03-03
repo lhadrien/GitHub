@@ -1,8 +1,8 @@
 <?php
 
-class CL_Creation {
+class CL_Site_ami {
 
-	public function update_creation_meta( $post_id, $key, $value ) {
+	public function update_site_ami_meta( $post_id, $key, $value ) {
 	
 		global $wpdb;
 		
@@ -15,11 +15,11 @@ class CL_Creation {
 		$where = array(
 			'post_id' => $post_id
 		);
-		$return = $wpdb->update( 'cl_creations', $data, $where );
+		$return = $wpdb->update( 'cl_sites_amis', $data, $where );
 		return ( $return );
 	}
 	
-	public function add_creation_meta( $post_id, $key, $value ) {
+	public function add_site_ami_meta( $post_id, $key, $value ) {
 
 		global $wpdb;
 		
@@ -31,10 +31,10 @@ class CL_Creation {
 			$key		=> $value
 		);
 		
-		$wpdb->insert( 'cl_creations', $data );
+		$wpdb->insert( 'cl_sites_amis', $data );
 	}
 	
-	public function get_creation_meta( $post_id = 0 ) {
+	public function get_site_ami_meta( $post_id = 0 ) {
 	
 		global $wpdb;
 		
@@ -44,15 +44,15 @@ class CL_Creation {
 		return $wpdb->get_row( $wpdb->prepare(
 			"
 			SELECT	*
-			FROM	cl_creations
+			FROM	cl_sites_amis
 			WHERE	%d
 			LIMIT	1
 			",
 			$post_id
 		) );
 	}
-	
-	// get content depending of the langue
+
+	// get the content depending of the langue
 	private function get_content( $post_id, $column ) {
 	
 		global $wpdb;
@@ -83,4 +83,5 @@ class CL_Creation {
 		$content = $this->get_content( $post_id, $column );
 		return ( stripslashes( $content ) );
 	}
+	
 }

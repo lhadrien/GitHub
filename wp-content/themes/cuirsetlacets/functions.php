@@ -51,6 +51,8 @@ require_once( 'includes/class-cl-user.php' );
 $cl_user = new CL_User();
 require_once( 'includes/class-cl-creation.php' );
 $cl_creation = new CL_Creation();
+require_once( 'includes/class-cl-site-ami.php' );
+$cl_site_ami = new CL_Site_ami();
 
 // INIT the website
 add_action( 'init', 'cuirs_init' );
