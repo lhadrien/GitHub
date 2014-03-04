@@ -47,12 +47,10 @@ foreach ( $requires as $require ) {
 add_filter('show_admin_bar', '__return_false');
 
 // INIT Classes
-require_once( 'includes/class-cl-user.php' );
-$cl_user = new CL_User();
-require_once( 'includes/class-cl-creation.php' );
-$cl_creation = new CL_Creation();
-require_once( 'includes/class-cl-site-ami.php' );
-$cl_site_ami = new CL_Site_ami();
+require_once( 'includes/class-cl-lang.php' );
+$cl_user = new CL_Lang();
+require_once( 'includes/class-cl-custom-type.php' );
+$cl_custom_type = new CL_Custom_type();
 
 // INIT the website
 add_action( 'init', 'cuirs_init' );

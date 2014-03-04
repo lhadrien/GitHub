@@ -50,11 +50,10 @@ class	CL_Custom_type {
 		return $wpdb->get_row( $wpdb->prepare(
 			"
 			SELECT	*
-			FROM	%s
-			WHERE	%d
+			FROM	" . $table . "
+			WHERE	post_id = %d
 			LIMIT	1
 			",
-			$table,
 			$post_id
 		) );
 	}

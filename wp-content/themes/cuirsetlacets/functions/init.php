@@ -100,7 +100,8 @@ function save_meta( $post_id, $post ) {
 
 function save_creation_meta( $post_id, $post ) {
 
-	global $cl_creation;
+	global $cl_custom_type;
+	$cl_custom_type->type_post = 'creations';
 	$creation_meta = array();
 	
 	// check if we save from the editor
@@ -122,10 +123,10 @@ function save_creation_meta( $post_id, $post ) {
 		}
 		$value = implode( ',', ( array ) $value ); // If $value is an array, make it a CSV (unlikely)
 		
-		if ( $cl_creation->get_cuirs_meta( $post->ID, $table ) ) { // If the post exist
-			$cl_creation->update_cuirs_meta( $post->ID, $key, $value );
+		if ( $cl_custom_type->get_cuirs_meta( $post->ID, $cl_custom_type->type_post ) ) { // If the post exist
+			$cl_custom_type->update_cuirs_meta( $post->ID, $key, $value, $cl_custom_type->type_post ); // $post_id, $key, $value, $table
 		} else { // If the does not exist
-			$cl_creation->add_cuirs_meta( $post->ID, $key, $value );
+			$cl_custom_type->add_cuirs_meta( $post->ID, $key, $value, $cl_custom_type->type_post );
 		}
 	}
 
@@ -133,7 +134,8 @@ function save_creation_meta( $post_id, $post ) {
 
 function save_site_ami_meta( $post_id, $post ) {
 
-	global $cl_site_ami;
+	global $cl_custom_type;
+	$cl_custom_type->type_post = 'sites_amis';
 	$site_ami_meta = array();
 
 	// check if we save from the editor
@@ -155,10 +157,10 @@ function save_site_ami_meta( $post_id, $post ) {
 		}
 		$value = implode( ',', ( array ) $value ); // If $value is an array, make it a CSV (unlikely)
 		
-		if ( $cl_site_ami->get_site_ami_meta( $post->ID ) ) { // If the post exist
-			$cl_site_ami->update_site_ami_meta( $post->ID, $key, $value );
+		if ( $cl_custom_type->get_cuirs_meta( $post->ID, $cl_custom_type->type_post ) ) { // If the post exist
+			$cl_custom_type->update_cuirs_meta( $post->ID, $key, $value, $cl_custom_type->type_post );
 		} else { // If the does not exist
-			$cl_site_ami->add_site_ami_meta( $post->ID, $key, $value );
+			$cl_custom_type->add_cuirs_meta( $post->ID, $key, $value, $cl_custom_type->type_post );
 		}
 	}
 }

@@ -1,0 +1,33 @@
+[04-Mar-2014 10:49:03 UTC] Erreur de la base de données WordPress You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''cl_creations'
+			WHERE	post_id = 120
+			LIMIT	1' at line 2 pour la requête 
+			SELECT	*
+			FROM	'cl_creations'
+			WHERE	post_id = 120
+			LIMIT	1
+			 faite par include('C:\xampp\htdocs\cuirsetlacets\wp-admin\edit-form-advanced.php'), do_meta_boxes, call_user_func, title_english_creations, CL_Custom_type->get_cuirs_meta
+[04-Mar-2014 10:49:03 UTC] Erreur de la base de données WordPress You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''cl_creations'
+			WHERE	post_id = 120
+			LIMIT	1' at line 2 pour la requête 
+			SELECT	*
+			FROM	'cl_creations'
+			WHERE	post_id = 120
+			LIMIT	1
+			 faite par include('C:\xampp\htdocs\cuirsetlacets\wp-admin\edit-form-advanced.php'), do_meta_boxes, call_user_func, description_creations, CL_Custom_type->get_cuirs_meta
+[04-Mar-2014 10:49:53 UTC] Erreur de la base de données WordPress You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''cl_creations'
+			WHERE	'post_id' = 120
+			LIMIT	1' at line 2 pour la requête 
+			SELECT	*
+			FROM	'cl_creations'
+			WHERE	'post_id' = 120
+			LIMIT	1
+			 faite par include('C:\xampp\htdocs\cuirsetlacets\wp-admin\edit-form-advanced.php'), do_meta_boxes, call_user_func, title_english_creations, CL_Custom_type->get_cuirs_meta
+[04-Mar-2014 10:49:53 UTC] Erreur de la base de données WordPress You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''cl_creations'
+			WHERE	'post_id' = 120
+			LIMIT	1' at line 2 pour la requête 
+			SELECT	*
+			FROM	'cl_creations'
+			WHERE	'post_id' = 120
+			LIMIT	1
+			 faite par include('C:\xampp\htdocs\cuirsetlacets\wp-admin\edit-form-advanced.php'), do_meta_boxes, call_user_func, description_creations, CL_Custom_type->get_cuirs_meta
+[04-Mar-2014 10:55:15 UTC] tas rien

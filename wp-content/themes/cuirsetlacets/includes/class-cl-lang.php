@@ -22,12 +22,11 @@ class CL_Lang {
 		return $wpdb->get_var( $wpdb->prepare(
 			"
 			SELECT	%s
-			FROM	%s
+			FROM	" . $table . "
 			WHERE	%d
 			LIMIT	1
 			",
 			$column,
-			$table,
 			$post_id
 		) );
 	}

@@ -11,13 +11,15 @@ function cuirs_admin_init() {
 
 function description_creations() {
 
-	global $post, $cl_creation;
+	global $post, $cl_custom_type;
+	
+	$cl_custom_type->type_post = 'creations';
 	
 	// Noncename needed to verify where the data originated
 	echo '<input type="hidden" name="edit_custom_creation" id="edit_custom_creation" value="' .
 	wp_create_nonce( plugin_basename(__FILE__) ) . '" />';
 	
-	$metas = $cl_creation->get_creation_meta( $post->ID );
+	$metas = $cl_custom_type->get_cuirs_meta( $post->ID, $cl_custom_type->type_post );
 	if ( $metas ) {
 		$content_fr = $metas->content_fr;
 		$content_en = $metas->content_en;
@@ -35,10 +37,12 @@ function description_creations() {
 
 function title_english_creations() {
 
-	global $post, $cl_creation;
+	global $post, $cl_custom_type;
+
+	$cl_custom_type->type_post = 'creations';
 
 	// Get the location data if its already been entered
-	$metas = $cl_creation->get_creation_meta( $post->ID );
+	$metas = $cl_custom_type->get_cuirs_meta( $post->ID, $cl_custom_type->type_post );
 	if ( $metas ) {
 		$title_en = $metas->title_en;
 	} else {
@@ -50,7 +54,7 @@ function title_english_creations() {
 
 function images_creations() {
 	
-	global $post, $cl_creation;	
+	global $post;	
 	
 //	echo '<input type="file" name="images_meta" value"prout" class="widefat" />';
 	?>
@@ -73,13 +77,15 @@ function images_creations() {
 
 function url_amis() {
 
-	global $post, $cl_site_ami;
+	global $post, $cl_custom_type;
 
+	$cl_custom_type->type_post = 'sites_amis';
+	
 	// Noncename needed to verify where the data originated
 	echo '<input type="hidden" name="edit_custom_site_ami" id="edit_custom_site_ami" value="' .
 	wp_create_nonce( plugin_basename(__FILE__) ) . '" />';
 	
-	$metas = $cl_site_ami->get_site_ami_meta( $post->ID );
+	$metas = $cl_custom_type->get_cuirs_meta( $post->ID, $cl_custom_type->type_post );
 	if ( $metas ) {
 		$url_ami = $metas->url_ami;
 	} else {
@@ -93,9 +99,11 @@ function url_amis() {
 
 function description_amis() {
 
-	global $post, $cl_site_ami;
+	global $post, $cl_custom_type;
+
+	$cl_custom_type->type_post = 'sites_amis';
 	
-	$metas = $cl_site_ami->get_site_ami_meta( $post->ID );
+	$metas = $cl_custom_type->get_cuirs_meta( $post->ID, $cl_custom_type->type_post );
 	if ( $metas ) {
 		$content_fr = $metas->content_fr;
 		$content_en = $metas->content_en;
