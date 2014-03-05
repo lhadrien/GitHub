@@ -17,16 +17,16 @@ $alt = 0;
 
 <?php get_header(); ?>
 
-<div class="col-md-12">
+<div class="col-sm-12">
 
 	<?php foreach ( $sites as $site ) : ?>
 		<?php if ( $alt == 0 ) : ?>
-			<div class=" col-md-offset-1 col-md-6 alert alert-success">
+			<div class=" col-sm-offset-1 col-sm-6 alert alert-success">
 				<strong>en FR :</strong><?php echo $site->content_fr; ?><br /><strong>Et en ENG :</strong><?php echo $site->content_en; ?><br />et URL : <?php echo $site->url_ami; ?>
 			</div>
 			<?php $alt = 1; ?>
 		<?php else : ?>
-			<div class=" col-md-offset-3 col-md-6 alert alert-danger">
+			<div class=" col-sm-offset-3 col-sm-6 alert alert-danger">
 				<strong>en FR :</strong><?php echo $site->content_fr; ?><br /><strong>et en ENG :</strong><?php echo $site->content_en; ?><br />et URL : <?php echo $site->url_ami; ?>
 			</div>
 			<?php $alt = 0; ?>
