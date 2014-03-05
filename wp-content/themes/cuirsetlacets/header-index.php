@@ -38,12 +38,5 @@ global $cl_lang;
 
 <body <?php body_class(); ?>>
 	<div class="container theme-showcase" role="main" id="page">
-		<header id="masthead" class="site-header" role="banner">
-			<div>
-				<h3 class="text-muted"><?php echo ( $cl_lang->language == 'en' ) ? CL_NAME : CL_NOM ; ?></h3>
-				<a class="navbar-brand" href="<?php bloginfo('url')?>"><?php bloginfo('name')?></a>
-				<?php require( 'includes/top-bar.php' ); ?>
-			</div>
-		</header><!-- #masthead -->
-		<hr />
+		
 		<div id="main" class="site-main">

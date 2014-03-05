@@ -1,9 +1,9 @@
 <nav class="navbar navbar-default" role="navigation">
 <?php
-	global $cl_user;
-	if ( $cl_user->language === 'fr' ) {
+	global $cl_lang;
+	if ( $cl_lang->language === 'fr' ) {
 		$lang_menu = 'menu-principal';
-	} elseif ( $cl_user->language === 'en' ) {
+	} elseif ( $cl_lang->language === 'en' ) {
 		$lang_menu = 'main-menu';
 	} else {
 		echo "menu not defined...";

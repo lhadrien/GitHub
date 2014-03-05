@@ -24,20 +24,21 @@ agag
 	background-repeat:		no-repeat;
 	background-size:		90% 100%;
 	background-position:	center;
-	height:					720px;
+	height:					320px;
+	margin-top:				200px;
+	margin-bottom:			200px;
 }
 
 #coussin_fr {
-	margin-left:			12%;
+	
 }
 
 #coussin_en {
-	margin-left:			8%;
+	
 }
 
 .coussin {
-	position:				relative;
-	top:					300px !important;
+
 }
 
 body {

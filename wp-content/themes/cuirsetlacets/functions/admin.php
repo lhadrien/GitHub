@@ -103,6 +103,9 @@ function description_amis() {
 
 	$cl_custom_type->type_post = 'sites_amis';
 	
+	echo '<input type="hidden" name="edit_custom_site_ami2" id="edit_custom_site_ami2" value="' .
+	wp_create_nonce( plugin_basename(__FILE__) ) . '" />';
+	
 	$metas = $cl_custom_type->get_cuirs_meta( $post->ID, $cl_custom_type->type_post );
 	if ( $metas ) {
 		$content_fr = $metas->content_fr;

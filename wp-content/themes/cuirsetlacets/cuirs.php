@@ -8,8 +8,8 @@
 * Createur : Hadrien
 */
 
-global $cl_user, $current_user;
-$cl_user->choose_language_fr();
+global $cl_lang, $current_user;
+$cl_lang->choose_language_fr();
 get_header(); ?>
 test cuirs.php
 <?php get_footer() ?>

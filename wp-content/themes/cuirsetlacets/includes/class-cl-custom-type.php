@@ -57,4 +57,20 @@ class	CL_Custom_type {
 			$post_id
 		) );
 	}
+	
+	public function get_sites_amis() {
+		
+		global $wpdb;
+		
+		$limit = 100;
+		
+		return $wpdb->get_results( $wpdb->prepare(
+			"
+			SELECT	*
+			FROM	cl_sites_amis
+			LIMIT	%d
+			",
+			$limit
+		) );
+	}
 }

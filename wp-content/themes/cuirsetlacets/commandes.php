@@ -8,8 +8,8 @@
 * Createur : Hadrien
 */
 
-global $cl_user;
-$cl_user->choose_language_fr();
+global $cl_lang;
+$cl_lang->choose_language_fr();
 ?>
 
 <?php get_header(); ?>

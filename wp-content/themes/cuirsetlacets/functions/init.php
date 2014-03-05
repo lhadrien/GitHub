@@ -88,11 +88,13 @@ function save_meta( $post_id, $post ) {
 	
 	// dispatch the right function to save
 	if ( isset( $_POST[ 'edit_custom_creation' ] ) ) {
+		error_log( "save creation" );
 		$success = save_creation_meta( $post_id, $post );
         return $success;
     }
 	
 	if ( isset( $_POST[ 'edit_custom_site_ami' ] ) ) {
+		error_log( "save site ami" );
 		$success = save_site_ami_meta( $post_id, $post );
 		return $success;
 	}
@@ -137,15 +139,18 @@ function save_site_ami_meta( $post_id, $post ) {
 	global $cl_custom_type;
 	$cl_custom_type->type_post = 'sites_amis';
 	$site_ami_meta = array();
+	error_log('bite');
 
 	// check if we save from the editor
-	if ( ! wp_verify_nonce( $_POST[ 'edit_custom_site_ami' ], plugin_basename(__FILE__) )) {
+	if ( ! wp_verify_nonce( $_POST[ 'edit_custom_site_ami2' ], plugin_basename(__FILE__) )) {
 		return $post->ID;
 	}
+	error_log('bite 2');
 	// authorized ?
 	if ( ! current_user_can( 'edit_post', $post->ID ) )
 		return $post->ID;
 	// make an array
+	error_log($_POST[ 'content_fr' ]);
 	$site_ami_meta[ 'content_fr' ] = $_POST[ 'content_fr' ];
 	$site_ami_meta[ 'content_en' ] = $_POST[ 'content_en' ];
 	$site_ami_meta[ 'url_ami' ] = $_POST[ 'url_ami' ];
@@ -156,10 +161,11 @@ function save_site_ami_meta( $post_id, $post ) {
 			return ( false ); // Don't store custom data twice
 		}
 		$value = implode( ',', ( array ) $value ); // If $value is an array, make it a CSV (unlikely)
-		
+		error_log( $post->ID );
 		if ( $cl_custom_type->get_cuirs_meta( $post->ID, $cl_custom_type->type_post ) ) { // If the post exist
 			$cl_custom_type->update_cuirs_meta( $post->ID, $key, $value, $cl_custom_type->type_post );
 		} else { // If the does not exist
+			error_log( 'exite pas' );
 			$cl_custom_type->add_cuirs_meta( $post->ID, $key, $value, $cl_custom_type->type_post );
 		}
 	}

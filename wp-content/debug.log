@@ -1,33 +1,9 @@
-[04-Mar-2014 10:49:03 UTC] Erreur de la base de données WordPress You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''cl_creations'
-			WHERE	post_id = 120
-			LIMIT	1' at line 2 pour la requête 
-			SELECT	*
-			FROM	'cl_creations'
-			WHERE	post_id = 120
-			LIMIT	1
-			 faite par include('C:\xampp\htdocs\cuirsetlacets\wp-admin\edit-form-advanced.php'), do_meta_boxes, call_user_func, title_english_creations, CL_Custom_type->get_cuirs_meta
-[04-Mar-2014 10:49:03 UTC] Erreur de la base de données WordPress You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''cl_creations'
-			WHERE	post_id = 120
-			LIMIT	1' at line 2 pour la requête 
-			SELECT	*
-			FROM	'cl_creations'
-			WHERE	post_id = 120
-			LIMIT	1
-			 faite par include('C:\xampp\htdocs\cuirsetlacets\wp-admin\edit-form-advanced.php'), do_meta_boxes, call_user_func, description_creations, CL_Custom_type->get_cuirs_meta
-[04-Mar-2014 10:49:53 UTC] Erreur de la base de données WordPress You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''cl_creations'
-			WHERE	'post_id' = 120
-			LIMIT	1' at line 2 pour la requête 
-			SELECT	*
-			FROM	'cl_creations'
-			WHERE	'post_id' = 120
-			LIMIT	1
-			 faite par include('C:\xampp\htdocs\cuirsetlacets\wp-admin\edit-form-advanced.php'), do_meta_boxes, call_user_func, title_english_creations, CL_Custom_type->get_cuirs_meta
-[04-Mar-2014 10:49:53 UTC] Erreur de la base de données WordPress You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''cl_creations'
-			WHERE	'post_id' = 120
-			LIMIT	1' at line 2 pour la requête 
-			SELECT	*
-			FROM	'cl_creations'
-			WHERE	'post_id' = 120
-			LIMIT	1
-			 faite par include('C:\xampp\htdocs\cuirsetlacets\wp-admin\edit-form-advanced.php'), do_meta_boxes, call_user_func, description_creations, CL_Custom_type->get_cuirs_meta
-[04-Mar-2014 10:55:15 UTC] tas rien
+[05-Mar-2014 11:18:21 UTC] save site ami
+[05-Mar-2014 11:19:22 UTC] save site ami
+[05-Mar-2014 11:20:10 UTC] save site ami
+[05-Mar-2014 11:20:10 UTC] bite
+[05-Mar-2014 11:20:36 UTC] save site ami
+[05-Mar-2014 11:20:36 UTC] bite
+[05-Mar-2014 11:22:18 UTC] save site ami
+[05-Mar-2014 11:22:18 UTC] bite
+[05-Mar-2014 11:22:18 UTC] PHP Notice:  Undefined index: edit_custom_site_ami2 in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\init.php on line 145

@@ -10,8 +10,8 @@
 * Template for boutique.php
 */
 
-global $cl_user;
-$cl_user->choose_language_en();
+global $cl_lang;
+$cl_lang->choose_language_en();
 ?>
 <?php 
 

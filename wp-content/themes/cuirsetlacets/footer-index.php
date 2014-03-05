@@ -14,12 +14,7 @@
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			
 
-			<div class="site-info">
-				<hr />
-					Footer
-				<div class="well">
-					La il y aura les infos du site
-				</div>
+			<div class="site-info col-md-12">
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 	</div><!-- #container id="page" -->
