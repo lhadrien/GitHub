@@ -15,5 +15,8 @@ $cl_lang->choose_language_en();
 ?>
 
 <?php get_header(); ?>
-test friendly_website.php
+
+<div id="sites" class="col-sm-12">
+	<?php get_template_part( 'template', 'sites' ); ?>
+</div>
 <?php get_footer( 'en' ); ?>

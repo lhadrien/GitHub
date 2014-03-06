@@ -39,3 +39,5 @@
 [05-Mar-2014 14:24:34 UTC] 149
 [05-Mar-2014 14:24:34 UTC] 149
 [05-Mar-2014 14:24:34 UTC] 149
+[06-Mar-2014 09:14:53 UTC] PHP Notice:  Undefined variable: sites in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\sites_amis.php on line 20
+[06-Mar-2014 09:14:53 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\sites_amis.php on line 20

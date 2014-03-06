@@ -41,6 +41,18 @@ agag
 
 }
 
+.text {
+	background:				rgba(255, 255, 255, 0.7);
+	border-radius:			10px;
+	padding:				39px;
+	margin-top: 			10px;
+	margin-bottom:			10px;
+}
+
+#sites {
+	background-color : #a75;
+}
+
 body {
 	background-color:		#cca;
 	color:					#152;
