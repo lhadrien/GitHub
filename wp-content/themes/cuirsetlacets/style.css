@@ -41,6 +41,10 @@ agag
 
 }
 
+#title-home {
+	text-align: center;
+}
+
 .text {
 	background:				rgba(255, 255, 255, 0.7);
 	border-radius:			10px;

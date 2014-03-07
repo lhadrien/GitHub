@@ -4,6 +4,21 @@
  * Provides helper functions to enhance the theme experience.
  */
 
+function showLetter(letter) {
+
+	var i = 0,
+		tag = '<span style="opacity:0.0';
+		endTag = '</span>';
+
+	while ( i < 100 ) {
+		startTag = tag + i + '">';
+		$('.appear').append(startTag + letter + endTag);
+		if ( i == 9 ) {
+			tag = '<span style="opacity:0.';
+		}
+		setTimeout(function() {}, 3000);
+}
+ 
 ( function( $ ) {
 	var body    = $( 'body' ),
 	    _window = $( window );
@@ -13,6 +28,15 @@
 	 * than the rest of the page, to help the footer always visually clear
 	 * the sidebar.
 	 */
+	$('#title-home').click(function() {
+		var id = $('.disappear').html(),
+			res = '';
+		alert(id);
+		result = id.substring(0,1);
+		id = id.substring(1);
+		showLetter(result);
+	});
+	 
 	$( function() {
 		if ( body.is( '.sidebar' ) ) {
 			var sidebar   = $( '#secondary .widget-area' ),
