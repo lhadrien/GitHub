@@ -54,7 +54,7 @@ agag
 }
 
 #sites {
-	background-color : #a75;
+	background-color: #a75 !important;
 }
 
 body {

@@ -4,6 +4,8 @@
 	$alt = 2;
 ?>
 
+<div  class="col-sm-12">
+	<div class="row" id="sites">
 <?php foreach ( $sites as $site ) : ?>
 
 		<div class="text col-sm-offset-<?php echo $alt; ?> col-sm-6">
@@ -15,3 +17,5 @@
 		</div>
 		<?php ( $alt == 2 ) ? $alt = 4 : $alt = 2; ?>
 <?php endforeach; ?>
+	</div>
+</div>

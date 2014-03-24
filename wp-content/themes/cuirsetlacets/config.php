@@ -8,7 +8,7 @@ define( 'FONT_AWESOME_VERSION', '4.0.3' );
 
 
 // define the PATHS
-define( 'WP_HOME', home_url() );
+define( 'CL_HOME', home_url() );
 define( 'ROOT', dirname( __FILE__ ) );
 define( 'THEME_SLUG', 'cuirsetlacets' );
 define( 'CL_PLUGINS' , ROOT . '/plugins' );

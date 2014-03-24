@@ -10,15 +10,13 @@
  */
 ?>
 
-		</div><!-- #main -->
 		<footer id="colophon" class="site-footer" role="contentinfo">
-			
-
 			<div class="site-info">
-			<hr />
+				<hr />
 				Footer
-			<div class="well">
-				There will be the infos of the website
+				<div class="well">
+					There will be the infos of the website
+				</div>
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 	</div><!-- #container id="page" -->

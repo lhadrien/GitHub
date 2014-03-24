@@ -7,11 +7,15 @@ class CL_Lang {
 	public function choose_language_fr() {
 		
 		$this->language = 'fr';
+		$this->fr = true;
+		$this->en = false;
 	}
 	
 	public function choose_language_en() {
 		
 		$this->language = 'en';
+		$this->fr = false;
+		$this->en = true;
 	}
 	
 	// get the content depending of the language

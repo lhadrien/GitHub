@@ -15,5 +15,7 @@ $cl_lang->choose_language_en();
 ?>
 
 <?php get_header(); ?>
-test creations_eng.php
+<div class="row">
+	<?php get_template_part( 'template', 'creations' ); ?>
+</div>
 <?php get_footer( 'en' ); ?>

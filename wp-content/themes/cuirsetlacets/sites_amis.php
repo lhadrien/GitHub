@@ -15,7 +15,7 @@ $cl_lang->choose_language_fr();
 
 <?php get_header(); ?>
 
-<div id="sites" class="col-sm-12">
+<div class="row">
 	<?php get_template_part( 'template', 'sites' ); ?>
 </div>
 
