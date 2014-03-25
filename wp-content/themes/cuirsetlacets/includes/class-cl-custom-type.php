@@ -73,4 +73,20 @@ class	CL_Custom_type {
 			$limit
 		) );
 	}
+	
+	public function get_creations() {
+		
+		global $wpdb;
+		
+		$limit = 1000;
+		
+		return $wpdb->get_results( $wpdb->prepare(
+			"
+			SELECT	*
+			FROM	cl_creations
+			LIMIT	%d
+			",
+			$limit
+		) );
+	}
 }
