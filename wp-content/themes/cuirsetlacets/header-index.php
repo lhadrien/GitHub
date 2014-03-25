@@ -29,7 +29,7 @@ global $cl_lang;
 	<link rel="stylesheet" href="<?php echo WP_THEME; ?>/bootstrap/<?php echo BOOTSTRAP_VERSION; ?>/css/bootstrap-theme.css?ver=<?php echo CL_VERSION; ?>" type="text/css" media="all" />
 	<link rel="stylesheet" href="<?php echo WP_THEME; ?>/font-awesome/<?php echo FONT_AWESOME_VERSION; ?>/css/font-awesome.css?ver=<?php echo CL_VERSION; ?>" type="text/css" media="all" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<link href="<?php echo WP_HOME; ?>/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link href="<?php echo CL_HOME; ?>/favicon.ico" rel="shortcut icon" type="image/x-icon">
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
