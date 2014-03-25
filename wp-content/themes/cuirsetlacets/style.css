@@ -15,7 +15,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 /*
-agag
+ * Table Des Matieres
+ *
+ * Descriptif
+ * Table des matieres
+ * Body
 */
 
 .background {
@@ -60,6 +64,7 @@ agag
 body {
 	background-color:		#cca;
 	color:					#152;
+	background:				url(img/wallpaper.jpg);
 }
 
 body a {

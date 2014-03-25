@@ -4,7 +4,8 @@
 								'Fourreaux', 'Scabbards',
 								'Escarcelles & Bourses', 'Purses & Pouchs',
 								'Ceintures', 'Girdles',
-								'Divers', 'Miscelaneous' );
+								'Divers', 'Miscelaneous',
+								'', '' );
 	$arr_menu_url = array(	'/boutique/fourreaux/', '/shop/scabbards/',
 							'/boutique/escarcelles-et-bourses/', '/shop/purses_pouchs/',
 							'/boutique/ceintures/', '/shop/girdles/',
@@ -22,4 +23,5 @@
 			</a>
 		<?php endfor; ?>
 	</div>
+	<div class="panel-footer"></div>
 </div>

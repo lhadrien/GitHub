@@ -10,7 +10,8 @@
 global $cl_lang;
 $cl_lang->choose_language_fr();
 
-get_header();
-?>
-
+get_header(); ?>
+<div class="row">
+	<?php get_template_part( 'template', 'boutique' ); ?>
+</div>
 <?php get_footer(); ?>
