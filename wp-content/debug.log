@@ -1,15 +1,49 @@
-[24-Mar-2014 11:09:31 UTC] PHP Notice:  Use of undefined constant CL_HOME - assumed 'CL_HOME' in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\part-sidebar.php on line 9
-[24-Mar-2014 11:09:31 UTC] PHP Notice:  Use of undefined constant CL_HOME - assumed 'CL_HOME' in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\part-sidebar.php on line 12
-[24-Mar-2014 11:09:31 UTC] PHP Notice:  Use of undefined constant CL_HOME - assumed 'CL_HOME' in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\part-sidebar.php on line 15
-[24-Mar-2014 11:10:09 UTC] PHP Notice:  Use of undefined constant WP_HOME - assumed 'WP_HOME' in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\header.php on line 32
-[24-Mar-2014 11:10:09 UTC] PHP Notice:  Use of undefined constant WP_HOME - assumed 'WP_HOME' in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\header.php on line 32
-[25-Mar-2014 01:12:18 UTC] PHP Notice:  Use of undefined constant WP_HOME - assumed 'WP_HOME' in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\header-index.php on line 32
-[25-Mar-2014 01:12:18 UTC] PHP Notice:  Use of undefined constant WP_HOME - assumed 'WP_HOME' in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\home.php on line 16
-[25-Mar-2014 01:12:18 UTC] PHP Notice:  Use of undefined constant WP_HOME - assumed 'WP_HOME' in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\home.php on line 17
-[25-Mar-2014 01:12:24 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ';' in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\part-sidebar.php on line 19
-[25-Mar-2014 01:15:45 UTC] PHP Notice:  Undefined variable: array_menu_url in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\part-sidebar.php on line 19
-[25-Mar-2014 10:38:20 UTC] PHP Notice:  Use of undefined constant prout - assumed 'prout' in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\boutique.php on line 15
-[25-Mar-2014 15:14:32 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting ')' in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\includes\class-cl-custom-type.php on line 9
-[25-Mar-2014 15:14:47 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting ')' in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\includes\class-cl-custom-type.php on line 9
-[25-Mar-2014 15:15:02 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting ')' in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\includes\class-cl-custom-type.php on line 9
-[25-Mar-2014 15:17:02 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting ')' in C:\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\includes\class-cl-custom-type.php on line 9
+[30-May-2014 08:08:02 UTC] PHP Parse error:  syntax error, unexpected ':' in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\template-creations.php on line 9
+[30-May-2014 08:08:21 UTC] PHP Notice:  Undefined variable: arr_post_type in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\includes\class-cl-custom-type.php on line 112
+[30-May-2014 08:08:21 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\includes\class-cl-custom-type.php on line 112
+[30-May-2014 08:08:21 UTC] no
+[30-May-2014 08:08:21 UTC] fourreaux
+[30-May-2014 08:08:54 UTC] PHP Notice:  Undefined variable: arr_post_type in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\includes\class-cl-custom-type.php on line 112
+[30-May-2014 08:08:54 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\includes\class-cl-custom-type.php on line 112
+[30-May-2014 08:08:54 UTC] no
+[30-May-2014 08:08:54 UTC] fourreaux
+[30-May-2014 08:08:58 UTC] PHP Notice:  Undefined variable: arr_post_type in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\includes\class-cl-custom-type.php on line 112
+[30-May-2014 08:08:58 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\includes\class-cl-custom-type.php on line 112
+[30-May-2014 08:08:58 UTC] no
+[30-May-2014 08:08:58 UTC] fourreaux
+[30-May-2014 08:11:08 UTC] PHP Notice:  Undefined variable: arr_post_type in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\includes\class-cl-custom-type.php on line 112
+[30-May-2014 08:11:08 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\includes\class-cl-custom-type.php on line 112
+[30-May-2014 08:11:08 UTC] no
+[30-May-2014 08:11:08 UTC] fourreaux
+[30-May-2014 08:11:48 UTC] PHP Notice:  Undefined variable: arr_post_type in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\includes\class-cl-custom-type.php on line 112
+[30-May-2014 08:11:48 UTC] PHP Fatal error:  Cannot access empty property in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\includes\class-cl-custom-type.php on line 112
+[30-May-2014 08:13:31 UTC] PHP Notice:  Undefined variable: arr_post_type in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\includes\class-cl-custom-type.php on line 112
+[30-May-2014 08:13:31 UTC] PHP Fatal error:  Cannot access empty property in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\includes\class-cl-custom-type.php on line 112
+[30-May-2014 08:13:36 UTC] PHP Notice:  Undefined variable: arr_post_type in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\includes\class-cl-custom-type.php on line 112
+[30-May-2014 08:13:36 UTC] PHP Fatal error:  Cannot access empty property in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\includes\class-cl-custom-type.php on line 112
+[30-May-2014 08:15:22 UTC] no
+[30-May-2014 08:15:22 UTC] fourreaux
+[30-May-2014 08:15:35 UTC] yes
+[30-May-2014 08:15:35 UTC] fourreaux
+[30-May-2014 08:16:28 UTC] yes
+[30-May-2014 08:16:28 UTC] fourreaux
+[30-May-2014 08:16:47 UTC] no
+[30-May-2014 08:16:47 UTC] escarcelles-et-bourses
+[30-May-2014 08:17:37 UTC] yes
+[30-May-2014 08:17:37 UTC] ceintures
+[30-May-2014 08:17:39 UTC] yes
+[30-May-2014 08:17:39 UTC] divers
+[30-May-2014 08:17:44 UTC] no
+[30-May-2014 08:17:44 UTC] shop
+[30-May-2014 08:17:48 UTC] yes
+[30-May-2014 08:17:48 UTC] scabbards
+[30-May-2014 08:18:00 UTC] no
+[30-May-2014 08:18:00 UTC] purses_pouchs
+[30-May-2014 08:18:14 UTC] yes
+[30-May-2014 08:18:14 UTC] scabbards
+[30-May-2014 08:18:15 UTC] yes
+[30-May-2014 08:18:15 UTC] girdles
+[30-May-2014 08:18:16 UTC] no
+[30-May-2014 08:18:16 UTC] miscellaneous
+[30-May-2014 08:18:25 UTC] yes
+[30-May-2014 08:18:25 UTC] miscellaneous

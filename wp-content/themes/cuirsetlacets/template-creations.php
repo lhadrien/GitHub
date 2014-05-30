@@ -6,9 +6,4 @@
 <div class="col-md-3">
 	<?php get_template_part( 'part', 'sidebar' ); ?>
 </div>
-<div class="col-md-4" style="background-color: #a75;height:200px">
-lol
-</div>
-<div class="col-md-5" style="background-color: #a7a;height:200px">
-lolilol
-</div>
+<?php $cl_custom_type->get_creation_by_type(); ?>

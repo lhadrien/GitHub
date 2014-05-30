@@ -3,6 +3,16 @@
 class	CL_Custom_type {
 
 	public $type_post = '';
+	public $arr_post_type = array(
+		'fourreaux'					=> 8,
+		'scabbards'					=> 8,
+		'ceintures'					=> 9,
+		'girdles'					=> 9,
+		'escarcelles-et-bourses'	=> 10,
+		'purses_pouchs'				=> 10,
+		'divers'					=> 5,
+		'miscellaneous'				=> 5
+	);
 
 	public function update_cuirs_meta( $post_id, $key, $value, $table ) {
 	
@@ -74,7 +84,7 @@ class	CL_Custom_type {
 		) );
 	}
 	
-	public function get_creations() {
+	private function get_creations( $tax_id ) {
 		
 		global $wpdb;
 		
@@ -83,10 +93,28 @@ class	CL_Custom_type {
 		return $wpdb->get_results( $wpdb->prepare(
 			"
 			SELECT	*
-			FROM	cl_creations
+			FROM	cl_term_relationships r
+			JOIN	cl_creations c ON c.ID = r.object_id
+			WHERE	r.term_taxonomy_id = %d
 			LIMIT	%d
 			",
+			$tax_id,
 			$limit
 		) );
+	}
+	
+	public function get_creation_by_type() {
+		
+		global $post;
+		
+		if ( ! isset( $post->post_name ) ) {
+			return ( false );
+		}
+		if ( array_key_exists( $post->post_name, $this->arr_post_type ) ) {
+			echo $this->arr_post_type[ $post->post_name ];
+		} else {
+			echo 'in the main page of the shop';
+		}
+		
 	}
 }
