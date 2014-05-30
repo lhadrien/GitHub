@@ -47,3 +47,4 @@
 [30-May-2014 08:18:16 UTC] miscellaneous
 [30-May-2014 08:18:25 UTC] yes
 [30-May-2014 08:18:25 UTC] miscellaneous
+[30-May-2014 09:06:18 UTC] PHP Fatal error:  Call to undefined method CL_Custom_type::get_creation_by_type() in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\template-creations.php on line 9

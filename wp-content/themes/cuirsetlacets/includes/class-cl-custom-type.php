@@ -84,7 +84,24 @@ class	CL_Custom_type {
 		) );
 	}
 	
-	private function get_creations( $tax_id ) {
+	private function get_all_creations() {
+	
+		global $wpdb;
+		
+		$limit = 1000;
+		
+		return $wpdb->get_results( $wpdb->prepare(
+			"
+			SELECT	*
+			FROM	cl_term_relationships r
+			JOIN	cl_creations c ON c.post_id = r.object_id
+			LIMIT	%d
+			",
+			$limit
+		) );
+	}
+	
+	private function get_creations_by_type( $tax_id ) {
 		
 		global $wpdb;
 		
@@ -94,7 +111,7 @@ class	CL_Custom_type {
 			"
 			SELECT	*
 			FROM	cl_term_relationships r
-			JOIN	cl_creations c ON c.ID = r.object_id
+			JOIN	cl_creations c ON c.post_id = r.object_id
 			WHERE	r.term_taxonomy_id = %d
 			LIMIT	%d
 			",
@@ -103,7 +120,7 @@ class	CL_Custom_type {
 		) );
 	}
 	
-	public function get_creation_by_type() {
+	public function get_creations() {
 		
 		global $post;
 		
@@ -112,9 +129,16 @@ class	CL_Custom_type {
 		}
 		if ( array_key_exists( $post->post_name, $this->arr_post_type ) ) {
 			echo $this->arr_post_type[ $post->post_name ];
+			$creations = $this->get_creations_by_type( $this->arr_post_type[ $post->post_name ] );
+			// gerer les creations
 		} else {
 			echo 'in the main page of the shop';
+			$creations = $this->get_all_creations();
 		}
-		
+		if ( count( $creations ) === 0 ) {
+			echo 'no creations yet';
+			return ( false );
+		}
+		return ( $creations );
 	}
 }
