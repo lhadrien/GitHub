@@ -79,6 +79,27 @@ body div {
 	background-color:		#fea;
 }
 */
+
+.label-escarcelle {
+	background-color: #C47811;
+}
+
+.label-fourreau {
+	background-color: #900;
+}
+
+.label-bourse {
+	background-color: #C47811;
+}
+
+.label-ceinture {
+	background-color: #237D6F;
+}
+
+.label-divers {
+	background-color: #9C8D69;
+}
+
 ::selection {
 	color:					#eee;
 	background:				#7b8;

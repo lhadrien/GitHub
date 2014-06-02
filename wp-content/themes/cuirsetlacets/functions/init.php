@@ -106,7 +106,7 @@ function save_creation_meta( $post_id, $post ) {
 	$creation_meta = array();
 	
 	// check if we save from the editor
-	if ( ! wp_verify_nonce( $_POST[ 'edit_custom_creation' ], plugin_basename(__FILE__) )) {
+	if ( wp_verify_nonce( $_POST[ 'edit_custom_creation' ], plugin_basename(__FILE__) )) {
 		return $post->ID;
 	}
 	// authorized ?
@@ -148,9 +148,9 @@ function save_site_ami_meta( $post_id, $post ) {
 	if ( ! current_user_can( 'edit_post', $post->ID ) )
 		return $post->ID;
 	// make an array
-	$site_ami_meta[ 'content_fr' ] = $_POST[ 'content_fr' ];
-	$site_ami_meta[ 'content_en' ] = $_POST[ 'content_en' ];
-	$site_ami_meta[ 'url_ami' ] = $_POST[ 'url_ami' ];
+	$site_ami_meta[ 'content_fr' ] = stripcslashes( $_POST[ 'content_fr' ] );
+	$site_ami_meta[ 'content_en' ] = stripcslashes( $_POST[ 'content_en' ] );
+	$site_ami_meta[ 'url_ami' ] = stripcslashes( $_POST[ 'url_ami' ] );
 	// Add values of $events_meta as custom fields
 	foreach ( $site_ami_meta as $key => $value ) { // Cycle through the $events_meta array!
 	

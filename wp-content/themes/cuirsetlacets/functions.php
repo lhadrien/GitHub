@@ -36,7 +36,7 @@ require_once( dirname(__FILE__) . "/config.php" );
 require_once( 'wp_bootstrap_navwalker.php' );
 
 $requires = array(
-    'init', 'admin'
+    'init', 'admin', 'tools'
 );
 foreach ( $requires as $require ) {
     require_once( 'functions/' . $require . '.php' );
@@ -51,6 +51,8 @@ require_once( 'includes/class-cl-lang.php' );
 $cl_lang = new CL_Lang();
 require_once( 'includes/class-cl-custom-type.php' );
 $cl_custom_type = new CL_Custom_type();
+require_once( 'includes/class-cl-cat.php' );
+$cl_cat = new CL_Category();
 
 // INIT the website
 add_action( 'init', 'cuirs_init' );

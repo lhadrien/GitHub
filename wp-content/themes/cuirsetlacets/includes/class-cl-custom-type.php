@@ -13,6 +13,9 @@ class	CL_Custom_type {
 		'divers'					=> 5,
 		'miscellaneous'				=> 5
 	);
+	
+	private $arr_name_type = array();
+	
 
 	public function update_cuirs_meta( $post_id, $key, $value, $table ) {
 	
@@ -128,17 +131,35 @@ class	CL_Custom_type {
 			return ( false );
 		}
 		if ( array_key_exists( $post->post_name, $this->arr_post_type ) ) {
-			echo $this->arr_post_type[ $post->post_name ];
 			$creations = $this->get_creations_by_type( $this->arr_post_type[ $post->post_name ] );
 			// gerer les creations
 		} else {
-			echo 'in the main page of the shop';
 			$creations = $this->get_all_creations();
 		}
 		if ( count( $creations ) === 0 ) {
-			echo 'no creations yet';
+			_cl( 'Pas de creations encore', 'no creations yet' );
 			return ( false );
 		}
 		return ( $creations );
 	}
+	
+	public function get_images( $post_id = 0 ) {
+	
+		global $wpdb;
+		
+		if ( $post_id === 0 ) {
+			return ( false );
+		}
+		return $wpdb->get_results( $wpdb->prepare(
+			"
+			SELECT	post_parent AS post_id,
+					guid AS link, post_mime_type, post_title
+			FROM	cl_posts
+			WHERE	post_parent = %d
+			AND		post_type = 'attachment'
+			",
+			$post_id
+		) );
+	}
+	
 }

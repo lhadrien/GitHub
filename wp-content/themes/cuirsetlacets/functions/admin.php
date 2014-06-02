@@ -66,9 +66,6 @@ function images_creations() {
 				<label for="upload_image">
 					<input id="upload_image" class="upload_button" type="text" size="28" name="upload_image" value="" />
 					<input id="upload_image_button" type="file" value="Upload Image" name="prout" /><br />
-					<u><b>Important:</b></u> Mets un titre a l'image sous la forme<br />
-					[titre de la creation][numero de l'image]<br />
-					<u><strong>Ex:</strong></u> Super_fourreau1.jpg, Super_fourreau2.jpg
 				</label>
 			</td>
 		</tr>
