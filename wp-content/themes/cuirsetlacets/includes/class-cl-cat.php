@@ -54,10 +54,8 @@ class	CL_Category {
 
 	public function display_title_cat( $cat, $is_css = false ) {
 		
-		
-		if ( empty( $this->arr_name_type ) ) {
-			$this->arr_name_type = $this->get_name_cat( $is_css );
-		}
+		error_log( $cat );
+		$this->arr_name_type = $this->get_name_cat( $is_css );
 		
 		if ( isset( $this->arr_name_type[ $cat ] ) ) {
 			$name = $this->arr_name_type[ $cat ];
@@ -76,16 +74,17 @@ class	CL_Category {
 	
 		global $wpdb, $cl_lang;
 		
-		$limit = 1000;
+		$tax = 'type';
 		$arr_terms = array();
 		if ( empty( $this->categories ) ) {
 			$this->categories = $wpdb->get_results( $wpdb->prepare(
 				"
-				SELECT	*
-				FROM	cl_terms
-				LIMIT	%d
+				SELECT	ter.name as name, tax.term_taxonomy_id as term_id
+				FROM	cl_term_taxonomy tax
+				JOIN	cl_terms ter ON tax.term_id = ter.term_id
+				WHERE	tax.taxonomy = %s
 				",
-				$limit
+				$tax
 			) );
 		}
 		$terms = $this->categories;
@@ -93,7 +92,7 @@ class	CL_Category {
 			$arr_terms[ $term->term_id ] = $term->name;
 			if ( $cl_lang->en && ! $is_css ) {
 				switch ( $term->term_id ) {
-					case 5:
+					case 12:
 						$arr_terms[ $term->term_id ] = 'Miscelaneous';
 						break;
 					case 8:

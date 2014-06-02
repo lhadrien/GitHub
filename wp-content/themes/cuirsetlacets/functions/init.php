@@ -113,9 +113,9 @@ function save_creation_meta( $post_id, $post ) {
 	if ( ! current_user_can( 'edit_post', $post->ID ) )
 		return $post->ID;
 	// make an array
-	$creation_meta[ 'content_fr' ] = $_POST[ 'content_fr' ];
-	$creation_meta[ 'content_en' ] = $_POST[ 'content_en' ];
-	$creation_meta[ 'title_en' ] = $_POST[ 'title_en' ];
+	$creation_meta[ 'content_fr' ] = stripcslashes( $_POST[ 'content_fr' ] );
+	$creation_meta[ 'content_en' ] = stripcslashes( $_POST[ 'content_en' ] );
+	$creation_meta[ 'title_en' ] = stripcslashes( $_POST[ 'title_en' ] );
 	// Add values of $events_meta as custom fields
 	foreach ( $creation_meta as $key => $value ) { // Cycle through the $events_meta array!
 	

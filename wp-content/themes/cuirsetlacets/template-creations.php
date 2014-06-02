@@ -25,9 +25,12 @@
 							_cl( "Pas d'image", 'No image' );
 						}
 					?>
-					<div class="caption">
-						<h3><?php echo get_the_title( $creation->post_id ); ?></h3>
+					<div class="caption caption-content">
+						<h3><?php _cl( get_the_title( $creation->post_id ), $creation->title_en ); ?></h3>
 						<p><?php _cl( $creation->content_fr, $creation->content_en ); ?>
+					</div>
+					<div class="caption">
+						<a href="#" class="btn btn-primary" role="button"><?php _cl( 'Voir...', 'See more...' ); ?></a>
 					</div>
 				</div>
 			</div>
