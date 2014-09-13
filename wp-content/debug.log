@@ -282,3 +282,17 @@
 [03-Jun-2014 14:07:07 UTC] 12
 [03-Jun-2014 17:04:43 UTC] 10
 [03-Jun-2014 17:04:43 UTC] 10
+[13-Sep-2014 09:31:10 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'cl_admin_page' not found or invalid function name in G:\Programs\xampp\htdocs\cuirsetlacets\wp-includes\plugin.php on line 505
+[13-Sep-2014 09:31:18 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'page_sites' not found or invalid function name in G:\Programs\xampp\htdocs\cuirsetlacets\wp-includes\plugin.php on line 505
+[13-Sep-2014 09:31:24 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'cl_admin_page' not found or invalid function name in G:\Programs\xampp\htdocs\cuirsetlacets\wp-includes\plugin.php on line 505
+[13-Sep-2014 10:01:51 UTC] PHP Notice:  wp_tiny_mce est <strong>déprécié</strong> depuis la version 3.3! Utilisez wp_editor() à la place. in G:\Programs\xampp\htdocs\cuirsetlacets\wp-includes\functions.php on line 3201
+[13-Sep-2014 10:01:51 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'cl_admin_page' not found or invalid function name in G:\Programs\xampp\htdocs\cuirsetlacets\wp-includes\plugin.php on line 505
+[13-Sep-2014 10:01:53 UTC] PHP Notice:  wp_tiny_mce est <strong>déprécié</strong> depuis la version 3.3! Utilisez wp_editor() à la place. in G:\Programs\xampp\htdocs\cuirsetlacets\wp-includes\functions.php on line 3201
+[13-Sep-2014 10:02:22 UTC] PHP Parse error:  syntax error, unexpected '<' in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\admin.php on line 124
+[13-Sep-2014 10:08:21 UTC] PHP Notice:  wp_tiny_mce est <strong>déprécié</strong> depuis la version 3.3! Utilisez wp_editor() à la place. in G:\Programs\xampp\htdocs\cuirsetlacets\wp-includes\functions.php on line 3201
+[13-Sep-2014 10:40:58 UTC] PHP Notice:  wp_tiny_mce est <strong>déprécié</strong> depuis la version 3.3! Utilisez wp_editor() à la place. in G:\Programs\xampp\htdocs\cuirsetlacets\wp-includes\functions.php on line 3201
+[13-Sep-2014 10:41:00 UTC] PHP Notice:  wp_tiny_mce est <strong>déprécié</strong> depuis la version 3.3! Utilisez wp_editor() à la place. in G:\Programs\xampp\htdocs\cuirsetlacets\wp-includes\functions.php on line 3201
+[13-Sep-2014 10:41:23 UTC] PHP Notice:  wp_tiny_mce est <strong>déprécié</strong> depuis la version 3.3! Utilisez wp_editor() à la place. in G:\Programs\xampp\htdocs\cuirsetlacets\wp-includes\functions.php on line 3201
+[13-Sep-2014 10:54:45 UTC] PHP Notice:  wp_tiny_mce est <strong>déprécié</strong> depuis la version 3.3! Utilisez wp_editor() à la place. in G:\Programs\xampp\htdocs\cuirsetlacets\wp-includes\functions.php on line 3201
+[13-Sep-2014 10:54:48 UTC] PHP Notice:  wp_tiny_mce est <strong>déprécié</strong> depuis la version 3.3! Utilisez wp_editor() à la place. in G:\Programs\xampp\htdocs\cuirsetlacets\wp-includes\functions.php on line 3201
+[13-Sep-2014 10:55:45 UTC] PHP Notice:  wp_tiny_mce est <strong>déprécié</strong> depuis la version 3.3! Utilisez wp_editor() à la place. in G:\Programs\xampp\htdocs\cuirsetlacets\wp-includes\functions.php on line 3201
