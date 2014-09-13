@@ -10,8 +10,8 @@ class	CL_Custom_type {
 		'girdles'					=> 9,
 		'escarcelles-et-bourses'	=> 10,
 		'purses_pouchs'				=> 10,
-		'divers'					=> 5,
-		'miscellaneous'				=> 5
+		'divers'					=> 12,
+		'miscellaneous'				=> 12
 	);
 	
 	private $arr_name_type = array();

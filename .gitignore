@@ -220,3 +220,4 @@ pip-log.txt
 .gitignore
 /Pandamandapp/nbproject/private/
 /app/nbproject/private/
+/nbproject/private/

@@ -27,7 +27,7 @@ function cuirs_init() {
 			'publicly_queryable'	=> true,
 			'show_ui'				=> true,
 			'menu_position'			=> 4,
-			'has_archive'			=> true,
+			'has_archive'			=> false,
 			'hierarchical'			=> true,
 			'label'					=> 'Question',
 			'rewrite'				=> array(
@@ -81,6 +81,7 @@ function cuirs_init() {
 			),
 		)
 	);
+	flush_rewrite_rules();
 }
 
 
