@@ -22,15 +22,24 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * Body
 */
 
+@font-face {
+    font-family: 'Augusta'; /*a name to be used later*/
+    src: url('augusta.ttf'); /*URL to font*/
+}
+
 .background {
-	clear:					both !important;
-	background:				url(img/background_parcho.png);
-	background-repeat:		no-repeat;
-	background-size:		90% 100%;
-	background-position:	center;
-	height:					320px;
-	margin-top:				200px;
-	margin-bottom:			200px;
+	clear:                  both !important;
+	height:                 320px;
+	margin-top:             200px;
+	margin-bottom:          200px;
+        background-color : transparent;
+}
+
+.container-home {
+    background:             url(img/background_parcho.png);
+    background-repeat:      no-repeat;
+    background-size:        90% 100%;
+    background-position:    center;
 }
 
 #coussin_fr {
@@ -47,14 +56,16 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 #title-home {
 	text-align: center;
+        font-size: 80px;
+        font-family: augusta;
 }
 
 .text {
-	background:				rgba(255, 255, 255, 0.7);
-	border-radius:			10px;
-	padding:				39px;
-	margin-top: 			10px;
-	margin-bottom:			10px;
+	background:     rgba(255, 255, 255, 0.7);
+	border-radius:  10px;
+	padding:        39px;
+	margin-top:     10px;
+	margin-bottom:  10px;
 }
 
 #sites {
@@ -62,9 +73,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 body {
-	background-color:		#cca;
-	color:					#152;
-	background:				url(img/wallpaper.jpg);
+    background-color:   #cca;
+    color:              #152;
+    background:         url(img/wallpaper.jpg);
+    margin-bottom:      50px;
 }
 
 body a {

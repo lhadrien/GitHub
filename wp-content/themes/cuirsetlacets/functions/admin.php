@@ -37,7 +37,7 @@ function description_creations() {
         <p>
             <label>Description EN :</label>
             <br />
-            <?php wp_editor( $content_en , 'description_en', array('textarea_name'=>'content_en') ); ?>
+            <?php wp_editor( $content_en , 'description_en', array('textarea_name' => 'content_en') ); ?>
         </p>
 	<?php
 }
@@ -133,14 +133,52 @@ function description_amis() {
     <?php
 }
 
+/**
+ * function page Home
+ */
 function page_home()
 {
-    ?><div id="poststuff">
-    <form action="" method="POST">
-  <?php wp_editor( 'Hi,its content' , 'desired_id_of_textarea', $settings = array('textarea_name'=>'your_desired_name_for_$POST') ); ?> 
-  <input type="submit">
-  </form>
-</div> <?php
+    edit_page('page_home');
+}
+
+/**
+ * function page Commande
+ */
+function page_commandes()
+{
+    edit_page('page_commandes');
+}
+
+/**
+ * function page Nouveaute
+ */
+function page_nouveautes()
+{
+    edit_page('page_nouveautes');
+}
+
+/**
+ * function page Savoir
+ */
+function page_savoir()
+{
+    edit_page('page_savoir');
+}
+
+/**
+ * function page Agenda
+ */
+function page_agenda()
+{
+    edit_page('page_agenda');
+}
+
+/**
+ * function page Sites
+ */
+function page_sites()
+{
+    edit_page('page_sites');
 }
 
 /**
@@ -158,21 +196,27 @@ function cl_admin_menu() {
 
 add_action( 'admin_menu', 'cl_admin_menu' );
 
-/** In main plugin file **/
-
-add_action('admin_print_scripts', 'do_jslibs' );
-add_action('admin_print_styles', 'do_css' );
-
-function do_css()
+function edit_page( $page )
 {
-    wp_enqueue_style('thickbox');
-}
-
-function do_jslibs()
-{
-    wp_enqueue_script('editor');
-    wp_enqueue_script('thickbox');
-    add_action( 'admin_head', 'wp_tiny_mce' );
+    global $cl_lang;
+    
+    if (isset( $_POST[ $page . '_fr' ] ) ) {
+        $cl_lang->set_cuir_content( $page, $_POST[ $page . '_fr' ], 'fr' );
+    }
+    if (isset( $_POST[ $page . '_en' ] ) ) {
+        $cl_lang->set_cuir_content( $page, $_POST[ $page . '_en' ], 'en' );
+    }
+    ?>
+    <div id="poststuff">
+        <form action="" method="POST">
+            <h3>Contenu en Francais</h3>
+            <?php wp_editor( $cl_lang->get_cuir_content( $page, 'fr' ), 'page_content_fr', array( 'textarea_name' => $page . '_fr' ) ); ?>
+            <h3>Contenu en Anglais</h3>
+            <?php wp_editor( $cl_lang->get_cuir_content( $page, 'en' ), 'page_content_en', array( 'textarea_name' => $page . '_en' ) ); ?> 
+            <input type="submit" class="button button-primary button-large">
+        </form>
+    </div>
+    <?php
 }
 
 ?>

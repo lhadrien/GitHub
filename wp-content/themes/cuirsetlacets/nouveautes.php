@@ -13,5 +13,7 @@ $cl_lang->choose_language_fr();
 ?>
 
 <?php get_header(); ?>
-test nouveautes.php
-<?php get_footer(); ?>
+
+<?php echo $cl_lang->get_cuir_content( 'page_nouveautes' ); ?>
+
+<?php get_footer();

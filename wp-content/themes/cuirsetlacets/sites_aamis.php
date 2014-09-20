@@ -1,17 +1,17 @@
 <?php
 /*
-* friendly.php
+* sites_aamis.php
 * ---
-* Template Name: friendly_websites
+* Template Name: sites_aamis
 * ---
 * Site : Cuirs et Lacets
 * Createur : Hadrien
 * ---
-* template for sites_amis.php
+* template for sites_aamis.php
 */
 
 global $cl_lang;
-$cl_lang->choose_language_en();
+$cl_lang->choose_language_fr();
 ?>
 
 <?php get_header(); ?>
@@ -21,4 +21,4 @@ $cl_lang->choose_language_en();
 <div id="sites" class="col-sm-12">
 	<?php get_template_part( 'template', 'sites' ); ?>
 </div>
-<?php get_footer( 'en' ); ?>
+<?php get_footer();

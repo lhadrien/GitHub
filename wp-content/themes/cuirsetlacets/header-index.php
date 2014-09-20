@@ -35,8 +35,6 @@ global $cl_lang;
 	<![endif]-->
 	<?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
-	<div class="container theme-showcase" role="main" id="page">
-		
-		<div id="main" class="site-main">
+    <div class="container container-home theme-showcase" role="main" id="page">
+        <div id="main" class="site-main">

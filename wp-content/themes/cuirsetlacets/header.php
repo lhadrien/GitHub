@@ -35,7 +35,6 @@ global $cl_lang;
 	<![endif]-->
 	<?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
 	<div class="container theme-showcase" role="main" id="page">
 		<header id="masthead" class="site-header" role="banner">

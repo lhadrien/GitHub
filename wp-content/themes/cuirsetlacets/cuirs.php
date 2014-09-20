@@ -11,5 +11,7 @@
 global $cl_lang, $current_user;
 $cl_lang->choose_language_fr();
 get_header(); ?>
-test cuirs.php
+
+<?php echo $cl_lang->get_cuir_content( 'page_home' ); ?>
+
 <?php get_footer() ?>

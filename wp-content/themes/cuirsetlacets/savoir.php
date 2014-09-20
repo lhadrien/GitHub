@@ -13,5 +13,7 @@ $cl_lang->choose_language_fr();
 ?>
 
 <?php get_header(); ?>
-test en_savoir_plus.php
+
+<?php echo $cl_lang->get_cuir_content( 'page_savoir' ); ?>
+
 <?php get_footer(); ?>

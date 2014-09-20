@@ -2,7 +2,7 @@
 /*
 * sites_amis.php
 * ---
-* Template Name: sites_amis
+* Template Name: sites_amis_bug
 * ---
 * Site : Cuirs et Lacets
 * Createur : Hadrien
@@ -15,8 +15,11 @@ $cl_lang->choose_language_fr();
 
 <?php get_header(); ?>
 
+
+
+penis
 <div class="row">
-	<?php get_template_part( 'template', 'sites' ); ?>
+    <?php //get_template_part( 'template', 'sites' ); ?>
 </div>
 
-<?php get_footer(); ?>
+<?php get_footer();

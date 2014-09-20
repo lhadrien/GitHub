@@ -12,91 +12,90 @@ function cuirs_init() {
 	
 	// CUSTOM TYPE Creations
 	register_post_type( 'creations', array(
-			'labels' => array(
-				'name'					=> __( 'Creations Wapapa' ),
-				'singular_name' 		=> __( 'Creation' ),
-				'add_new'				=> __( 'Ajouter une Creation' ),
-				'edit_item'				=> __( 'Editer une Creation' ),
-				'menu_name'				=> __( 'Creations' ),
-				'view_item'				=> __( 'Voir les Creations' ),
-				'search_items'			=> __( 'Gno, on cherche' ),
-				'not_found'				=> __( "Ouin, rien n'a ete trouve" ),
-				'not_found_in_trash'	=> __( 'Rien dans la corbeille' )
-			),
-			'public'				=> true,
-			'publicly_queryable'	=> true,
-			'show_ui'				=> true,
-			'menu_position'			=> 4,
-			'has_archive'			=> false,
-			'hierarchical'			=> true,
-			'label'					=> 'Question',
-			'rewrite'				=> array(
-				'slug'			=> 'creations',
-				'with_front' 	=> true
-			),
-			'supports'		=> array(
-				'title',
-				'editor',
-				'thumbnail'
-			),
-		)
-	);
-	register_taxonomy(	"type",
-						array( "creations" ),
-						array(
-							"hierarchical"		=> true,
-							"label"				=> "Types",
-							"singular_label" 	=> "Type",
-							"rewrite" 			=> true
-						)
+            'labels' => array(
+                'name'                  => __( 'Creations Wapapa' ),
+                'singular_name'         => __( 'Creation' ),
+                'add_new'               => __( 'Ajouter une Creation' ),
+                'edit_item'             => __( 'Editer une Creation' ),
+                'menu_name'             => __( 'Creations' ),
+                'view_item'             => __( 'Voir les Creations' ),
+                'search_items'          => __( 'Gno, on cherche' ),
+                'not_found'             => __( "Ouin, rien n'a ete trouve" ),
+                'not_found_in_trash'    => __( 'Rien dans la corbeille' )
+            ),
+            'public'                => true,
+            'publicly_queryable'    => true,
+            'show_ui'               => true,
+            'menu_position'         => 4,
+            'has_archive'           => false,
+            'hierarchical'          => true,
+            'label'                 => 'Question',
+            'rewrite'               => array(
+                'slug'          => 'creations',
+                'with_front' 	=> true
+            ),
+            'supports'              => array(
+                'title',
+                'editor',
+                'thumbnail'
+            ),
+	) );
+	register_taxonomy(
+            "type",
+            array( "creations" ),
+            array(
+                "hierarchical"      => true,
+                "label"             => "Types",
+                "singular_label"    => "Type",
+                "rewrite"           => true
+            )
 	);
 	
 	// CUSTOM TYPE Sites Amis
 	register_post_type( 'amis', array(
-			'labels' => array(
-				'name'					=> __( 'Sites Amis' ),
-				'singular_name' 		=> __( 'Site Ami' ),
-				'add_new'				=> __( 'Ajouter un Site Ami' ),
-				'edit_item'				=> __( 'Editer un Site Ami' ),
-				'menu_name'				=> __( 'Sites Amis' ),
-				'view_item'				=> __( 'Voir les Sites Amis' ),
-				'search_items'			=> __( 'Gno, on cherche un site ami' ),
-				'not_found'				=> __( "Ouin, pas de sites amis" ),
-				'not_found_in_trash'	=> __( 'Pas de sites amis dans la corbeille' )
-			),
-			'public'				=> true,
-			'publicly_queryable'	=> true,
-			'show_ui'				=> true,
-			'menu_position'			=> 5,
-			'has_archive'			=> true,
-			'hierarchical'			=> false,
-			'label'					=> 'Question',
-			'rewrite'				=> array(
-				'slug'			=> 'sites-amis',
-				'with_front' 	=> true
-			),
-			'supports'		=> array(
-				'title',
-				'thumbnail'
-			),
-		)
-	);
+            'labels' => array(
+                'name'                  => __( 'Sites Amis' ),
+                'singular_name'         => __( 'Site Ami' ),
+                'add_new'               => __( 'Ajouter un Site Ami' ),
+                'edit_item'             => __( 'Editer un Site Ami' ),
+                'menu_name'             => __( 'Sites Amis' ),
+                'view_item'             => __( 'Voir les Sites Amis' ),
+                'search_items'          => __( 'Gno, on cherche un site ami' ),
+                'not_found'             => __( "Ouin, pas de sites amis" ),
+                'not_found_in_trash'    => __( 'Pas de sites amis dans la corbeille' )
+            ),
+            'public'                => true,
+            'publicly_queryable'    => true,
+            'show_ui'               => true,
+            'menu_position'         => 5,
+            'has_archive'           => false,
+            'hierarchical'          => true,
+            'label'                 => 'Question',
+            'rewrite'               => array(
+                'slug'          => 'sites-amis',
+                'with_front'    => true
+            ),
+            'supports'              => array(
+                'title',
+                'thumbnail'
+            ),
+        ) );
 	flush_rewrite_rules();
 }
 
 
 function save_meta( $post_id, $post ) {
-	
-	// dispatch the right function to save
-	if ( isset( $_POST[ 'edit_custom_creation' ] ) ) {
-		$success = save_creation_meta( $post_id, $post );
+
+    // dispatch the right function to save
+    if ( isset( $_POST[ 'edit_custom_creation' ] ) ) {
+        $success = save_creation_meta( $post_id, $post );
         return $success;
     }
-	
-	if ( isset( $_POST[ 'edit_custom_site_ami' ] ) ) {
-		$success = save_site_ami_meta( $post_id, $post );
-		return $success;
-	}
+
+    if ( isset( $_POST[ 'edit_custom_site_ami' ] ) ) {
+        $success = save_site_ami_meta( $post_id, $post );
+        return $success;
+    }
 }
 
 function save_creation_meta( $post_id, $post ) {

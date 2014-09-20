@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-09-02 09:39:39+0000\n"
+"PO-Revision-Date: 2014-09-15 09:49:19+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -70,7 +70,7 @@ msgstr "<strong>ERREUR</strong>&nbsp;: Nom d&rsquo;utilisateur invalide. <a href
 
 #: wp-includes/user.php:153
 msgid "<strong>ERROR</strong>: The password you entered for the username <strong>%1$s</strong> is incorrect. <a href=\"%2$s\">Lost your password</a>?"
-msgstr "<strong>ERREUR</strong>&nbsp;: Le mot de passe que vous avez saisi pour cet nom d&rsquo;utilisateur<strong>%1$s</strong> est incorrect. <a href=\"%2$s\">Vous avez perdu votre mot de passe</a>&nbsp;?"
+msgstr "<strong>ERREUR</strong>&nbsp;: le mot de passe que vous avez saisi pour le nom d&rsquo;utilisateur <strong>%1$s</strong> est incorrect. <a href=\"%2$s\">Avez-vous perdu votre mot de passe</a>&nbsp;?"
 
 #: wp-includes/media.php:1467
 msgid "Bitrate"

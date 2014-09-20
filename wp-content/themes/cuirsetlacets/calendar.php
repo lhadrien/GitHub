@@ -15,5 +15,7 @@ $cl_lang->choose_language_en();
 ?>
 
 <?php get_header(); ?>
-test calendar.php
+
+<?php echo $cl_lang->get_cuir_content( 'page_agenda' ); ?>
+
 <?php get_footer( 'en' ); ?>
