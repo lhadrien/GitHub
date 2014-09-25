@@ -21,27 +21,26 @@ global $cl_lang;
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width">
-	<title><?php wp_title( '|', true, 'right' ); ?></title>
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="stylesheet" href="<?php echo WP_THEME; ?>/bootstrap/<?php echo BOOTSTRAP_VERSION; ?>/css/bootstrap.min.css?ver=<?php echo CL_VERSION; ?>" type="text/css" media="all" />
-	<link rel="stylesheet" href="<?php echo WP_THEME; ?>/bootstrap/<?php echo BOOTSTRAP_VERSION; ?>/css/bootstrap-theme.css?ver=<?php echo CL_VERSION; ?>" type="text/css" media="all" />
-	<link rel="stylesheet" href="<?php echo WP_THEME; ?>/font-awesome/<?php echo FONT_AWESOME_VERSION; ?>/css/font-awesome.css?ver=<?php echo CL_VERSION; ?>" type="text/css" media="all" />
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<link href="<?php echo CL_HOME; ?>/favicon.ico" rel="shortcut icon" type="image/x-icon">
-	<!--[if lt IE 9]>
-	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
-	<![endif]-->
-	<?php wp_head(); ?>
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width">
+    <title><?php wp_title( '|', true, 'right' ); ?></title>
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="stylesheet" href="<?php echo WP_THEME; ?>/bootstrap/<?php echo BOOTSTRAP_VERSION; ?>/css/bootstrap.min.css?ver=<?php echo CL_VERSION; ?>" type="text/css" media="all" />
+    <link rel="stylesheet" href="<?php echo WP_THEME; ?>/bootstrap/<?php echo BOOTSTRAP_VERSION; ?>/css/bootstrap-theme.css?ver=<?php echo CL_VERSION; ?>" type="text/css" media="all" />
+    <link rel="stylesheet" href="<?php echo WP_THEME; ?>/font-awesome/<?php echo FONT_AWESOME_VERSION; ?>/css/font-awesome.css?ver=<?php echo CL_VERSION; ?>" type="text/css" media="all" />
+    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+    <link href="<?php echo CL_HOME; ?>/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <!--[if lt IE 9]>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
+    <![endif]-->
+    <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-	<div class="container theme-showcase" role="main" id="page">
-		<header id="masthead" class="site-header" role="banner">
-			<div>
-				<h3 class="text-muted"><?php echo ( $cl_lang->language == 'en' ) ? CL_NAME : CL_NOM ; ?></h3>
-				<a class="navbar-brand" href="<?php bloginfo('url')?>"><?php bloginfo('name')?></a>
-				<?php require( 'includes/top-bar.php' ); ?>
-			</div>
-		</header><!-- #masthead -->
-		<hr />
+    <div class="container container-site theme-showcase" role="main" id="page">
+        <header id="masthead" role="banner">
+            <div>
+                    <a class="navbar-brand" href="<?php bloginfo('url')?>"><?php bloginfo('name')?></a>
+                    <?php require( 'includes/top-bar.php' ); ?>
+            </div>
+        </header><!-- #masthead -->
+        <hr />

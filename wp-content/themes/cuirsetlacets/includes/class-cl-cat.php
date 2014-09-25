@@ -12,6 +12,7 @@ class	CL_Category {
 
         if ( $cl_lang->fr ) {
             $menu = array(
+                'La Boutique',
                 'Sommaire',
                 'Fourreaux',
                 'Escarcelles & Bourses',
@@ -20,6 +21,7 @@ class	CL_Category {
             );
         } else {
             $menu = array(
+                'The Shop',
                 'Index',
                 'Scabbards',
                 'Purses & Pouchs',
@@ -36,6 +38,7 @@ class	CL_Category {
 
         if ( $cl_lang->fr ) {
             $urls = array(
+                '/boutique/',
                 '/boutique/fourreaux/',
                 '/boutique/escarcelles-et-bourses/',
                 '/boutique/ceintures/',
@@ -43,6 +46,7 @@ class	CL_Category {
             );
         } else {
             $urls = array(
+                '/shop/',
                 '/shop/scabbards/',
                 '/shop/purses_pouchs/',
                 '/shop/girdles/',
@@ -54,7 +58,6 @@ class	CL_Category {
 
     public function display_title_cat( $cat, $is_css = false ) {
 
-        error_log( $cat );
         $this->arr_name_type = $this->get_name_cat( $is_css );
 
         if ( isset( $this->arr_name_type[ $cat ] ) ) {

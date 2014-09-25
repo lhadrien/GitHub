@@ -35,11 +35,38 @@ Use it to make something cool, have fun, and share what you've learned with othe
         background-color : transparent;
 }
 
+#masthead {
+    padding-top:    150px;
+}
+
 .container-home {
     background:             url(img/background_parcho.png);
     background-repeat:      no-repeat;
     background-size:        90% 100%;
     background-position:    center;
+    
+}
+
+.container-site {
+    background-color: #D3BF9A;
+    border-color:           #111 !important;
+    border-width: 2px;
+    border-style:           ridge;
+}
+
+.navbar-site {
+    background-color:       #BB9C64;
+    border-style:           ridge;
+    border-color:           #A97D23 !important;
+    border-width: 4px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #111;
+}
+
+.thumbnail {
+    background-color: #fff !important;
 }
 
 #coussin_fr {
@@ -73,9 +100,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 body {
-    background-color:   #cca;
-    color:              #152;
-    background:         url(img/wallpaper.jpg);
+    color:              #111;
     margin-bottom:      50px;
 }
 
@@ -84,7 +109,7 @@ body a {
 }
 
 body div {
-	background-color:		#fff;
+//	background-color:		#F2E2C1;
 }
 /*
 .nav {

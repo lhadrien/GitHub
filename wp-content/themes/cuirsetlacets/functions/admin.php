@@ -181,17 +181,23 @@ function page_sites()
     edit_page('page_sites');
 }
 
+function page_boutique()
+{
+    edit_page('page_boutique');
+}
+
 /**
  *  
  */
 function cl_admin_menu() {
     add_menu_page( 'Admin CL', __( 'Les pages du site' ), 'administrator', 'pages_du_site', 'cl_admin_page', '', 3 );
-    add_submenu_page( 'pages_du_site', __( 'Accueil' ), __( 'Accueil' ), 'administrator', 'page_home', 'page_home' ); 
-    add_submenu_page( 'pages_du_site', __( 'Commandes' ), __( 'Commandes' ), 'administrator', 'page_commandes', 'page_commandes' );
-    add_submenu_page( 'pages_du_site', __( 'Nouveautés' ), __( 'Nouveautés' ), 'administrator', 'page_nouveautes', 'page_nouveautes' ); 
-    add_submenu_page( 'pages_du_site', __( 'En savoir plus' ), __( 'En savoir plus' ), 'administrator', 'page_savoir', 'page_savoir' );
-    add_submenu_page( 'pages_du_site', __( 'Agenda' ), __( 'Agenda' ), 'administrator', 'page_agenda', 'page_agenda' ); 
-    add_submenu_page( 'pages_du_site', __( 'Sites amis' ), __( 'Sites amis' ), 'administrator', 'page_sites', 'page_sites' );
+    add_submenu_page( 'pages_du_site', 'Accueil', 'Accueil', 'administrator', 'page_home', 'page_home' ); 
+    add_submenu_page( 'page_du_site', 'Boutique', 'Boutique', 'administrator', 'page_boutique', 'page_boutique' );
+    add_submenu_page( 'pages_du_site', 'Commandes', 'Commandes', 'administrator', 'page_commandes', 'page_commandes' );
+    add_submenu_page( 'pages_du_site', 'Nouveautés', 'Nouveautés', 'administrator', 'page_nouveautes', 'page_nouveautes' ); 
+    add_submenu_page( 'pages_du_site', 'En savoir plus', 'En savoir plus', 'administrator', 'page_savoir', 'page_savoir' );
+    add_submenu_page( 'pages_du_site', 'Agenda', 'Agenda', 'administrator', 'page_agenda', 'page_agenda' ); 
+    add_submenu_page( 'pages_du_site', 'Sites amis', 'Sites amis', 'administrator', 'page_sites', 'page_sites' );
 }
 
 add_action( 'admin_menu', 'cl_admin_menu' );

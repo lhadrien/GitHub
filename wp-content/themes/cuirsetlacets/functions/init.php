@@ -36,7 +36,6 @@ function cuirs_init() {
             ),
             'supports'              => array(
                 'title',
-                'editor',
                 'thumbnail'
             ),
 	) );

@@ -135,7 +135,7 @@ class	CL_Custom_type {
             $creations = $this->get_all_creations();
         }
         if ( count( $creations ) === 0 ) {
-            _cl( 'Pas de creations encore', 'no creations yet' );
+            _cl( 'Pas de creations encore', 'No creations yet' );
             return ( false );
         }
         return ( $creations );
