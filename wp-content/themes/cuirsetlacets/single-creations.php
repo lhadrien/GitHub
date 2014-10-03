@@ -10,6 +10,7 @@
 
 global $cl_lang;
 $cl_lang->choose_language_fr();
+$creations = $cl_custom_type->get_creation();
 ?>
 
 <?php get_header(); ?>
@@ -24,7 +25,7 @@ $cl_lang->choose_language_fr();
             $nb_images = count( $images );
             if ( $nb_images >= 1 ) {
                 ?>
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <div id="creation_carousel" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
                         <?php for ( $i = 0; $i < $nb_images; $i++ ) : ?>
@@ -38,7 +39,7 @@ $cl_lang->choose_language_fr();
                             <div class="item<?php if ( $i === 0 ) : echo ' active'; endif; ?>">
                                 <img src="<?php echo $images{ $i }->link; ?>" alt="<?php echo $images{ $i }->post_title; ?>" />
                                 <div class="carousel-caption">
-                                  penis
+                                  ...
                                 </div>
                             </div>
                         <?php endfor; ?>
@@ -55,6 +56,10 @@ $cl_lang->choose_language_fr();
                 _cl( "Pas d'image", 'No image' );
             }
         ?>
+        <hr />
+        <div>
+            
+        </div>
     </div>
 </div>
 <?php get_footer();

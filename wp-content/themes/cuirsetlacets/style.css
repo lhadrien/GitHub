@@ -61,6 +61,32 @@ Use it to make something cool, have fun, and share what you've learned with othe
     border-width: 4px;
 }
 
+.social {
+    display:block;
+    margin:auto;
+}
+
+footer {
+    margin-bottom: 20px;
+}
+
+#creation_carousel {
+    height: 300px;
+}
+
+.carousel .item>img {
+    max-width: 50%;
+    height: 100%;
+}
+
+.carousel-inner > .item > img {
+    top: 0;
+    left: 0;
+    min-width: 50%;
+    height: 300px;
+    margin : auto;
+}
+
 .navbar-default .navbar-nav>li>a {
     color: #111;
 }

@@ -1,11 +1,19 @@
 <?php
 
+/**
+ * 
+ */
 class	CL_Category {
 
     private $arr_menu_title = array();
     private $arr_menu_url = array();
     private $categories;
 
+    /**
+     * 
+     * @global type $cl_lang
+     * @return type
+     */
     public function get_menu_title() {
 
         global $cl_lang;
@@ -32,6 +40,11 @@ class	CL_Category {
         return ( $menu );
     }
 
+    /**
+     * 
+     * @global type $cl_lang
+     * @return type
+     */
     public function get_menu_urls() {
 
         global $cl_lang;
@@ -56,6 +69,12 @@ class	CL_Category {
         return ( $urls );
     }
 
+    /**
+     * 
+     * @param type $cat
+     * @param type $is_css
+     * @return type
+     */
     public function display_title_cat( $cat, $is_css = false ) {
 
         $this->arr_name_type = $this->get_name_cat( $is_css );
@@ -73,6 +92,13 @@ class	CL_Category {
         }
     }
 
+    /**
+     * 
+     * @global type $wpdb
+     * @global type $cl_lang
+     * @param type $is_css
+     * @return type
+     */
     private function get_name_cat( $is_css = false ) {
 
         global $wpdb, $cl_lang;
