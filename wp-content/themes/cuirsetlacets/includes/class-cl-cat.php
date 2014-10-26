@@ -20,8 +20,8 @@ class	CL_Category {
 
         if ( $cl_lang->fr ) {
             $menu = array(
-                'La Boutique',
-                'Sommaire',
+                'Les Créations',
+                'La boutique',
                 'Fourreaux',
                 'Escarcelles & Bourses',
                 'Ceintures',
@@ -29,8 +29,8 @@ class	CL_Category {
             );
         } else {
             $menu = array(
-                'The Shop',
-                'Index',
+                'The Creations',
+                'The shop',
                 'Scabbards',
                 'Purses & Pouchs',
                 'Girdles',

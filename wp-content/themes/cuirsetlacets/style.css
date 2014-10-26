@@ -95,6 +95,18 @@ footer {
     background-color: #fff !important;
 }
 
+.price-head {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.price-value {
+    color: #a33;
+}
+.siret {
+    font-size: 10px;
+}
+
 #coussin_fr {
 	
 }

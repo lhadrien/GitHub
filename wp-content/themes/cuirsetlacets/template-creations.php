@@ -20,17 +20,17 @@
                         $images =  $cl_custom_type->get_images( $creation->post_id );
                         // var_dump( $images );
                         if ( count( $images ) >= 1 ) {
-                                ?><img src="<?php echo $images{ 0 }->link; ?>" alt="<?php echo $images{ 0 }->post_title; ?>" /><?php
+                            ?><img src="<?php echo $images{ 0 }->link; ?>" alt="<?php echo $images{ 0 }->post_title; ?>" /><?php
                         } else {
-                                _cl( "Pas d'image", 'No image' );
+                            _cl( "Pas d'image", 'No image' );
                         }
                     ?>
                     <div class="caption caption-content">
                         <h3><?php _cl( get_the_title( $creation->post_id ), $creation->title_en ); ?></h3>
-                        <p><?php _cl( $creation->content_fr, $creation->content_en ); ?>
+                        <p><?php _cl( $creation->content_fr, $creation->content_en ); ?></p>
                     </div>
                     <div class="caption">
-                        <a href="#" class="btn btn-primary" role="button"><?php _cl( 'Voir...', 'See more...' ); ?></a>
+                        <a href="<?php echo get_permalink( $creation->object_id ); ?>" class="btn btn-primary" role="button"><?php _cl( 'Voir...', 'See more...' ); ?></a>
                     </div>
                 </div>
             </div>

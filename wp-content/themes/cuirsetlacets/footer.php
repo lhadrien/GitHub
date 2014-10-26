@@ -30,7 +30,7 @@
                         <div class="col-md-4" style="text-align: right">
                             <small>
                                 <u><b>Cuirs et Lacets :</b></u><br />
-                            Siret : 800 092 496 00010
+                                <span class="siret">Siret : 800 092 496 00010</span>
                             </small>
                         </div>
                     </div>
