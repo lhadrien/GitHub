@@ -17,4 +17,4 @@ get_header(); ?>
 <div class="row">
 	<?php get_template_part( 'template', 'creations' ); ?>
 </div>
-<?php get_footer(); ?>
+<?php get_footer();

@@ -15,14 +15,14 @@
                     <hr />
                     <div class="row">
                         <div class="col-sm-4">
-                            <a href="http://www.facebook.com/" name="@facebook">
+                            <a href="http://www.facebook.com/taillejarret.mesnieedemontinius" name="@facebook">
                                 <img class="social img-circle" src="<?php echo WP_THEME; ?>/img/social/facebook.png" alt="Cuirs et Lacets @facebook" width="36" height="36" />
                             </a>
                         </div>
                         <div class="col-md-4" style="text-align: center">
                             <small>
                                 <a href="<?php echo CL_HOME; ?>"><?php _cl( "Page d'accueil", 'Home page' ); ?></a> -
-                                <a href="<?php echo CL_HOME; ?>"><?php _cl( 'Mentions légales', 'Mentions légales' ); ?></a> -
+                                <a href="<?php echo CL_HOME; ?>"><?php _cl( 'Mentions légales', 'Imprint' ); ?></a> -
                                 <a href="<?php echo CL_HOME . __cl( '/eng/', '/fr/' ); ?>"><?php _cl( 'English version', 'Version Francaise' ); ?></a>
                             </small>
                             

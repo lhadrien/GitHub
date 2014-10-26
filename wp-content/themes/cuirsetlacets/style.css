@@ -48,10 +48,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .container-site {
-    background-color: #D3BF9A;
+    /*background-color: #D3BF9A;*/
+    background:             url(img/leather_01.jpg);
+    border-image: url(img/leather_border_01.png) 10 70 stretch;
     border-color:           #111 !important;
-    border-width: 2px;
-    border-style:           ridge;
+    border-width: 30px;
 }
 
 .navbar-site {
@@ -95,8 +96,9 @@ footer {
     background-color: #fff !important;
 }
 
-.price-head {
-    font-size: 17px;
+.price {
+    margin-top: 20px;
+    font-size: 19px;
     font-weight: bold;
 }
 
@@ -113,6 +115,18 @@ footer {
 
 #coussin_en {
 	
+}
+
+nav.navbar a {
+    font-size: 20px;
+    font-family: augusta;
+    font-weight: 500;
+}
+
+.panel a, .panel-heading {
+    font-size: 20px;
+    font-family: augusta;
+    font-weight: 500;
 }
 
 .coussin {

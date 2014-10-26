@@ -17,4 +17,4 @@ $cl_lang->choose_language_fr();
 
 <?php echo $cl_lang->get_cuir_content( 'page_agenda' ); ?>
 
-<?php get_footer(); ?>
+<?php get_footer();

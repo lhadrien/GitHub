@@ -18,4 +18,4 @@ $cl_lang->choose_language_en();
 
 <?php echo $cl_lang->get_cuir_content( 'page_agenda' ); ?>
 
-<?php get_footer( 'en' ); ?>
+<?php get_footer();

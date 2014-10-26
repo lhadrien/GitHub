@@ -60,7 +60,7 @@ $cl_lang->choose_language_fr();
                 ?>
             </div>
             <div class="col-md-5">
-                <h3><?php _cl('Caractéristiques', 'Specifications'); ?> :</h3>
+                <h3><u><?php _cl('Caractéristiques', 'Specifications'); ?> :</u></h3>
                 <dl class="dl-horizontal">
                     <dt><?php _cl( 'Date', 'Date' ); ?> :</dt>
                     <dd>N/C</dd>
@@ -68,8 +68,9 @@ $cl_lang->choose_language_fr();
                     <dd>N/C</dd>
                     <dt><?php _cl( 'Couleurs disponibles', 'available colours' ); ?> :</dt>
                     <dd>N/C</dd>
+                    <dt class="price"><?php _cl( 'Prix', 'Price' ); ?> :</dt>
+                    <dd class="price price-value">N/C</dd>
                 </dl>
-                <p class="price-head"><?php _cl( 'Prix', 'Price' ); ?> : <span class="price-value">N/C</span></p>
             </div>
         </div>
         <hr />
