@@ -2,7 +2,10 @@
 
 function cuirs_admin_init() {
 
-	add_meta_box( "title_english_creations", "Titre Anglais", "title_english_creations", "creations", "normal", "high" );
+	add_meta_box( "title_english_creations", "Titre Anglais :", "title_english_creations", "creations", "normal", "high" );
+        add_meta_box( "epoque_creations", "L'epoque de l'objet :", "epoque_creations", "creations", "normal", "high" );
+        add_meta_box( "size_creations", "La taille de l'objet :", "size_creations", "creations", "normal", "high" );
+        add_meta_box( "price_creations", "Le prix :", "price_creations", "creations", "normal", "high" );
 	add_meta_box( "description_creations", "Description Francaise/Anglaise", "description_creations", "creations", "normal", "low" );
 	add_meta_box( "images_creations", "Ajoute des images", "images_creations", "creations", "side", "low" );
 	add_meta_box( "url_amis", "Lien vers le site ami", "url_amis", "amis", "normal", "high" );
@@ -23,6 +26,9 @@ function description_creations() {
 	if ( $metas ) {
 		$content_fr = $metas->content_fr;
 		$content_en = $metas->content_en;
+                $epoque = $metas->epoque;
+                $size = $metas->size;
+                $price = $metas->price;
 	} else {
 		$content_fr = '';
 		$content_en = '';
@@ -57,6 +63,57 @@ function title_english_creations() {
 	}
 	// Echo out the field
 	echo '<input type="text" name="title_en" value="' . $title_en  . '" class="widefat" />';
+}
+
+function epoque_creations() {
+
+	global $post, $cl_custom_type;
+
+	$cl_custom_type->type_post = 'creations';
+
+	// Get the location data if its already been entered
+	$metas = $cl_custom_type->get_cuirs_meta( $post->ID, $cl_custom_type->type_post );
+	if ( $metas ) {
+		$epoque = $metas->epoque;
+	} else {
+		$epoque = '';
+	}
+	// Echo out the field
+	echo '<input type="text" name="epoque" value="' . $epoque  . '" class="widefat" />';
+}
+
+function size_creations() {
+
+	global $post, $cl_custom_type;
+
+	$cl_custom_type->type_post = 'creations';
+
+	// Get the location data if its already been entered
+	$metas = $cl_custom_type->get_cuirs_meta( $post->ID, $cl_custom_type->type_post );
+	if ( $metas ) {
+		$size = $metas->size;
+	} else {
+		$size = '';
+	}
+	// Echo out the field
+	echo '<input type="text" name="size" value="' . $size  . '" class="widefat" />';
+}
+
+function price_creations() {
+
+	global $post, $cl_custom_type;
+
+	$cl_custom_type->type_post = 'creations';
+
+	// Get the location data if its already been entered
+	$metas = $cl_custom_type->get_cuirs_meta( $post->ID, $cl_custom_type->type_post );
+	if ( $metas ) {
+		$price = $metas->price;
+	} else {
+		$price = '';
+	}
+	// Echo out the field
+	echo '<input type="text" name="price" value="' . $price  . '" class="widefat" />';
 }
 
 function images_creations() {

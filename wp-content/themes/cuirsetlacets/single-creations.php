@@ -10,7 +10,8 @@
 
 global $cl_lang;
 $cl_lang->choose_language_fr();
-//$creations = $cl_custom_type->get_creation();
+$creations = $cl_custom_type->get_creations();
+$creation = $creations{0};
 ?>
 
 <?php get_header(); ?>
@@ -63,19 +64,23 @@ $cl_lang->choose_language_fr();
                 <h3><u><?php _cl('Caractéristiques', 'Specifications'); ?> :</u></h3>
                 <dl class="dl-horizontal">
                     <dt><?php _cl( 'Date', 'Date' ); ?> :</dt>
-                    <dd>N/C</dd>
+                    <dd><?php echo (isset($creation->epoque)) ? $creation->epoque : 'N/C'; ?></dd>
                     <dt><?php _cl( 'Taille', 'Size' ); ?> :</dt>
-                    <dd>N/C</dd>
+                    <dd><?php echo (isset($creation->size)) ? $creation->size : 'N/C'; ?></dd>
                     <dt><?php _cl( 'Couleurs disponibles', 'available colours' ); ?> :</dt>
                     <dd>N/C</dd>
                     <dt class="price"><?php _cl( 'Prix', 'Price' ); ?> :</dt>
-                    <dd class="price price-value">N/C</dd>
+                    <dd class="price price-value"><?php echo (isset($creation->price)) ? $creation->price : 'N/C'; ?> €</dd>
                 </dl>
             </div>
         </div>
         <hr />
         <div>
-            un petit test
+            <?php if ( $cl_lang->language == 'fr' ) : ?>
+                <?php echo (isset($creation->content_fr)) ? $creation->content_fr : 'Pas de description'; ?>
+            <?php else : ?>
+                <?php echo (isset($creation->content_en)) ? $creation->content_en : 'No descriptions'; ?>
+            <?php endif; ?>
         </div>
     </div>
 </div>

@@ -115,6 +115,9 @@ function save_creation_meta( $post_id, $post ) {
 	$creation_meta[ 'content_fr' ] = stripcslashes( $_POST[ 'content_fr' ] );
 	$creation_meta[ 'content_en' ] = stripcslashes( $_POST[ 'content_en' ] );
 	$creation_meta[ 'title_en' ] = stripcslashes( $_POST[ 'title_en' ] );
+        $creation_meta[ 'epoque' ] = stripcslashes( $_POST[ 'epoque' ] );
+        $creation_meta[ 'size' ] = stripcslashes( $_POST[ 'size' ] );
+        $creation_meta[ 'price' ] = stripcslashes( $_POST[ 'price' ] );
 	// Add values of $events_meta as custom fields
 	foreach ( $creation_meta as $key => $value ) { // Cycle through the $events_meta array!
 	

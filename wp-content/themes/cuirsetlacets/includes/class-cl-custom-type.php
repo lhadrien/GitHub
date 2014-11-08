@@ -41,8 +41,8 @@ class	CL_Custom_type {
             return ( false );
         }
         $data = array(
-            'post_id' 	=> $post_id,
-            $key		=> $value
+            'post_id'   => $post_id,
+            $key        => $value
         );
         $wpdb->insert( 'cl_' . $table, $data );
     }

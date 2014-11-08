@@ -15,7 +15,11 @@ $cl_lang->choose_language_en();
 ?>
 
 <?php get_header(); ?>
-
-<?php echo $cl_lang->get_cuir_content( 'page_nouveautes' ); ?>
+<h2>What's new ?</h2>
+<div class="row">
+    <div class="the-page col-md-12">
+        <?php echo $cl_lang->get_cuir_content( 'page_nouveautes' ); ?>
+    </div>
+</div>
 
 <?php get_footer( 'en' ); ?>

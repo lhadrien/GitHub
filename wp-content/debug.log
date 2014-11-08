@@ -1,44 +1,6 @@
-[03-Oct-2014 18:27:26 UTC] PHP Fatal error:  Call to undefined method CL_Custom_type::get_creation() in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\single-creations.php on line 13
-[03-Oct-2014 18:27:39 UTC] PHP Fatal error:  Call to undefined method CL_Custom_type::get_creation() in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\single-creations.php on line 13
-[03-Oct-2014 18:30:34 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'cl_admin_page' not found or invalid function name in G:\Programs\xampp\htdocs\cuirsetlacets\wp-includes\plugin.php on line 505
-[03-Oct-2014 18:34:26 UTC] PHP Warning:  Invalid argument supplied for foreach() in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\template-creations.php on line 13
-[26-Oct-2014 09:16:45 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
-[26-Oct-2014 09:16:45 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
-[26-Oct-2014 09:16:45 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 13
-[26-Oct-2014 09:16:45 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
-[26-Oct-2014 09:21:32 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
-[26-Oct-2014 09:21:32 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
-[26-Oct-2014 09:21:32 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 13
-[26-Oct-2014 09:21:32 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
-[26-Oct-2014 09:21:39 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
-[26-Oct-2014 09:21:39 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
-[26-Oct-2014 09:21:39 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 13
-[26-Oct-2014 09:21:39 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
-[26-Oct-2014 11:23:33 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
-[26-Oct-2014 11:23:33 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
-[26-Oct-2014 11:23:33 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 13
-[26-Oct-2014 11:23:33 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
-[26-Oct-2014 11:23:57 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
-[26-Oct-2014 11:23:57 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
-[26-Oct-2014 11:23:57 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 13
-[26-Oct-2014 11:23:57 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
-[26-Oct-2014 11:23:58 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
-[26-Oct-2014 11:23:58 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
-[26-Oct-2014 11:23:58 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 13
-[26-Oct-2014 11:23:58 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
-[26-Oct-2014 11:50:53 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
-[26-Oct-2014 11:50:53 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
-[26-Oct-2014 11:50:53 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 13
-[26-Oct-2014 11:50:53 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
-[26-Oct-2014 11:50:53 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
-[26-Oct-2014 11:50:53 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
-[26-Oct-2014 11:50:53 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 13
-[26-Oct-2014 11:50:53 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
-[26-Oct-2014 11:50:54 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
-[26-Oct-2014 11:50:54 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
-[26-Oct-2014 11:50:54 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 13
-[26-Oct-2014 11:50:54 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
-[26-Oct-2014 11:50:54 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
-[26-Oct-2014 11:50:54 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
-[26-Oct-2014 11:50:54 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 13
-[26-Oct-2014 11:50:54 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
+[07-Nov-2014 17:16:39 UTC] PHP Fatal error:  Call to undefined method CL_Custom_type::get_creation() in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\single-creations.php on line 13
+[07-Nov-2014 17:40:36 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
+[07-Nov-2014 17:40:36 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
+[07-Nov-2014 17:40:36 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 13
+[07-Nov-2014 17:40:36 UTC] PHP Notice:  Undefined property: CL_Lang::$fr in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\functions\tools.php on line 31
+[07-Nov-2014 17:58:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in G:\Programs\xampp\htdocs\cuirsetlacets\wp-content\themes\cuirsetlacets\template-creations.php on line 13

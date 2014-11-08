@@ -15,9 +15,6 @@ $cl_lang->choose_language_fr();
 
 <?php get_header(); ?>
 
-
-
-penis
 <div class="row">
     <?php //get_template_part( 'template', 'sites' ); ?>
 </div>

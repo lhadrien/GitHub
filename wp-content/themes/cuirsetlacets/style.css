@@ -40,26 +40,61 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .container-home {
-    background:             url(img/background_parcho.png);
+    background:             url(img/background_parcho.jpg);
     background-repeat:      no-repeat;
-    background-size:        90% 100%;
+    background-size:        100% 100%;
     background-position:    center;
+    border: #885D56 8px ridge;
+}
+
+#choose {
+    margin-top: -150px;
+}
+
+#choose p {
+    font-size: 26px;
+    text-align: center;
+}
+
+#choose p.small {
+    font-size: 20px;
+}
+
+
+.container-site {
+    background-color: #F2E2C1;
+    border-color: #111;
+    border-style: solid;
+    margin-top: 30px;
+}
+
+.navbar {
+    border: 0px;
     
 }
 
-.container-site {
-    /*background-color: #D3BF9A;*/
-    background:             url(img/leather_01.jpg);
-    border-image: url(img/leather_border_01.png) 10 70 stretch;
-    border-color:           #111 !important;
-    border-width: 30px;
+.navbar-site {
+    background-color: #CFBD97;
+    border-style: ridge;
+    border-color: #333 !important;
+    border-width: 2px;
 }
 
-.navbar-site {
-    background-color:       #BB9C64;
-    border-style:           ridge;
-    border-color:           #A97D23 !important;
-    border-width: 4px;
+footer#colophon {
+    margin-top: 50px;
+    background-color: #CFBD97;
+    z-index: 3;
+    padding: 20px 10px 20px 10px;
+}
+
+#site-main {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+header {
+    margin-bottom: 40px;
 }
 
 .social {
@@ -83,7 +118,8 @@ footer {
 .carousel-inner > .item > img {
     top: 0;
     left: 0;
-    min-width: 50%;
+    min-width: 83%;
+    width: 83%;
     height: 300px;
     margin : auto;
 }
@@ -110,8 +146,9 @@ footer {
 }
 
 #coussin_fr {
-	
 }
+
+
 
 #coussin_en {
 	
@@ -136,7 +173,7 @@ nav.navbar a {
 #title-home {
 	text-align: center;
         font-size: 80px;
-        font-family: augusta;
+        font-family: Augusta;
 }
 
 .text {
@@ -148,7 +185,7 @@ nav.navbar a {
 }
 
 #sites {
-	background-color: #a75 !important;
+
 }
 
 body {

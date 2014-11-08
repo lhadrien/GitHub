@@ -15,7 +15,11 @@ $cl_lang->choose_language_en();
 ?>
 
 <?php get_header(); ?>
+<h2>Want to learn more ?</h2>
+<div class="row">
+    <div class="the-page col-md-12">
+        <?php echo $cl_lang->get_cuir_content( 'page_savoir' ); ?>
+    </div>
+</div>
 
-<?php echo $cl_lang->get_cuir_content( 'page_savoir' ); ?>
-
-<?php get_footer( 'en' ); ?>
+<?php get_footer( 'en' );

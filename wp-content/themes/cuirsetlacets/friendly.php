@@ -16,9 +16,7 @@ $cl_lang->choose_language_en();
 
 <?php get_header(); ?>
 
+<h2>This is my friendly websites</h2>
 <p><?php echo $cl_lang->get_cuir_content( 'page_sites' ); ?></p>
-
-<div id="sites" class="col-sm-12">
-	<?php get_template_part( 'template', 'sites' ); ?>
-</div>
-<?php get_footer( 'en' ); ?>
+    <?php get_template_part( 'template', 'sites' ); ?>
+<?php get_footer( 'en' );

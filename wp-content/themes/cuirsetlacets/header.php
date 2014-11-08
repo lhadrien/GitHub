@@ -43,4 +43,4 @@ global $cl_lang;
                     <?php require( 'includes/top-bar.php' ); ?>
             </div>
         </header><!-- #masthead -->
-        <hr />
+        <div id="site-main">

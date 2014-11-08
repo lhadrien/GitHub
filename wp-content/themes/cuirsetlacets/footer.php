@@ -9,10 +9,9 @@
  * @since Twenty Thirteen 1.0
  */
 ?>
-
+        </div>
             <footer id="colophon" class="site-footer" role="contentinfo">
                 <div class="site-info">
-                    <hr />
                     <div class="row">
                         <div class="col-sm-4">
                             <a href="http://www.facebook.com/taillejarret.mesnieedemontinius" name="@facebook">
