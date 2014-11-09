@@ -95,9 +95,9 @@ class CL_Lang {
             $lang = $this->language;
         }
         if ( $lang === 'fr' ) {
-            return $this->page_content->content_fr;
+            return nl2br($this->page_content->content_fr);
         } elseif ( $lang === 'en' ) {
-            return $this->page_content->content_en;
+            return nl2br($this->page_content->content_en);
         }
         return false;
     }

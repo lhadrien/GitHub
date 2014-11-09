@@ -118,8 +118,8 @@ footer {
 .carousel-inner > .item > img {
     top: 0;
     left: 0;
-    min-width: 83%;
-    width: 83%;
+    min-width: auto;
+    width: auto;
     height: 300px;
     margin : auto;
 }

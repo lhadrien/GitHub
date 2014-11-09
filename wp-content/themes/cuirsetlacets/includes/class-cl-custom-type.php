@@ -101,6 +101,20 @@ class	CL_Custom_type {
             $limit
         ) );
     }
+    
+    private function get_creation_by_id( $id ) {
+        
+        global $wpdb;
+
+        return $wpdb->get_row( $wpdb->prepare(
+            "
+            SELECT  *
+            FROM    cl_creations
+            WHERE   post_id = %d
+            ",
+            $id
+        ) );
+    }
 	
     private function get_creations_by_type( $tax_id ) {
 
@@ -139,6 +153,17 @@ class	CL_Custom_type {
             return ( false );
         }
         return ( $creations );
+    }
+    
+    public function get_creation() {
+
+        global $post;
+
+        if ( ! isset( $post->ID ) ) {
+            return ( false );
+        }
+        $creation = $this->get_creation_by_id( $post->ID );
+        return ( $creation );
     }
 	
     public function get_images( $post_id = 0 ) {
