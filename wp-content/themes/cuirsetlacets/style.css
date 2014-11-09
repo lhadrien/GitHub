@@ -62,10 +62,17 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 
 .container-site {
-    background-color: #F2E2C1;
-    border-color: #111;
-    border-style: solid;
-    margin-top: 30px;
+    background-color:   #F2E2C1;
+    border-color:       #111;
+    border-style:       solid;
+    margin-top:         30px;
+    background: url('img/wildtextures-leather-Campo-beige.jpg');
+}
+
+body {
+    color:              #111;
+    margin-bottom:      50px;
+    background: url('img/wood-brown-texture-fence-wall.jpg');
 }
 
 .navbar {
@@ -74,17 +81,31 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .navbar-site {
+    background: url('img/wildtextures-leather-Campo-chestnut.jpg');
     background-color: #CFBD97;
-    border-style: ridge;
-    border-color: #333 !important;
+    border-style: outset;
+    border-color: #3E2D25 !important;
     border-width: 2px;
+}
+
+.navbar-site a {
+    color: #BA9F81 !important;
+    text-shadow: -1px -1px 0px rgba(10, 10, 10, 1) !important;
 }
 
 footer#colophon {
     margin-top: 50px;
-    background-color: #CFBD97;
+    background: url('img/wildtextures-leather-Campo-chestnut.jpg');
+    border-style: outset;
+    border-color: #3E2D25 !important;
+    border-width: 2px;
     z-index: 3;
     padding: 20px 10px 20px 10px;
+    color: #BA9F81;
+}
+
+footer#colophon a {
+    color: #BA9F81;
 }
 
 #site-main {
@@ -186,11 +207,6 @@ nav.navbar a {
 
 #sites {
 
-}
-
-body {
-    color:              #111;
-    margin-bottom:      50px;
 }
 
 body a {
