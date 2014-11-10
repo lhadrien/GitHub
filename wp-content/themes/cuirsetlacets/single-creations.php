@@ -10,8 +10,7 @@
 
 global $cl_lang;
 $cl_lang->choose_language_fr();
-$creations = $cl_custom_type->get_creations();
-$creation = $creations{0};
+$creation = $cl_custom_type->get_creation();
 ?>
 
 <?php get_header(); ?>
