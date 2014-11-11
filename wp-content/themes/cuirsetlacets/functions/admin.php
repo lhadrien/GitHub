@@ -246,18 +246,19 @@ function page_boutique()
 /**
  *  
  */
-function cl_admin_menu() {
+function cl_admin_page_menu() {
     add_menu_page( 'Admin CL', __( 'Les pages du site' ), 'administrator', 'pages_du_site', 'cl_admin_page', '', 3 );
     add_submenu_page( 'pages_du_site', 'Accueil', 'Accueil', 'administrator', 'page_home', 'page_home' ); 
-    add_submenu_page( 'page_du_site', 'Boutique', 'Boutique', 'administrator', 'page_boutique', 'page_boutique' );
+    add_submenu_page( 'pages_du_site', 'Boutique', 'Boutique', 'administrator', 'page_boutique', 'page_boutique' );
     add_submenu_page( 'pages_du_site', 'Commandes', 'Commandes', 'administrator', 'page_commandes', 'page_commandes' );
     add_submenu_page( 'pages_du_site', 'Nouveautés', 'Nouveautés', 'administrator', 'page_nouveautes', 'page_nouveautes' ); 
     add_submenu_page( 'pages_du_site', 'En savoir plus', 'En savoir plus', 'administrator', 'page_savoir', 'page_savoir' );
     add_submenu_page( 'pages_du_site', 'Agenda', 'Agenda', 'administrator', 'page_agenda', 'page_agenda' ); 
     add_submenu_page( 'pages_du_site', 'Sites amis', 'Sites amis', 'administrator', 'page_sites', 'page_sites' );
+    add_menu_page( 'Admin Category', __( 'Les catégories créations' ), 'administrator', 'categories_du_site', 'cl_admin_cat_page', '', 4 ); 
 }
 
-add_action( 'admin_menu', 'cl_admin_menu' );
+add_action( 'admin_menu', 'cl_admin_page_menu' );
 
 function edit_page( $page )
 {
@@ -275,11 +276,74 @@ function edit_page( $page )
             <h3>Contenu en Francais</h3>
             <?php wp_editor( $cl_lang->get_cuir_content( $page, 'fr' ), 'page_content_fr', array( 'textarea_name' => $page . '_fr' ) ); ?>
             <h3>Contenu en Anglais</h3>
-            <?php wp_editor( $cl_lang->get_cuir_content( $page, 'en' ), 'page_content_en', array( 'textarea_name' => $page . '_en' ) ); ?> 
+            <?php wp_editor( $cl_lang->get_cuir_content( $page, 'en' ), 'page_content_en', array( 'textarea_name' => $page . '_en' ) ); ?>
             <input type="submit" class="button button-primary button-large">
         </form>
     </div>
     <?php
 }
 
-?>
+
+/*********** CATEGORY MENU ***********/
+
+function cl_admin_cat_page() {
+    
+    global $cl_lang;
+    
+    if (isset( $_POST[ 'submit_cat' ] ) ) {
+        $cl_lang->set_cat_content( $_POST );
+    }
+    $arr_cat = $cl_lang->get_cat_content();
+    ?>
+    <h2>Les Catégories du site</h2>
+    <p>Ici remplir une description courtes des catégories du site. Elles seront visible dans le sommaire de la boutique, pour indiquer les différentes sections</p>
+    <hr />
+    <div id="poststuff">
+        <form action="" method="POST">
+            <p>
+                <label for="description_fourreau_fr">Description Fourreau FR :</label>
+                <textarea id="description_fourreau_fr" name="description_fourreau_fr" placeholder="Pas de description encore..." rows="4" cols="75"><?php echo $arr_cat[ 'cat_fourreau' ]['fr']; ?></textarea>
+            </p>
+            <p>
+                <label for="description_fourreau_en">Description Fourreau EN :</label>
+                <textarea id="description_fourreau_en" name="description_fourreau_en" placeholder="Pas de description encore..." rows="4" cols="75"><?php echo $arr_cat[ 'cat_fourreau' ]['en']; ?></textarea>
+            </p>
+            <p>
+                <label for="description_escarcelle_fr">Description Escarcelle FR :</label>
+                <textarea id="description_escarcelle_fr" name="description_escarcelle_fr" placeholder="Pas de description encore..." rows="4" cols="75"><?php echo $arr_cat[ 'cat_escarcelle' ]['fr']; ?></textarea>
+            </p>
+            <p>
+                <label for="description_escarcelle_en">Description Escarcelle EN :</label>
+                <textarea id="description_escarcelle_en" name="description_escarcelle_en" placeholder="Pas de description encore..." rows="4" cols="75"><?php echo $arr_cat[ 'cat_escarcelle' ]['en']; ?></textarea>
+            </p>
+            <p>
+                <label for="description_bourse_fr">Description Bourse FR :</label>
+                <textarea id="description_bourse_fr" name="description_bourse_fr" placeholder="Pas de description encore..." rows="4" cols="75"><?php echo $arr_cat[ 'cat_bourse' ]['fr']; ?></textarea>
+            </p>
+            <p>
+                <label for="description_bourse_en">Description Bourse EN :</label>
+                <textarea id="description_bourse_en" name="description_bourse_en" placeholder="Pas de description encore..." rows="4" cols="75"><?php echo $arr_cat[ 'cat_bourse' ]['en']; ?></textarea>
+            </p>
+            <p>
+                <label for="description_ceinture_fr">Description Ceinture FR :</label>
+                <textarea id="description_ceinture_fr" name="description_ceinture_fr" placeholder="Pas de description encore..." rows="4" cols="75"><?php echo $arr_cat[ 'cat_ceinture' ]['fr']; ?></textarea>
+            </p>
+            <p>
+                <label for="description_ceinture_en">Description Ceinture EN :</label>
+                <textarea id="description_ceinture_en" name="description_ceinture_en" placeholder="Pas de description encore..." rows="4" cols="75"><?php echo $arr_cat[ 'cat_ceinture' ]['en']; ?></textarea>
+            </p>
+            <p>
+                <label for="description_divers_fr">Description Divers FR :</label>
+                <textarea id="description_divers_fr" name="description_divers_fr" placeholder="Pas de description encore..." rows="4" cols="75"><?php echo $arr_cat[ 'cat_divers' ]['fr']; ?></textarea>
+            </p>
+            <p>
+                <label for="description_divers_en">Description Divers EN :</label>
+                <textarea id="description_diver_en" name="description_divers_en" placeholder="Pas de description encore..." rows="4" cols="75"><?php echo $arr_cat[ 'cat_divers' ]['en']; ?></textarea>
+            </p>
+            <hr />
+            <input type="submit" class="button button-primary button-large" name="submit_cat" value="Valider les changements">
+        </form>
+    </div>
+    
+    <?php
+}

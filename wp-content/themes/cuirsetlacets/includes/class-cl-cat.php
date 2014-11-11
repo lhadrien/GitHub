@@ -99,7 +99,7 @@ class	CL_Category {
      * @param type $is_css
      * @return type
      */
-    private function get_name_cat( $is_css = false ) {
+    public function get_name_cat( $is_css = false, $choose_fr = false ) {
 
         global $wpdb, $cl_lang;
 
@@ -119,7 +119,7 @@ class	CL_Category {
         $terms = $this->categories;
         foreach ( $terms as $term ) {
             $arr_terms[ $term->term_id ] = $term->name;
-            if ( $cl_lang->en && ! $is_css ) {
+            if ( isset( $cl_lang->en ) && $cl_lang->en && ! $is_css ) {
                 switch ( $term->term_id ) {
                     case 12:
                         $arr_terms[ $term->term_id ] = 'Miscelaneous';
@@ -140,5 +140,13 @@ class	CL_Category {
             }
         }
         return ( $arr_terms );
+    }
+    
+    public function get_image_cat( $tax_id )
+    {
+        global $cl_custom_type;
+        
+        $result = $cl_custom_type->get_creations_by_type( $tax_id, 1);
+        return ( empty($result) ) ? false : $cl_custom_type->get_images( $result{ 0 }->post_id );
     }
 }

@@ -116,11 +116,9 @@ class	CL_Custom_type {
         ) );
     }
 	
-    private function get_creations_by_type( $tax_id ) {
+    public function get_creations_by_type( $tax_id, $limit = 1000 ) {
 
         global $wpdb;
-
-        $limit = 1000;
 
         return $wpdb->get_results( $wpdb->prepare(
             "
@@ -183,6 +181,23 @@ class	CL_Custom_type {
             ",
             $post_id
         ) );
+    }
+    
+    public function get_cat_by_lang( $lang = 'fr' )
+    {
+        $arr = array();
+        
+        $offset = ( $lang === 'fr' ) ? 0 : 1;
+        
+        foreach ($this->arr_post_type as $name => $value) {
+            if ( $offset === 0 ) {
+                $arr[$name] = $value;
+                $offset = 1;
+            } else {
+                $offset = 0;
+            }
+        }
+        return $arr;
     }
 	
 }

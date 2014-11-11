@@ -26,7 +26,6 @@ global $cl_lang;
     <title><?php wp_title( '|', true, 'right' ); ?></title>
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="stylesheet" href="<?php echo WP_THEME; ?>/bootstrap/<?php echo BOOTSTRAP_VERSION; ?>/css/bootstrap.min.css?ver=<?php echo CL_VERSION; ?>" type="text/css" media="all" />
-    <link rel="stylesheet" href="<?php echo WP_THEME; ?>/bootstrap/<?php echo BOOTSTRAP_VERSION; ?>/css/bootstrap-theme.css?ver=<?php echo CL_VERSION; ?>" type="text/css" media="all" />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <link href="<?php echo CL_HOME; ?>/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <!--[if lt IE 9]>

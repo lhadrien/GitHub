@@ -60,13 +60,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
     font-size: 20px;
 }
 
-
 .container-site {
     background-color:   #F2E2C1;
     border-color:       #111;
     border-style:       solid;
-    margin-top:         30px;
-    background: url('img/wildtextures-leather-Campo-beige.jpg');
+    background: url('img/container_background.jpg');
 }
 
 body {
@@ -88,7 +86,7 @@ body {
     border-width: 2px;
 }
 
-.navbar-site a {
+.navbar-site a, .panel-default>.panel-heading {
     color: #BA9F81 !important;
     text-shadow: -1px -1px 0px rgba(10, 10, 10, 1) !important;
 }
@@ -139,18 +137,71 @@ footer {
 .carousel-inner > .item > img {
     top: 0;
     left: 0;
-    min-width: auto;
     width: auto;
     height: 300px;
     margin : auto;
 }
 
-.navbar-default .navbar-nav>li>a {
-    color: #111;
+/***********************************************
+ * thumbnail creations
+ ***********************************************/
+.item-creation {
+    
+}
+
+.item-creation .title {
+    padding: 0px 9px 8px 6px;
+}
+
+.item-creation h3 {
+    margin-top: 0px;
+    margin-bottom: 6px;
+}
+
+.item-creation .caption-content {
+    height:     150px;
+    min-height: 150px;
+    overflow:   hidden;
+}
+
+.item-creation img, .item-creation .no-img {
+    height: 180px;
+    min-height: 180px;
+}
+
+.item-creation .footer {
+    padding-bottom: 3px;
+    padding-top: 5px;
+}
+
+
+.panel, .thumbnail {
+    border-color: #3E2D25;
 }
 
 .thumbnail {
-    background-color: #fff !important;
+    background-color: #E2D5B8;
+}
+
+.list-group-item {
+    background-color: #E2D5B8;
+    border-color: #aaa;
+}
+.panel-default>.panel-heading, .panel-default>.panel-footer, .dropdown-menu {
+    background: url('img/wildtextures-leather-Campo-chestnut.jpg');
+}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus,
+nav.navbar ul ul a, .list-group-item {
+    background-color: #E2D5B8;
+    color: #3E2D23 !important;
+    text-shadow: -0px -0px 0px rgba(10, 10, 10, 1) !important;
 }
 
 .price {
@@ -177,13 +228,13 @@ footer {
 
 nav.navbar a {
     font-size: 20px;
-    font-family: augusta;
+    font-family: Augusta;
     font-weight: 500;
 }
 
 .panel a, .panel-heading {
     font-size: 20px;
-    font-family: augusta;
+    font-family: Augusta;
     font-weight: 500;
 }
 
@@ -192,17 +243,17 @@ nav.navbar a {
 }
 
 #title-home {
-	text-align: center;
-        font-size: 80px;
-        font-family: Augusta;
+    text-align: center;
+    font-size: 80px;
+    font-family: Augusta;
 }
 
 .text {
-	background:     rgba(255, 255, 255, 0.7);
-	border-radius:  10px;
-	padding:        39px;
-	margin-top:     10px;
-	margin-bottom:  10px;
+    background:     rgba(255, 255, 255, 0.7);
+    border-radius:  10px;
+    padding:        39px;
+    margin-top:     10px;
+    margin-bottom:  10px;
 }
 
 #sites {
@@ -240,11 +291,6 @@ body div {
 
 .label-divers {
 	background-color: #9C8D69;
-}
-
-.caption-content {
-	height:		200px;
-	overflow:	hidden;
 }
 
 ::selection {

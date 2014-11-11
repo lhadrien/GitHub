@@ -110,4 +110,41 @@ class CL_Lang {
         }
         $this->set_page_content( $page, stripcslashes( $content ), $lang );
     }
+    
+    // function that return the content fr/en of the pages
+    public function get_cat_content()
+    {
+        global $wpdb;
+        
+        $arr_cat = array();
+        
+        $cat = '%cat_%';
+        $result = $wpdb->get_results( $wpdb->prepare(
+            "
+            SELECT  *
+            FROM    cl_pages_content
+            WHERE   page_name LIKE %s
+            ",
+            $cat
+        ) );
+        foreach ($result as $cat) {
+            $arr_cat[ $cat->page_name ] = array( 'fr' => $cat->content_fr, 'en' => $cat->content_en );
+        }
+        return $arr_cat;
+    }
+    
+    // function to update the content of the pages
+    public function set_cat_content( $postvar )
+    {
+        global $wpdb, $cl_cat;
+        
+        $arr_cat = $cl_cat->get_name_cat();
+        foreach ($arr_cat as $cat) {
+            $data[ 'content_fr' ] = $postvar[ 'description_' . $cat . '_fr' ];
+            $data[ 'content_en' ] = $postvar[ 'description_' . $cat . '_en' ];
+            $where = array( 'page_name' => 'cat_' . $cat );
+            $wpdb->update( 'cl_pages_content', $data, $where );
+        }
+        return;
+    }
 }
