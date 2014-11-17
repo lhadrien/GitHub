@@ -22,7 +22,7 @@ $creation = $cl_custom_type->get_creation();
         <div class="row">
             <div class="col-md-7">
                 <?php
-                    $images =  $cl_custom_type->get_images( $post->ID );
+                    $images =  $cl_custom_type->get_images_size( $post->ID, 'large' );
                     // var_dump( $images );
                     $nb_images = count( $images );
                     if ( $nb_images >= 1 ) {
@@ -38,11 +38,8 @@ $creation = $cl_custom_type->get_creation();
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
                                 <?php for ( $i = 0; $i < $nb_images; $i++ ) : ?>
-                                    <div class="item<?php if ( $i === 0 ) : echo ' active'; endif; ?>">
-                                        <img src="<?php echo $images{ $i }->link; ?>" alt="<?php echo $images{ $i }->post_title; ?>" />
-                                        <div class="carousel-caption">
-                                          ...
-                                        </div>
+                                    <div class="item<?php if ( $i === 0 ) : echo ' active'; endif; ?> clic_photo">
+                                        <?php echo $images{ $i }->link_size; ?>
                                     </div>
                                 <?php endfor; ?>
                             </div>
@@ -82,5 +79,12 @@ $creation = $cl_custom_type->get_creation();
             <?php endif; ?>
         </div>
     </div>
+</div>
+<div id="modal_photo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div id="modal_child" class="modal-dialog modal-lg">
+    <div id="my_photo" class="modal-content">
+      ...
+    </div>
+  </div>
 </div>
 <?php get_footer();

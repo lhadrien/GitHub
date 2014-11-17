@@ -140,9 +140,9 @@ class CL_Lang {
         
         $arr_cat = $cl_cat->get_name_cat();
         foreach ($arr_cat as $cat) {
-            $data[ 'content_fr' ] = $postvar[ 'description_' . $cat . '_fr' ];
-            $data[ 'content_en' ] = $postvar[ 'description_' . $cat . '_en' ];
-            $where = array( 'page_name' => 'cat_' . $cat );
+            $data[ 'content_fr' ] = $postvar[ 'description_' . strtolower($cat) . '_fr' ];
+            $data[ 'content_en' ] = $postvar[ 'description_' . strtolower($cat) . '_en' ];
+            $where = array( 'page_name' => 'cat_' . strtolower($cat) );
             $wpdb->update( 'cl_pages_content', $data, $where );
         }
         return;

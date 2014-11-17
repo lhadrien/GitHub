@@ -17,10 +17,9 @@
                         <span class="label label-<?php $cl_cat->display_title_cat( $creation->term_taxonomy_id, true ); ?>"><?php $cl_cat->display_title_cat( $creation->term_taxonomy_id ); ?></span>
                     </div>
                     <?php
-                        $images =  $cl_custom_type->get_images( $creation->post_id );
-                        // var_dump( $images );
-                        if ( count( $images ) >= 1 ) {
-                            ?><img src="<?php echo $images{ 0 }->link; ?>" alt="<?php echo $images{ 0 }->post_title; ?>" /><?php
+                        $image =  $cl_custom_type->get_images_size( $creation->post_id, 'medium', true );
+                        if ( $image ) {
+                            echo $image;
                         } else {
                             ?><div class="caption no-img"><p><?php _cl( "Pas d'image", 'No image' ); ?></p></div><?php
                         }

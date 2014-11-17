@@ -91,6 +91,17 @@ body {
     text-shadow: -1px -1px 0px rgba(10, 10, 10, 1) !important;
 }
 
+#my_photo img {
+    display: block;
+    margin: 30px auto;
+    max-width: 90%;
+    max-height: 100%;
+}
+
+#my_photo {
+    background-color: #BA9F81;
+}
+
 footer#colophon {
     margin-top: 50px;
     background: url('img/wildtextures-leather-Campo-chestnut.jpg');
@@ -129,17 +140,9 @@ footer {
     height: 300px;
 }
 
-.carousel .item>img {
-    max-width: 50%;
-    height: 100%;
-}
-
 .carousel-inner > .item > img {
-    top: 0;
-    left: 0;
-    width: auto;
-    height: 300px;
-    margin : auto;
+    max-height: 300px;
+    margin : 0 auto;
 }
 
 /***********************************************

@@ -147,6 +147,6 @@ class	CL_Category {
         global $cl_custom_type;
         
         $result = $cl_custom_type->get_creations_by_type( $tax_id, 1);
-        return ( empty($result) ) ? false : $cl_custom_type->get_images( $result{ 0 }->post_id );
+        return ( empty($result) ) ? false : $cl_custom_type->get_images_size( $result{ 0 }->post_id, 'medium', true );
     }
 }

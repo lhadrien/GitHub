@@ -58,6 +58,13 @@ $cl_cat = new CL_Category();
 add_action( 'init', 'cuirs_init' );
 add_action( 'admin_init', 'cuirs_admin_init');
 
+// scripts
+function theme_name_scripts() {
+    wp_enqueue_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' );
+}
+
+add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
+
 
 function my_admin_scripts() {
 	wp_enqueue_script( 'media-upload' );

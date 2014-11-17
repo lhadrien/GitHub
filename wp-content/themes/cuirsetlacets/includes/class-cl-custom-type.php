@@ -173,7 +173,7 @@ class	CL_Custom_type {
         }
         return $wpdb->get_results( $wpdb->prepare(
             "
-            SELECT  post_parent AS post_id,
+            SELECT  ID, post_parent AS post_id,
                     guid AS link, post_mime_type, post_title
             FROM    cl_posts
             WHERE   post_parent = %d
@@ -199,5 +199,41 @@ class	CL_Custom_type {
         }
         return $arr;
     }
-	
+    
+    
+    private function undo_size( $image )
+    {
+        $pos1 = strpos( $image, 'width="');
+        if ( $pos1 !== false ) {
+            $part1 = substr( $image, 0, $pos1 );
+            $rest = substr( $image, $pos1 + 7 );
+            $pos2 = strpos( $rest, '"' );
+            $part2 = substr( $rest, $pos2 + 1 );
+            $image = $part1 . $part2;
+        }
+        $pos3 = strpos( $image, 'height="');
+        if ( $pos3 !== false ) {
+            $part1 = substr( $image, 0, $pos3 );
+            $rest = substr( $image, $pos3 + 8 );
+            $pos2 = strpos( $rest, '"' );
+            $part2 = substr( $rest, $pos2 + 1 );
+            $image = $part1 . $part2;
+        }
+        return $image;
+    }
+    
+    public function get_images_size( $post_id, $size = 'large', $single = false )
+    {
+        $images = $this->get_images( $post_id );
+        $count = count($images);
+        if ( $count < 1 ) {
+            return false;
+        } elseif ( $single ) {
+            return $this->undo_size(wp_get_attachment_image( $images{ 0 }->ID, $size ));
+        }
+        for ( $i = 0; $i < $count; $i++ ) {
+            $images{ $i }->link_size = $this->undo_size( wp_get_attachment_image( $images{ $i }->ID, $size ) );
+        }
+        return $images;
+    }
 }

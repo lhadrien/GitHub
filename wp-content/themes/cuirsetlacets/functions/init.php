@@ -8,7 +8,9 @@ function cuirs_init() {
 		  'menu-boutique' => __( 'Menu Boutique' )
 		)
 	);
+        wp_enqueue_script( 'jquery1', 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js', null, null, true);
 	wp_enqueue_script( 'bootstrap', WP_THEME . '/bootstrap/' . BOOTSTRAP_VERSION . '/js/bootstrap.min.js', null, null, true);
+        wp_enqueue_script( 'my_own_script', WP_THEME . '/js/my-own-script.js', null, null, true);
 	
 	// CUSTOM TYPE Creations
 	register_post_type( 'creations', array(

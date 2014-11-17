@@ -29,9 +29,9 @@ $index = 0;
                             <span class="label label-<?php $cl_cat->display_title_cat( $key, true ); ?>"><?php $cl_cat->display_title_cat( $key ); ?></span>
                         </div>
                         <?php
-                            $images =  $cl_cat->get_image_cat( $key );
-                            if ( $images !== false && count( $images ) >= 1 ) {
-                                ?><img src="<?php echo $images{ 0 }->link; ?>" alt="<?php echo $images{ 0 }->post_title; ?>" /><?php
+                            $image =  $cl_cat->get_image_cat( $key );
+                            if ( $image ) {
+                                echo $image;
                             } else {
                                 ?><div class="caption no-img"><p><?php _cl( "Pas d'image", 'No image' ); ?></p></div><?php
                             }
