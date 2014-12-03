@@ -14,7 +14,7 @@
         'theme_location'    => $lang_menu,
         'depth'             => 2,
         'container'         => 'div',
-        'container_class'   => 'collapse navbar-collapse navbar-ex1-collapse navbar-site',
+        'container_class'   => 'navbar-collapse navbar-ex1-collapse navbar-site',
         'menu_class'        => 'nav navbar-nav',
         'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
         'walker'            => new wp_bootstrap_navwalker())

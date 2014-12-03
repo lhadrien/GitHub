@@ -78,7 +78,8 @@ body {
     
 }
 
-.navbar-site {
+.navbar-site,
+.navbar-default {
     background: url('img/wildtextures-leather-Campo-chestnut.jpg');
     background-color: #CFBD97;
     border-style: outset;
