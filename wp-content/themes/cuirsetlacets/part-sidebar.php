@@ -7,7 +7,7 @@
 ?>
 
 <div class="panel panel-default">
-	<div class="panel-heading"><?php echo $arr_menu_title[ 0 ] ?></div>
+	<div class="panel-heading leather-effect effect-beige"><?php echo $arr_menu_title[ 0 ] ?></div>
 	<div class="list-group">
 		<?php for ( $i = 1; $i < count( $arr_menu_title ); $i++ ) : ?>
 			<a href="<?php echo CL_HOME . $arr_menu_url[ $i - 1 ]; ?>" class="list-group-item">
@@ -15,5 +15,5 @@
 			</a>
 		<?php endfor; ?>
 	</div>
-	<div class="panel-footer"></div>
+	<div class="panel-footer leather-effect effect-beige"></div>
 </div>

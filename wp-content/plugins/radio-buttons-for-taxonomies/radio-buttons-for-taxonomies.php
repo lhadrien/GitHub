@@ -2,14 +2,14 @@
 /*
 Plugin Name: Radio Buttons for Taxonomies
 Plugin URI: http://www.kathyisawesome.com/441/radio-buttons-for-taxonomies
-Description: Use radio buttons for any taxonomy
-Version: 1.7.1
+Description: Use radio buttons for any taxonomy so users can only select 1 term at a time
+Version: 1.7.6
 Text Domain: radio-buttons-for-taxonomies
 Author: Kathy Darling
 Author URI: http://www.kathyisawesome.com
 License: GPL2
 
-Copyright 2012  Kathy Darling  (email: kathy.darling@gmail.com)
+Copyright 2015  Kathy Darling  (email: kathy.darling@gmail.com)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License, version 2, as
@@ -50,7 +50,7 @@ class Radio_Buttons_for_Taxonomies {
 	 * @var version
 	 * @since 1.7.0
 	 */
-	static $version = '1.7.0';
+	static $version = '1.7.6';
 
 	/**
 	 * @var plugin options
@@ -219,15 +219,14 @@ class Radio_Buttons_for_Taxonomies {
 		$clean = array();
 
 		//probably overkill, but make sure that the taxonomy actually exists and is one we're cool with modifying
-		$args = array(
-			'public'   => true,
-			'show_ui' => true
-		);
+		$taxonomies = $this->get_all_taxonomies();
 
-		$taxonomies = get_taxonomies( $args );
-
-		if( isset( $input['taxonomies'] ) ) foreach ( $input['taxonomies'] as $tax ){
-			if( in_array( $tax,$taxonomies ) ) $clean['taxonomies'][] = $tax;
+    if( isset( $input['taxonomies'] ) ) {
+      foreach ( $input['taxonomies'] as $tax ){
+        if( array_key_exists( $tax, $taxonomies ) ) {
+          $clean['taxonomies'][] = $tax;
+        }
+      }
 		}
 
 		$clean['delete'] =  isset( $input['delete'] ) && $input['delete'] ? 1 : 0 ;  //checkbox
@@ -242,8 +241,8 @@ class Radio_Buttons_for_Taxonomies {
 	 * @since  1.0
 	 */
 	public function admin_script( $hook ){
-		if( 'edit.php' == $hook ){
-			$suffix = defined( 'WP_SCRIPT_DEBUG' ) && WP_SCRIPT_DEBUG ? '' : '.min';
+		if( in_array( $hook, array( 'edit.php', 'post.php', 'post-new.php' ) ) ){
+			$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
 			wp_enqueue_script( 'radiotax', plugins_url( 'js/radiotax' . $suffix . '.js', __FILE__ ), array( 'jquery', 'inline-edit-post' ), self::$version, true );
 		}
 	}

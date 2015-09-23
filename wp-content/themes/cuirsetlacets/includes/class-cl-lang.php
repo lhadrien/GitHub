@@ -1,10 +1,10 @@
 <?php
 
-class CL_Lang {
+class CL_Lang extends CL_Abstract {
 
     public  $language = 'fr';
     private $page_content = array();
-
+	
     public function choose_language_fr()
     {
         $this->language = 'fr';
@@ -22,9 +22,7 @@ class CL_Lang {
     // get the content depending of the language
     private function get_content( $post_id, $column, $table )
     {
-        global $wpdb;
-
-        return $wpdb->get_var( $wpdb->prepare(
+        return $this->wpdb->get_var( $this->wpdb->prepare(
             "
             SELECT  %s
             FROM    " . $table . "
@@ -54,9 +52,7 @@ class CL_Lang {
     // private function to get the values of the table cl_pages_content
     private function get_page_content( $page )
     {
-        global $wpdb;
-        
-        return $wpdb->get_row( $wpdb->prepare(
+        return $this->wpdb->get_row( $this->wpdb->prepare(
             "
             SELECT  *
             FROM    cl_pages_content
@@ -70,8 +66,6 @@ class CL_Lang {
     // private function to set the values of the table cl_pages_content
     private function set_page_content( $page, $content, $lang )
     {
-        global $wpdb;
-
         if ( $content === NULL ) {
             return ( false );
         }
@@ -81,7 +75,7 @@ class CL_Lang {
         $where = array(
             'page_name' => $page
         );
-        $result = $wpdb->update( 'cl_pages_content', $data, $where );
+        $result = $this->wpdb->update( 'cl_pages_content', $data, $where );
         return $result;
     }
     
@@ -114,12 +108,10 @@ class CL_Lang {
     // function that return the content fr/en of the pages
     public function get_cat_content()
     {
-        global $wpdb;
-        
         $arr_cat = array();
         
         $cat = '%cat_%';
-        $result = $wpdb->get_results( $wpdb->prepare(
+        $result = $this->wpdb->get_results( $this->wpdb->prepare(
             "
             SELECT  *
             FROM    cl_pages_content
@@ -136,14 +128,14 @@ class CL_Lang {
     // function to update the content of the pages
     public function set_cat_content( $postvar )
     {
-        global $wpdb, $cl_cat;
+        global $cl_cat;
         
         $arr_cat = $cl_cat->get_name_cat();
         foreach ($arr_cat as $cat) {
             $data[ 'content_fr' ] = $postvar[ 'description_' . strtolower($cat) . '_fr' ];
             $data[ 'content_en' ] = $postvar[ 'description_' . strtolower($cat) . '_en' ];
             $where = array( 'page_name' => 'cat_' . strtolower($cat) );
-            $wpdb->update( 'cl_pages_content', $data, $where );
+            $this->wpdb->update( 'cl_pages_content', $data, $where );
         }
         return;
     }

@@ -24,7 +24,7 @@ $index = 0;
         <div class="row">
             <?php foreach ($arr_cat as $key => $cat) : ?>
                 <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail item-creation">
+                    <div class="thumbnail item-creation leather-effect">
                         <div class="caption title">
                             <span class="label label-<?php $cl_cat->display_title_cat( $key, true ); ?>"><?php $cl_cat->display_title_cat( $key ); ?></span>
                         </div>

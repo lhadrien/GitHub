@@ -1,6 +1,6 @@
 <?php
 
-class	CL_Custom_type {
+class CL_Custom_type extends CL_Abstract {
 
     public $type_post = '';
     public $arr_post_type = array(
@@ -16,10 +16,8 @@ class	CL_Custom_type {
 	
     private $arr_name_type = array();
 	
-    public function update_cuirs_meta( $post_id, $key, $value, $table ) {
-	
-        global $wpdb;
-
+    public function update_cuirs_meta( $post_id, $key, $value, $table )
+	{
         if ( $key === NULL ) {
             return ( false );
         }
@@ -29,11 +27,12 @@ class	CL_Custom_type {
         $where = array(
             'post_id' => $post_id
         );
-        $return = $wpdb->update( 'cl_' . $table, $data, $where );
+        $return = $this->wpdb->update( 'cl_' . $table, $data, $where );
         return ( $return );
     }
 	
-    public function add_cuirs_meta( $post_id, $key, $value, $table ) {
+    public function add_cuirs_meta( $post_id, $key, $value, $table )
+	{
 
         global $wpdb;
 
@@ -47,7 +46,8 @@ class	CL_Custom_type {
         $wpdb->insert( 'cl_' . $table, $data );
     }
 	
-    public function get_cuirs_meta( $post_id, $table ) {
+    public function get_cuirs_meta( $post_id, $table )
+	{
 
         global $wpdb;
 
@@ -69,7 +69,8 @@ class	CL_Custom_type {
         ) );
     }
 	
-    public function get_sites_amis() {
+    public function get_sites_amis()
+	{
 
         global $wpdb;
 
@@ -85,7 +86,8 @@ class	CL_Custom_type {
         ) );
     }
 	
-    private function get_all_creations() {
+    private function get_all_creations()
+	{
 
         global $wpdb;
 
@@ -102,11 +104,10 @@ class	CL_Custom_type {
         ) );
     }
     
-    private function get_creation_by_id( $id ) {
-        
-        global $wpdb;
+    private function get_creation_by_id( $id )
+	{
 
-        return $wpdb->get_row( $wpdb->prepare(
+        return $this->wpdb->get_row( $this->wpdb->prepare(
             "
             SELECT  *
             FROM    cl_creations
@@ -116,11 +117,9 @@ class	CL_Custom_type {
         ) );
     }
 	
-    public function get_creations_by_type( $tax_id, $limit = 1000 ) {
-
-        global $wpdb;
-
-        return $wpdb->get_results( $wpdb->prepare(
+    public function get_creations_by_type( $tax_id, $limit = 1000 )
+	{
+        return $this->wpdb->get_results( $this->wpdb->prepare(
             "
             SELECT  *
             FROM    cl_term_relationships r
@@ -133,15 +132,13 @@ class	CL_Custom_type {
         ) );
     }
 	
-    public function get_creations() {
-
-        global $post;
-
-        if ( ! isset( $post->post_name ) ) {
+    public function get_creations()
+	{
+        if ( ! isset( $this->post->post_name ) ) {
             return ( false );
         }
-        if ( array_key_exists( $post->post_name, $this->arr_post_type ) ) {
-            $creations = $this->get_creations_by_type( $this->arr_post_type[ $post->post_name ] );
+        if ( array_key_exists( $this->post->post_name, $this->arr_post_type ) ) {
+            $creations = $this->get_creations_by_type( $this->arr_post_type[ $this->post->post_name ] );
             // gerer les creations
         } else {
             $creations = $this->get_all_creations();
@@ -153,25 +150,23 @@ class	CL_Custom_type {
         return ( $creations );
     }
     
-    public function get_creation() {
+    public function get_creation()
+	{
 
-        global $post;
-
-        if ( ! isset( $post->ID ) ) {
+        if ( ! isset( $this->post->ID ) ) {
             return ( false );
         }
-        $creation = $this->get_creation_by_id( $post->ID );
+        $creation = $this->get_creation_by_id( $this->post->ID );
         return ( $creation );
     }
 	
-    public function get_images( $post_id = 0 ) {
-
-        global $wpdb;
+    public function get_images( $post_id = 0 )
+	{
 
         if ( $post_id === 0 ) {
             return ( false );
         }
-        return $wpdb->get_results( $wpdb->prepare(
+        return $this->wpdb->get_results( $this->wpdb->prepare(
             "
             SELECT  ID, post_parent AS post_id,
                     guid AS link, post_mime_type, post_title

@@ -2,49 +2,55 @@
 
 function cuirs_admin_init() {
 
+	// creations
 	add_meta_box( "title_english_creations", "Titre Anglais :", "title_english_creations", "creations", "normal", "high" );
-        add_meta_box( "epoque_creations", "L'epoque de l'objet :", "epoque_creations", "creations", "normal", "high" );
-        add_meta_box( "size_creations", "La taille de l'objet :", "size_creations", "creations", "normal", "high" );
-        add_meta_box( "price_creations", "Le prix :", "price_creations", "creations", "normal", "high" );
+	add_meta_box( "epoque_creations", "L'epoque de l'objet :", "epoque_creations", "creations", "normal", "high" );
+	add_meta_box( "size_creations", "La taille de l'objet :", "size_creations", "creations", "normal", "high" );
+	add_meta_box( "price_creations", "Le prix :", "price_creations", "creations", "normal", "high" );
 	add_meta_box( "description_creations", "Description Francaise/Anglaise", "description_creations", "creations", "normal", "low" );
 	add_meta_box( "images_creations", "Ajoute des images", "images_creations", "creations", "side", "low" );
+	// amis
 	add_meta_box( "url_amis", "Lien vers le site ami", "url_amis", "amis", "normal", "high" );
 	add_meta_box( "description_amis", "Description Francaise/Anglaise", "description_amis", "amis", "normal", "low" );
+	// personalisation
+	add_meta_box( "type_personalisation", "Type de personalisation", "type_personalisation", "personalisation", "normal", "low" );
+	add_meta_box( "associer_personalisation", "Associer la personalisation", "associer_personalisation", "personalisation", "normal", "low" );
+	add_meta_box( "affichage_personalisation", "Associer la personalisation", "affichage_personalisation", "personalisation", "normal", "low" );
 }
 
 function description_creations() {
 
 	global $post, $cl_custom_type;
-	
+
 	$cl_custom_type->type_post = 'creations';
-	
+
 	// Noncename needed to verify where the data originated
 	echo '<input type="hidden" name="edit_custom_creation" id="edit_custom_creation" value="' .
 	wp_create_nonce( plugin_basename(__FILE__) ) . '" />';
-	
+
 	$metas = $cl_custom_type->get_cuirs_meta( $post->ID, $cl_custom_type->type_post );
 	if ( $metas ) {
 		$content_fr = $metas->content_fr;
 		$content_en = $metas->content_en;
-                $epoque = $metas->epoque;
-                $size = $metas->size;
-                $price = $metas->price;
+		$epoque = $metas->epoque;
+		$size = $metas->size;
+		$price = $metas->price;
 	} else {
 		$content_fr = '';
 		$content_en = '';
 	}
 	?>
-        <p>
-            <label>Description FR :</label>
-            <br />
-            <?php wp_editor( $content_fr , 'description_fr', array('textarea_name' => 'content_fr') ); ?>
-        </p>
-        <hr />
-        <p>
-            <label>Description EN :</label>
-            <br />
-            <?php wp_editor( $content_en , 'description_en', array('textarea_name' => 'content_en') ); ?>
-        </p>
+		<p>
+			<label>Description FR :</label>
+			<br />
+			<?php wp_editor( $content_fr , 'description_fr', array('textarea_name' => 'content_fr') ); ?>
+		</p>
+		<hr />
+		<p>
+			<label>Description EN :</label>
+			<br />
+			<?php wp_editor( $content_en , 'description_en', array('textarea_name' => 'content_en') ); ?>
+		</p>
 	<?php
 }
 
@@ -346,4 +352,19 @@ function cl_admin_cat_page() {
     </div>
     
     <?php
+}
+
+function type_personalisation()
+{
+	
+}
+
+function associer_personalisation()
+{
+	
+}
+
+function affichage_personalisation()
+{
+	
 }

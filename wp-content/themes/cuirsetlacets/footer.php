@@ -10,7 +10,7 @@
  */
 ?>
         </div>
-            <footer id="colophon" class="site-footer" role="contentinfo">
+            <footer id="colophon" class="site-footer leather-effect" role="contentinfo">
                 <div class="site-info">
                     <div class="row">
                         <div class="col-sm-4">

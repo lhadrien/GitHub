@@ -3,7 +3,7 @@
 /**
  * 
  */
-class	CL_Category {
+class CL_Category extends CL_Abstract {
 
     private $arr_menu_title = array();
     private $arr_menu_url = array();
@@ -101,12 +101,12 @@ class	CL_Category {
      */
     public function get_name_cat( $is_css = false, $choose_fr = false ) {
 
-        global $wpdb, $cl_lang;
+        global $cl_lang;
 
         $tax = 'type';
         $arr_terms = array();
         if ( empty( $this->categories ) ) {
-            $this->categories = $wpdb->get_results( $wpdb->prepare(
+            $this->categories = $this->wpdb->get_results( $this->wpdb->prepare(
                 "
                 SELECT  ter.name as name, tax.term_taxonomy_id as term_id
                 FROM    cl_term_taxonomy tax

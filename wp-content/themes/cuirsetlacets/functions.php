@@ -47,12 +47,16 @@ foreach ( $requires as $require ) {
 add_filter('show_admin_bar', '__return_false');
 
 // INIT Classes
+// La classe abstraite
+require_once( 'includes/class-cl-abstract.php' );
 require_once( 'includes/class-cl-lang.php' );
 $cl_lang = new CL_Lang();
 require_once( 'includes/class-cl-custom-type.php' );
 $cl_custom_type = new CL_Custom_type();
 require_once( 'includes/class-cl-cat.php' );
 $cl_cat = new CL_Category();
+require_once( 'includes/class-cl-perso.php' );
+$cl_perso = new CL_Personalisation();
 
 // INIT the website
 add_action( 'init', 'cuirs_init' );
